@@ -1,0 +1,102 @@
+{
+  "stage": "experiment_ready_arrays_and_DRAFT_splits; biological_QC_pending",
+  "models_trained": 0,
+  "final_training_release": false,
+  "library_records": 3407,
+  "distinct_conditions": 3168,
+  "cell_drug_pairs": 530,
+  "cells": 5,
+  "drug_ids": 106,
+  "chemical_connectivity_groups": 106,
+  "scaffold_groups": 105,
+  "expression_shape": [
+    3407,
+    2,
+    978
+  ],
+  "baseline_shape": [
+    5,
+    978
+  ],
+  "sum_condition_weights": 3168.0,
+  "conditions_with_two_libraries": 239,
+  "functional_bioreplicate_rows": 10221,
+  "technical_wells_in_core": 30321,
+  "technical_rows_per_bioreplicate": {
+    "3": 9879,
+    "2": 342
+  },
+  "functional_bioreplicate_spearman_descriptive": {
+    "1_2": 0.9533906442293465,
+    "1_3": 0.9365524576049153,
+    "2_3": 0.9425902036688989
+  },
+  "count_sd_across_bioreplicates_quantiles": {
+    "0": 0.0010821634709126,
+    "0.25": 0.03006102771779455,
+    "0.5": 0.0501073904506887,
+    "0.75": 0.07858009670547089,
+    "0.95": 0.14188133027711836,
+    "1": 0.4508586070097972
+  },
+  "cross_library_count_difference_quantiles": {
+    "0": 0.00010777777777781772,
+    "0.25": 0.01174616666666671,
+    "0.5": 0.02397444444444441,
+    "0.75": 0.04579027777777783,
+    "0.95": 0.17107355555555545,
+    "1": 0.8241944444444445
+  },
+  "cross_library_expression_pearson_quantiles": {
+    "3": {
+      "0": -0.11192639574797948,
+      "0.25": 0.19651334421256458,
+      "0.5": 0.33086772318019597,
+      "0.75": 0.4845870367150803,
+      "0.95": 0.7208562409797009,
+      "1": 0.8028482881082747
+    },
+    "24": {
+      "0": -0.24951258900749715,
+      "0.25": 0.32020110545256464,
+      "0.5": 0.5942913310075575,
+      "0.75": 0.7643014956496272,
+      "0.95": 0.8692732342836061,
+      "1": 0.915890861744278
+    }
+  },
+  "expression_metric_missing_counts": {
+    "distil_nsample": 0,
+    "tas": 0,
+    "distil_cc_q75": 81,
+    "distil_ss": 0
+  },
+  "missing_replicate_correlation_all_and_only_single_instance_signatures": true,
+  "expression_replicate_number_distribution": {
+    "1": 81,
+    "2": 753,
+    "3": 5079,
+    "4": 901
+  },
+  "phaseI_phaseII_pr_is_lm_genes_equal": true,
+  "delta_landmark_file_intersection_with_measured_landmarks": 785,
+  "split_assertions_passed": [
+    "all_library_views_and_times_grouped",
+    "heldout_identity_disjoint",
+    "pair_test_entities_present_in_train",
+    "interpolation_within_training_dose_range",
+    "extrapolation_above_training_dose_range"
+  ],
+  "versions": {
+    "python": "3.12.12",
+    "numpy": "2.0.1",
+    "pandas": "2.3.3",
+    "rdkit": "2025.09.4"
+  },
+  "seed": 20261106,
+  "notes": [
+    "Descriptive repeat statistics are not independent biological validation.",
+    "Connectivity grouping is for conservative splits only; original chemical identities and stereochemistry are retained.",
+    "No TAS/response-size-based exclusion and no clipping of function labels."
+  ]
+}

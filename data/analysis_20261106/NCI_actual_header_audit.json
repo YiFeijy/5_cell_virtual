@@ -1,0 +1,16 @@
+{
+  "matrix_sample_columns": 7623,
+  "first_probe_id": "1007_s_at",
+  "platforms": [
+    "GPL571"
+  ],
+  "distinct_source_labels": 60,
+  "time_h_counts": {
+    "6": 2551,
+    "2": 2540,
+    "24": 2532
+  },
+  "zero_dose_arrays": 2554,
+  "title_unparsed_dose_or_time": 0,
+  "qualification": "GEO processed microarray matrix; probe-to-gene mapping not completed; zero-dose controls may be named per compound and need identity/batch audit."
+}

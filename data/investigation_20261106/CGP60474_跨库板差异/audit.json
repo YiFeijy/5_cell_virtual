@@ -1,0 +1,58 @@
+{
+  "drug": "CGP-60474",
+  "pert_id": "BRD-K79090631",
+  "raw_CGP_wells": 642,
+  "nominal_dose_and_units_confirmed": true,
+  "count_formula_max_absolute_error": 4.364853027349902e-05,
+  "SKBR3_0.04uM_bioreplicates": [
+    {
+      "CellLine": "SKBR3",
+      "LJP Library Plate": "LJP5",
+      "Small Mol Concentration": 0.04,
+      "source_file": "Screen20237_LJP_processedData1.xls",
+      "count_ratio": 1.1429333333333334,
+      "n_wells": 3
+    },
+    {
+      "CellLine": "SKBR3",
+      "LJP Library Plate": "LJP5",
+      "Small Mol Concentration": 0.04,
+      "source_file": "Screen20238_LJP_processedData2.xls",
+      "count_ratio": 1.0401666666666667,
+      "n_wells": 3
+    },
+    {
+      "CellLine": "SKBR3",
+      "LJP Library Plate": "LJP5",
+      "Small Mol Concentration": 0.04,
+      "source_file": "Screen20239_LJP_processedData3.xls",
+      "count_ratio": 1.05421,
+      "n_wells": 3
+    },
+    {
+      "CellLine": "SKBR3",
+      "LJP Library Plate": "LJP6",
+      "Small Mol Concentration": 0.04,
+      "source_file": "Screen20237_LJP_processedData1.xls",
+      "count_ratio": 0.24959,
+      "n_wells": 3
+    },
+    {
+      "CellLine": "SKBR3",
+      "LJP Library Plate": "LJP6",
+      "Small Mol Concentration": 0.04,
+      "source_file": "Screen20238_LJP_processedData2.xls",
+      "count_ratio": 0.2549,
+      "n_wells": 3
+    },
+    {
+      "CellLine": "SKBR3",
+      "LJP Library Plate": "LJP6",
+      "Small Mol Concentration": 0.04,
+      "source_file": "Screen20239_LJP_processedData3.xls",
+      "count_ratio": 0.26023666666666667,
+      "n_wells": 3
+    }
+  ],
+  "interpretation": "The library difference is present in each source biological file and survives direct Nt/Nc recomputation. It is not created by cross-library averaging or this project's ratio calculation. Cause (library-specific material, actual exposure, protocol or source annotation) remains unresolved."
+}

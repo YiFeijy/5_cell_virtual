@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+"""Source inventory, not a list of independently measured paired cohorts."""
+from pathlib import Path
+import csv
+import io
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = """id	resource	role	readout	pairing_route	verification	priority	primary_url	qualification
+D01	Broad HMS LINCS Joint Project	联合实验	L1000表达与细胞计数和GR	同项目条件对接	原始功能表和LINCS元数据已读	P0	https://pmc.ncbi.nlm.nih.gov/articles/PMC5662764/	3h和24h表达对应72h功能终点；不同平行孔；尚未读取L1000矩阵
+D02	HMS MCF10A Common Project	联合实验	表达蛋白形态与生长读数	同项目多模态条件对接	官方项目说明已核验	P1	https://lincs.hms.harvard.edu/explore/	单细胞系；需逐个实验表核对实际交集
+D03	LINCS L1000 Phase I GSE92742	分子响应	Level3表达及Level5扰动签名	细胞药物剂量时间	完整sig和细胞药物基因元数据已读	P0	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742	978个实测基因；Level5不是绝对表达；pert_idose有剂量显示舍入
+D04	LINCS L1000 Phase II GSE70138	分子响应	Level3表达及Level5扰动签名	细胞药物剂量时间	完整sig元数据已读	P0	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138	本次固定2017-03-06版本；LJP含3h和24h条件
+D05	CMap LINCS 2020	分子响应	扩大版L1000表达和签名	细胞药物剂量时间	官方入口与使用论文已核验	P1	https://clue.io/releases/data-dashboard	与旧版存在重叠；下载权限和具体build需另固定
+D06	CMap Build 02	分子响应	药物处理微阵列表达	化合物细胞时间条件	作者汇总下载入口已核验	P2	https://perturbseqr.maayanlab.cloud/download	旧数据可补充；不能与LINCS视为独立大队列
+D07	CTRP v2	功能读数	浓度级相对活性和曲线参数	Broad ID加细胞和浓度	原始作者处理代码已逐段核对；本轮未取得原始响应表	P0	https://portals.broadinstitute.org/ctrp.v2/	CTD2旧路径本轮重定向；DepMap下载要求登录；需恢复原始文件或ORCESTRA替代
+D08	CTRP v1	功能读数	早期浓度响应筛查	身份映射后跨平台验证	官方门户已核验	P2	https://portals.broadinstitute.org/ctrp/	与v2不是完全独立资源；保留版本和重复关系
+D09	GDSC1	功能读数	浓度响应及IC50和AUC	COSMIC或Sanger映射加药物浓度	官方raw下载清单已核验	P1	https://cellmodelpassports.sanger.ac.uk/downloads/gdsc	Legacy；读数方法与GDSC2不同；不能只拿IC50当浓度级活性
+D10	GDSC2	功能读数	浓度响应及IC50和AUC	模型ID和药物浓度	官方raw下载清单已核验	P1	https://cellmodelpassports.sanger.ac.uk/downloads/gdsc	raw与fitted是不同文件；需读取归一化和plate设计
+D11	PRISM Repurposing 19Q4 Secondary	功能读数	条码丰度LFC及剂量曲线	DepMap ID与Broad ID加浓度	官方README与两张元数据表已读	P1	https://depmap.org/repurposing/	LFC是log2尺度；README指明2的LFC次方转换；筛除STR异常并选择screen；未下载响应矩阵
+D12	PRISM Primary与Extended Primary	功能读数	单浓度或固定设计的丰度读数	细胞药物条件对接	官方文件清单已核验	P1	https://depmap.org/repurposing/	单浓度标签不能用于完整剂量曲线监督；版本不可混用
+D13	DepMap CCLE baseline omics	背景输入	基线RNAseq与模型注释	DepMap和Cellosaurus映射	24Q4官方文件索引及模型和profile表已下载	P0	https://api.figshare.com/v2/articles/27993248	基线不是药后表达；跨年代和培养条件不等于同实验对照
+D14	CCLE pharmacological profiling	功能读数	浓度响应及药物敏感性汇总	细胞药物映射	原始论文和PharmacoDB来源已核验	P2	https://doi.org/10.1038/nature11003	规模和药物覆盖较小；区分active area和指定浓度读数
+D15	gCSI	功能读数	药物响应和部分GR数据	基线表达加细胞药物剂量	PharmacoDB官方论文来源表已核验	P1	https://pmc.ncbi.nlm.nih.gov/articles/PMC8728279/	适合跨平台复核；不同发布版本药物覆盖有差别
+D16	FIMM pharmacogenomics	功能读数	体外浓度响应	PharmacoSet身份映射	MultiDCP与PharmacoDB来源已核验	P2	https://orcestra.ca/	需定位实际PSet版本和原始assay；不预设药后表达配对
+D17	NCI Transcriptional Pharmacodynamics Workbench	时间响应	NCI60药后表达时间序列及GI50关联	NSC加细胞加剂量时间	官方页面和原始论文已核验	P1	https://tpwb.nci.nih.gov/GeneExpressionNCI60/index.html	表达有2h和6h和24h；GI50不是每个表达剂量的直接活性
+D18	NCI60 DTP与HTS384	功能读数	浓度响应及GI50和TGI和LC50	NSC和实验ID及细胞	官方2026年下载页已核验	P1	https://wiki.nci.nih.gov/spaces/NCIDTPdata/pages/147193864/NCI-60+Growth+Inhibition+Data	新旧实验体系和时长需分开；growth percent不是相对存活率
+D19	MIX-seq McFarland 2020	单细胞与功能关联	scRNAseq及独立敏感性标签	DepMap ID加药物和实验条件	四个原始表达包和作者功能标签已读取	P0	https://doi.org/10.6084/m9.figshare.10298696	本轮试读trametinib 0.1uM；标签sens是1减归一化AUC；不等于0.1uM活性
+D20	sci-Plex 2	单细胞响应	A549小药物面板和剂量响应	条件级表达与回收数代理	原始论文和GEO及修正版scPerturb已核验	P1	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE139944	24h；回收数viability score是代理；可查独立计数验证子集
+D21	sci-Plex 3	单细胞响应	A549与MCF7与K562药物剂量响应	伪bulk加外部功能标签	原始论文及GEO和修正版scPerturb已核验	P1	https://pmc.ncbi.nlm.nih.gov/articles/PMC7289078/	24h为主；多数条件不是独立活性实测；标准化版本有过纠错
+D22	sci-Plex 4	单细胞响应	HDAC抑制剂机制与代谢相关条件	单细胞机制外部验证	原始GEO和scPerturb文件清单已核验	P2	https://zenodo.org/records/13350497	先检查是否仍属于本阶段单药设计；不预设通用功能标签
+D23	Tahoe 100M	单细胞响应	药物剂量条件下单细胞表达	Cellosaurus和DepMap加化学身份	官方README和三张Parquet元数据已读	P1	https://huggingface.co/datasets/tahoebio/Tahoe-100M	379条药物元数据与1344条样本元数据；细胞注释包含更广面板；没有已核验的独立活性列
+D24	DRUG-seq Ye 2018	分子响应	U2OS等细胞批量转录组	条件级药物剂量映射	原始论文及数据可用性已核验	P2	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE120222	表达公开；其他数据论文称按需申请；不当作完整公开联合标签
+D25	Novartis DRUG-seq U2OS MoABox	分子响应	药物多剂量全转录组	U2OS加药物结构和浓度	官方Zenodo和代码入口已核验	P1	https://zenodo.org/records/14291446	单细胞系；先读原始元数据；处理后的第三方版本不能当原始单细胞数据
+D26	VCPI 0001和0002	分子响应	THP1多剂量DRUGseq	单细胞系药物浓度映射	官方2026发布页已核验	P1	https://thevirtualcell.com/	注册后可下载；24h；未确认每个药物都有独立功能标签
+D27	VCPI 0003和0004	分子响应	THP1单浓度大化合物面板	药物身份加固定实验条件	官方2026发布页已核验	P2	https://thevirtualcell.com/	与前两版设计不同；对照药的细胞毒性说明不等于全库功能标签
+D28	Ginkgo GDPx1和GDPx2	分子响应	DRUGseq与primary cell剂量响应	供者细胞类型及药物浓度	官方GDPx2数据卡已核验	P2	https://huggingface.co/datasets/ginkgo-datapoints/GDPx2	primary cell数据适合外部迁移；需要核对实际公开矩阵范围及使用许可
+D29	OP3 Open Problems PBMC	单细胞响应	原代PBMC药物24h响应	供者和免疫细胞类型条件	官方GEO及基准页面已核验	P2	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279945	原代细胞不应硬映射为肿瘤细胞系；独立活性标签未确认
+D30	Combi-seq	表达与组合功能验证	K562组合表达及独立plate活性验证	单药和组合条件分别匹配	原始论文和GEO已核验	P2	https://www.nature.com/articles/s41467-022-32197-0	GSE174696；PrestoBlue验证覆盖需逐条查；表达推断活性不能冒充实测
+D31	Way 2022 L1000与Cell Painting	多模态状态	同化合物条件的表达与形态	平行测量条件映射	原始论文和作者代码已核验	P2	https://pmc.ncbi.nlm.nih.gov/articles/PMC10246468/	形态与细胞计数可补充状态；不能直接当作死亡比例
+D32	JUMP Cell Painting Gallery	形态响应	显微图像及形态特征	化合物与细胞和处理条件	官方数据仓和数据清单已核验	P2	https://broadinstitute.github.io/cellpainting-gallery/complete_datasets.html	主资源是形态；与表达的重叠要另算；数据量很大
+D33	DILImap	肝细胞联合数据	PHH表达及LDH等毒性读数	同研究供者药物浓度	原始论文和作者数据API说明已核验	P1条件性	https://www.nature.com/articles/s41467-025-65690-3	验证集和部分处理后训练特征公开；训练原始表达需申请；不同于癌细胞活性
+D34	Open TG-GATEs human in vitro	人源联合数据	肝细胞表达与LDH和DNA含量	物种供者药物剂量时间	官方归档页及ToxicoDB论文已核验	P1条件性	https://dbarchive.biosciencedbc.jp/en/open-tggates/download.html	适合检验分子响应与毒性不同；2h和8h和24h设计需按样本核对；非肿瘤
+D35	Open TG-GATEs rat及DrugMatrix	毒理外部验证	表达及细胞毒性或组织病理	按物种实验条件匹配	官方归档和数据库论文已核验	P3	https://pmc.ncbi.nlm.nih.gov/articles/PMC4384023/	体内组织终点不等于细胞系活性；物种层次必须保留
+D36	Tox21 qHTS	功能读数	ATP活性与caspase和膜完整性等	PubChem化合物加assay和条件	官方数据页及assay表已核验	P2	https://tox21.gov/data-and-tools/	每种assay含义不同；通路激活不是细胞活性；可用于功能概念分解
+D37	EPA ToxCast和HTTr	响应与功能候选	TempOseq及多种体外功能assay	DSSTox或PubChem加细胞条件	EPA官方开放数据入口已核验	P2	https://registry.opendata.aws/epa-ccte-httr/	不能仅凭相同化合物把不同assay配成同细胞观测
+D38	CIGS	分子响应	两细胞系的靶向转录组药物扰动	化合物及细胞条件映射	原始论文已核验	P2	https://www.nature.com/articles/s41592-025-02781-5	非商业研究条款需核对；标题和摘要样本数有差异不作为本项目规模
+D39	DeepCoverMOA	蛋白状态补充	HCT116药物诱导蛋白组	药物细胞条件或通路层关联	原始论文已核验	P3	https://pmc.ncbi.nlm.nih.gov/articles/PMC11069389/	主数据为蛋白组；不能列为独立全转录组加活性联合队列
+D40	Zhao 2021肿瘤组织药物单细胞	临床前外部验证	肿瘤组织ex vivo药物表达响应	患者和药物及细胞类型	原始论文及GSE148842入口已核验	P2	https://pmc.ncbi.nlm.nih.gov/articles/PMC8114529/	患者组织和bulk细胞系域不同；需核对功能验证范围
+D41	Lee 2024 GBM神经药物筛查	疾病特定验证	DRUGseq和时间序列及药效验证	患者药物条件对接	原始论文及GEO已核验	P2	https://www.nature.com/articles/s41591-024-03224-y	GSE214965至GSE214968；不能直接扩充为广谱细胞系队列
+D42	Achilles RNAi和CRISPR及Perturb-seq	遗传扰动辅助	遗传扰动表达和fitness	同shRNA或guide与细胞；或谨慎做gene层映射	原始表达活性整合论文及DepMap入口已核验	P2	https://pmc.ncbi.nlm.nih.gov/articles/PMC6821211/	不同shRNA和KO不能直接等同；药物剂量不能转换为基因敲除强度
+D43	NCI ALMANAC与DrugComb	后续组合功能	药物组合浓度响应与协同	双药及剂量和实验条件	NCI官方原始数据页已核验	P3	https://wiki.nci.nih.gov/spaces/NCIDTPdata/pages/338237347/NCI-ALMANAC	本轮单药主线之外；无完整配对表达；不同协同指标不可直接合并
+R01	PharmacoDB和ORCESTRA PharmacoGx	整合入口	多个药敏数据集和PharmacoSet	标准化药物及细胞映射和曲线拟合	数据库原始论文已核验	P0	https://pmc.ncbi.nlm.nih.gov/articles/PMC8728279/	整合服务不是新增独立实验；PSet保留原始来源与剂量范围
+R02	Chem-PerturBridge	标准化入口	bulk及伪bulk表达与DE统计	统一细胞药物剂量时间schema	作者仓库与HF manifest已读	P1	https://huggingface.co/datasets/theislab/chem-perturbridge	不提供新的独立活性标签；bulk和伪bulk数值尺度不同；继承上游许可
+R03	scPerturb	标准化入口	多研究单细胞扰动h5ad	统一元数据后回查原始论文	官方Zenodo版本说明已核验	P1	https://zenodo.org/records/13350497	v1.4修正sciPlex3；与原始GEO数据不能重复计数
+R04	ToxicoDB和ToxicoGx	整合入口	毒理TSet表达与功能表	同TSet实验条件对接	数据库原始论文已核验	P1条件性	https://academic.oup.com/nar/article/48/W1/W455/5838860	是TG-GATEs等数据的处理版本；LDH与DNA分别保留
+R05	Perturb-Seqr和L1000FWD	发现入口	多扰动资源的签名与元数据	定位原始表达数据而非产生功能标签	作者下载页已核验	P2	https://perturbseqr.maayanlab.cloud/download	上调下调基因集不能替代全部连续表达；优先回源
+R06	Cellosaurus及Cell Model Passports	身份映射	细胞别名和DepMap及COSMIC映射	稳定ID加身份验证	官方FAQ与下载入口已核验	P0	https://www.cellosaurus.org/faq	近似名称只生成候选；亲本与耐药亚株及基因改造株分开
+R07	PubChem与Broad Repurposing Hub	身份映射	化合物结构ID与机制注释	全InChIKey和标准化结构；保留盐及立体信息	LINCS药物元数据及作者代码已核验	P0	https://clue.io/repurposing	靶点相同不代表同一药物；Broad批次号只按有依据规则折叠
+"""
+
+
+def main():
+    rows = list(csv.DictReader(io.StringIO(DATA), delimiter="\t"))
+    with (ROOT / "dataset_catalog.csv").open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=list(rows[0]))
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"{len(rows)} catalog entries: {sum(r['id'].startswith('D') for r in rows)} dataset families and {sum(r['id'].startswith('R') for r in rows)} integration or mapping resources.")
+
+
+if __name__ == "__main__":
+    main()

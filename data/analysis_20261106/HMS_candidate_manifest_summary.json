@@ -1,0 +1,14 @@
+{
+  "available_conditions": 3168,
+  "cells": 5,
+  "drugs": 106,
+  "cell_drug_pairs": 530,
+  "conditions_by_cell": {
+    "BT20": 636,
+    "HS578T": 632,
+    "MCF7": 635,
+    "MDAMB231": 632,
+    "SKBR3": 633
+  },
+  "qualification": "Available inputs, 3h/24h expression and 72h functional endpoint; not final QC-passing training cohort."
+}

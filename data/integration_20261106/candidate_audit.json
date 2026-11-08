@@ -1,0 +1,367 @@
+{
+  "scope": "Candidate condition links from source IDs, names, structure strings, and actual CTRP measurements; cell identity curation and expression QC pending.",
+  "LINCS_GSE70138_dose_unresolved": 115,
+  "drug_correspondences_by_release": [
+    {
+      "source": "LINCS_GSE70138",
+      "structure_relation": "same_canonical_isomeric_structure",
+      "rows": 172
+    },
+    {
+      "source": "LINCS_GSE70138",
+      "structure_relation": "structure_conflict_review",
+      "rows": 3
+    },
+    {
+      "source": "LINCS_GSE92742",
+      "structure_relation": "same_canonical_isomeric_structure",
+      "rows": 279
+    },
+    {
+      "source": "LINCS_GSE92742",
+      "structure_relation": "structure_conflict_review",
+      "rows": 4
+    },
+    {
+      "source": "LINCS_GSE92742",
+      "structure_relation": "structure_missing",
+      "rows": 5
+    }
+  ],
+  "unique_expression_queries_before_actual_functional_coverage": 23775,
+  "coverage": [
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "all_releases",
+      "dose_rule": "numeric_dose_match",
+      "relation_rows": 146,
+      "unique_expression_queries": 100,
+      "cell_models": 10,
+      "drugs": 17,
+      "functional_curves": 97,
+      "cell_drug_pairs": 62
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "all_releases",
+      "dose_rule": "log10_delta_le_0.05",
+      "relation_rows": 5798,
+      "unique_expression_queries": 4444,
+      "cell_models": 46,
+      "drugs": 227,
+      "functional_curves": 2009,
+      "cell_drug_pairs": 1497
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "all_releases",
+      "dose_rule": "log10_delta_le_0.1",
+      "relation_rows": 18351,
+      "unique_expression_queries": 14890,
+      "cell_models": 48,
+      "drugs": 324,
+      "functional_curves": 6992,
+      "cell_drug_pairs": 6156
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "all_releases",
+      "dose_rule": "log10_delta_le_0.2",
+      "relation_rows": 25212,
+      "unique_expression_queries": 20133,
+      "cell_models": 48,
+      "drugs": 332,
+      "functional_curves": 7301,
+      "cell_drug_pairs": 6443
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "all_releases",
+      "dose_rule": "within_measured_range",
+      "relation_rows": 25535,
+      "unique_expression_queries": 20372,
+      "cell_models": 48,
+      "drugs": 332,
+      "functional_curves": 7361,
+      "cell_drug_pairs": 6502
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "LINCS_GSE70138",
+      "dose_rule": "numeric_dose_match",
+      "relation_rows": 76,
+      "unique_expression_queries": 48,
+      "cell_models": 9,
+      "drugs": 10,
+      "functional_curves": 65,
+      "cell_drug_pairs": 40
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "LINCS_GSE70138",
+      "dose_rule": "log10_delta_le_0.05",
+      "relation_rows": 3735,
+      "unique_expression_queries": 2891,
+      "cell_models": 12,
+      "drugs": 162,
+      "functional_curves": 1465,
+      "cell_drug_pairs": 1084
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "LINCS_GSE70138",
+      "dose_rule": "log10_delta_le_0.1",
+      "relation_rows": 6462,
+      "unique_expression_queries": 4993,
+      "cell_models": 12,
+      "drugs": 169,
+      "functional_curves": 1503,
+      "cell_drug_pairs": 1108
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "LINCS_GSE70138",
+      "dose_rule": "log10_delta_le_0.2",
+      "relation_rows": 10791,
+      "unique_expression_queries": 8342,
+      "cell_models": 12,
+      "drugs": 173,
+      "functional_curves": 1528,
+      "cell_drug_pairs": 1122
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "LINCS_GSE70138",
+      "dose_rule": "within_measured_range",
+      "relation_rows": 10974,
+      "unique_expression_queries": 8462,
+      "cell_models": 12,
+      "drugs": 173,
+      "functional_curves": 1531,
+      "cell_drug_pairs": 1123
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "LINCS_GSE92742",
+      "dose_rule": "numeric_dose_match",
+      "relation_rows": 70,
+      "unique_expression_queries": 52,
+      "cell_models": 9,
+      "drugs": 9,
+      "functional_curves": 38,
+      "cell_drug_pairs": 28
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "LINCS_GSE92742",
+      "dose_rule": "log10_delta_le_0.05",
+      "relation_rows": 2063,
+      "unique_expression_queries": 1553,
+      "cell_models": 44,
+      "drugs": 147,
+      "functional_curves": 817,
+      "cell_drug_pairs": 655
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "LINCS_GSE92742",
+      "dose_rule": "log10_delta_le_0.1",
+      "relation_rows": 11889,
+      "unique_expression_queries": 9897,
+      "cell_models": 46,
+      "drugs": 275,
+      "functional_curves": 6312,
+      "cell_drug_pairs": 5669
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "LINCS_GSE92742",
+      "dose_rule": "log10_delta_le_0.2",
+      "relation_rows": 14421,
+      "unique_expression_queries": 11791,
+      "cell_models": 46,
+      "drugs": 282,
+      "functional_curves": 6621,
+      "cell_drug_pairs": 5956
+    },
+    {
+      "identity_scope": "Broad_ID_candidates",
+      "release_scope": "LINCS_GSE92742",
+      "dose_rule": "within_measured_range",
+      "relation_rows": 14561,
+      "unique_expression_queries": 11910,
+      "cell_models": 46,
+      "drugs": 282,
+      "functional_curves": 6689,
+      "cell_drug_pairs": 6022
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "all_releases",
+      "dose_rule": "numeric_dose_match",
+      "relation_rows": 146,
+      "unique_expression_queries": 100,
+      "cell_models": 10,
+      "drugs": 17,
+      "functional_curves": 97,
+      "cell_drug_pairs": 62
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "all_releases",
+      "dose_rule": "log10_delta_le_0.05",
+      "relation_rows": 5735,
+      "unique_expression_queries": 4403,
+      "cell_models": 46,
+      "drugs": 222,
+      "functional_curves": 1981,
+      "cell_drug_pairs": 1478
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "all_releases",
+      "dose_rule": "log10_delta_le_0.1",
+      "relation_rows": 17967,
+      "unique_expression_queries": 14578,
+      "cell_models": 48,
+      "drugs": 314,
+      "functional_curves": 6803,
+      "cell_drug_pairs": 5989
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "all_releases",
+      "dose_rule": "log10_delta_le_0.2",
+      "relation_rows": 24741,
+      "unique_expression_queries": 19766,
+      "cell_models": 48,
+      "drugs": 322,
+      "functional_curves": 7111,
+      "cell_drug_pairs": 6275
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "all_releases",
+      "dose_rule": "within_measured_range",
+      "relation_rows": 25062,
+      "unique_expression_queries": 20001,
+      "cell_models": 48,
+      "drugs": 322,
+      "functional_curves": 7170,
+      "cell_drug_pairs": 6333
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "LINCS_GSE70138",
+      "dose_rule": "numeric_dose_match",
+      "relation_rows": 76,
+      "unique_expression_queries": 48,
+      "cell_models": 9,
+      "drugs": 10,
+      "functional_curves": 65,
+      "cell_drug_pairs": 40
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "LINCS_GSE70138",
+      "dose_rule": "log10_delta_le_0.05",
+      "relation_rows": 3725,
+      "unique_expression_queries": 2883,
+      "cell_models": 12,
+      "drugs": 161,
+      "functional_curves": 1460,
+      "cell_drug_pairs": 1080
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "LINCS_GSE70138",
+      "dose_rule": "log10_delta_le_0.1",
+      "relation_rows": 6438,
+      "unique_expression_queries": 4974,
+      "cell_models": 12,
+      "drugs": 168,
+      "functional_curves": 1498,
+      "cell_drug_pairs": 1104
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "LINCS_GSE70138",
+      "dose_rule": "log10_delta_le_0.2",
+      "relation_rows": 10743,
+      "unique_expression_queries": 8307,
+      "cell_models": 12,
+      "drugs": 170,
+      "functional_curves": 1509,
+      "cell_drug_pairs": 1110
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "LINCS_GSE70138",
+      "dose_rule": "within_measured_range",
+      "relation_rows": 10926,
+      "unique_expression_queries": 8427,
+      "cell_models": 12,
+      "drugs": 170,
+      "functional_curves": 1512,
+      "cell_drug_pairs": 1111
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "LINCS_GSE92742",
+      "dose_rule": "numeric_dose_match",
+      "relation_rows": 70,
+      "unique_expression_queries": 52,
+      "cell_models": 9,
+      "drugs": 9,
+      "functional_curves": 38,
+      "cell_drug_pairs": 28
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "LINCS_GSE92742",
+      "dose_rule": "log10_delta_le_0.05",
+      "relation_rows": 2010,
+      "unique_expression_queries": 1520,
+      "cell_models": 44,
+      "drugs": 143,
+      "functional_curves": 794,
+      "cell_drug_pairs": 640
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "LINCS_GSE92742",
+      "dose_rule": "log10_delta_le_0.1",
+      "relation_rows": 11529,
+      "unique_expression_queries": 9604,
+      "cell_models": 46,
+      "drugs": 266,
+      "functional_curves": 6128,
+      "cell_drug_pairs": 5506
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "LINCS_GSE92742",
+      "dose_rule": "log10_delta_le_0.2",
+      "relation_rows": 13998,
+      "unique_expression_queries": 11459,
+      "cell_models": 46,
+      "drugs": 273,
+      "functional_curves": 6437,
+      "cell_drug_pairs": 5793
+    },
+    {
+      "identity_scope": "Broad_ID_and_structure_supported",
+      "release_scope": "LINCS_GSE92742",
+      "dose_rule": "within_measured_range",
+      "relation_rows": 14136,
+      "unique_expression_queries": 11574,
+      "cell_models": 46,
+      "drugs": 273,
+      "functional_curves": 6503,
+      "cell_drug_pairs": 5857
+    }
+  ],
+  "qualification": "All counts are condition-link candidates, not independent sample counts or final training eligibility. Same Broad ID plus compatible structure still requires cell-identity review. Matching dose across studies preserves separate assay and time; no expression-derived or interpolated viability labels generated.",
+  "rdkit_version": "2025.09.4",
+  "structure_standardization": "Canonical isomeric SMILES; comparison additionally uses Cleanup, FragmentParent and Uncharger; no stereo removal or tautomer merging."
+}

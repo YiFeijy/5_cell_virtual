@@ -1,0 +1,79 @@
+[
+  {
+    "stage": "pre_QC_pilot",
+    "protocol": "unseen_drug",
+    "fold": 0,
+    "task": "function",
+    "input_shape": [
+      3407,
+      3027
+    ],
+    "target_shape": [
+      3407
+    ],
+    "role_library_records": {
+      "train": 2004,
+      "validation": 717,
+      "test": 686
+    },
+    "checks": [
+      "array_ID_order",
+      "finite_inputs_targets",
+      "no_condition_group_crosses_roles",
+      "no_observed_expression_as_input"
+    ],
+    "models_fitted_this_run": 0
+  },
+  {
+    "stage": "pre_QC_pilot",
+    "protocol": "unseen_drug",
+    "fold": 0,
+    "task": "expression3",
+    "input_shape": [
+      3407,
+      3027
+    ],
+    "target_shape": [
+      3407,
+      978
+    ],
+    "role_library_records": {
+      "train": 2004,
+      "validation": 717,
+      "test": 686
+    },
+    "checks": [
+      "array_ID_order",
+      "finite_inputs_targets",
+      "no_condition_group_crosses_roles",
+      "no_observed_expression_as_input"
+    ],
+    "models_fitted_this_run": 0
+  },
+  {
+    "stage": "pre_QC_pilot",
+    "protocol": "unseen_drug",
+    "fold": 0,
+    "task": "expression24",
+    "input_shape": [
+      3407,
+      3027
+    ],
+    "target_shape": [
+      3407,
+      978
+    ],
+    "role_library_records": {
+      "train": 2004,
+      "validation": 717,
+      "test": 686
+    },
+    "checks": [
+      "array_ID_order",
+      "finite_inputs_targets",
+      "no_condition_group_crosses_roles",
+      "no_observed_expression_as_input"
+    ],
+    "models_fitted_this_run": 0
+  }
+]

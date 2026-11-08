@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-07",
+  "neural_training_runs": 144,
+  "epochs_total": 4724,
+  "cohort_records": 3364,
+  "distinct_conditions": 3133,
+  "main_new_drug_joint_MAE_relative_improvement_percent": 1.294299434876362,
+  "dose_extrapolation_joint_MAE_relative_improvement_percent": 6.32288985799012,
+  "measured_RNA_diagnostic_MAE": 0.1251603801733591,
+  "primary_test_evaluated": true,
+  "external_dataset_validation_completed": false,
+  "survivor_state_validated": false,
+  "main_conclusion": "Joint benefit not established on unseen drugs; positive within-cohort dose-extrapolation signal; measured RNA contains predictive functional information under an extra-observation budget."
+}

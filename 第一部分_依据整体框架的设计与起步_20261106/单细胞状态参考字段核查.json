@@ -1,0 +1,103 @@
+[
+  {
+    "dataset": "SrivatsanTrapnell2020_sciplex2.h5ad",
+    "path": "data/raw/sciPlex/SrivatsanTrapnell2020_sciplex2.h5ad",
+    "shape": [
+      24262,
+      58347
+    ],
+    "obs_fields": [
+      "cancer",
+      "cell_barcode",
+      "cell_line",
+      "celltype",
+      "chembl-ID",
+      "disease",
+      "dose_value",
+      "hash_umis",
+      "ncounts",
+      "ngenes",
+      "nperts",
+      "organism",
+      "percent_mito",
+      "percent_ribo",
+      "perturbation",
+      "perturbation_type",
+      "pval_demultiplexing",
+      "qval_demultiplexing",
+      "tissue_type",
+      "top_oligo",
+      "top_to_second_best_ratio",
+      "well"
+    ],
+    "explicit_live_dead_like_field_names": [],
+    "interpretation": "Field-name audit only. Captured expression and QC annotations do not by themselves authenticate independently measured viable-cell state. Original protocol and supplementary references require matching."
+  },
+  {
+    "dataset": "SrivatsanTrapnell2020_sciplex3.h5ad",
+    "path": "data/raw/sciPlex/SrivatsanTrapnell2020_sciplex3.h5ad",
+    "shape": [
+      799317,
+      110983
+    ],
+    "obs_fields": [
+      "_index",
+      "cancer",
+      "cell_line",
+      "celltype",
+      "disease",
+      "dose_unit",
+      "dose_value",
+      "ncounts",
+      "organism",
+      "pathway",
+      "pathway_level_1",
+      "pathway_level_2",
+      "perturbation",
+      "perturbation_type",
+      "plate",
+      "replicate",
+      "target",
+      "time",
+      "tissue_type",
+      "well"
+    ],
+    "explicit_live_dead_like_field_names": [],
+    "interpretation": "Field-name audit only. Captured expression and QC annotations do not by themselves authenticate independently measured viable-cell state. Original protocol and supplementary references require matching."
+  },
+  {
+    "dataset": "MIXseq_downloaded_archives",
+    "classification_tables_checked": 26,
+    "cell_quality_value_counts": {
+      "normal": 130648,
+      "low_quality": 6649,
+      "empty_droplet": 3672,
+      "doublet": 13690,
+      "low_confidence": 51
+    },
+    "metadata_field_occurrence_counts": {
+      "barcode": 26,
+      "singlet_ID": 26,
+      "num_SNPs": 26,
+      "singlet_dev": 26,
+      "singlet_dev_z": 26,
+      "singlet_margin": 26,
+      "singlet_z_margin": 26,
+      "doublet_z_margin": 26,
+      "tot_reads": 26,
+      "doublet_dev_imp": 26,
+      "doublet_CL1": 26,
+      "doublet_CL2": 26,
+      "percent.mito": 26,
+      "cell_det_rate": 26,
+      "cell_quality": 26,
+      "doublet_GMM_prob": 26,
+      "channel": 10,
+      "DepMap_ID": 26,
+      "hash_assignment": 1,
+      "hash_tag": 1
+    },
+    "explicit_live_dead_like_field_names": [],
+    "interpretation": "Author cell_quality labels retained. The label normal is not relabeled as a measured live-cell gate; quality definition/protocol must be traced separately."
+  }
+]

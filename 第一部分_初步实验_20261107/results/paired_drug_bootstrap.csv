@@ -1,0 +1,23 @@
+protocol,method,reference,metric,difference_mean,ci95_low,ci95_high,resampling_unit,n_drugs,seed_treatment
+unseen_drug,joint_shared,func_only,function_mae,-0.0030682563029383945,-0.009703074382928823,0.003787764261533906,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+unseen_drug,joint_shared,expr_only,expression_mse,0.0004935844216661517,-0.01832696947667535,0.01818623130615813,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+unseen_drug,joint_shared_E01,func_only,function_mae,-0.0027428078974517083,-0.009379567545611462,0.0041292382912220035,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+unseen_drug,joint_shared_E01,expr_only,expression_mse,0.03293136603130297,0.010973368845935012,0.05347727484108315,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+unseen_drug,joint_shared_F01,func_only,function_mae,0.0005331774362410254,-0.005477262553490584,0.006502527145392014,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+unseen_drug,joint_shared_F01,expr_only,expression_mse,0.011204459356475582,-0.006037823800337782,0.0284957826554992,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+unseen_drug,joint_private,func_only,function_mae,0.0001227767315242894,-0.004995524988170687,0.004896432261137293,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+unseen_drug,joint_private,expr_only,expression_mse,0.029594907265433817,0.008835443021375986,0.05073345106951796,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+unseen_drug,joint_bottleneck,func_only,function_mae,-0.0028695138649361073,-0.009308240144601682,0.0033753175810730764,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+unseen_drug,joint_bottleneck,expr_only,expression_mse,0.01981464310258261,0.0010151329421999832,0.037958445952710335,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+unseen_drug,joint_bottleneck,function_bottleneck_control,function_mae,-0.0052458524916801155,-0.0136081900119719,0.003119138410626419,drug,106,mean per-observation error across 3 seeds
+dose_extrapolation,joint_shared,func_only,function_mae,-0.008451324172825856,-0.013184688009117021,-0.003693905332544207,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+dose_extrapolation,joint_shared,expr_only,expression_mse,-0.03438148694102052,-0.06603471827119266,-0.007534559262898346,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+dose_extrapolation,joint_shared_E01,func_only,function_mae,-0.004440237117445535,-0.008333111662570161,-0.0005902508198302307,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+dose_extrapolation,joint_shared_E01,expr_only,expression_mse,0.03373612068456562,-0.018948807063869724,0.08609195606904946,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+dose_extrapolation,joint_shared_F01,func_only,function_mae,0.024863959084505918,0.016476575147191627,0.033234257202930675,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+dose_extrapolation,joint_shared_F01,expr_only,expression_mse,0.006655851666968118,-0.01755976495219804,0.028070322013474786,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+dose_extrapolation,joint_private,func_only,function_mae,-0.008812212067634285,-0.01427655482981033,-0.0034572599367726758,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+dose_extrapolation,joint_private,expr_only,expression_mse,-0.04441291287488574,-0.08235423466959739,-0.009685154734441558,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+dose_extrapolation,joint_bottleneck,func_only,function_mae,-0.00686858342106865,-0.011350466576016528,-0.0023580916106987647,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+dose_extrapolation,joint_bottleneck,expr_only,expression_mse,0.03178423555648476,-0.0005402362671899655,0.06222465836574928,drug,106,mean per-observation error across 3 seeds; no ensemble averaging of predictions
+dose_extrapolation,joint_bottleneck,function_bottleneck_control,function_mae,-0.010013344730595269,-0.015520381922052321,-0.004790788215808066,drug,106,mean per-observation error across 3 seeds

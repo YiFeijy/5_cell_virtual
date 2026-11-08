@@ -1,0 +1,16 @@
+{
+  "SrivatsanTrapnell2020_sciplex3.h5ad": {
+    "var_rows": 110983,
+    "unique_ensembl_ids": 110938,
+    "human_prefix_ENSG_rows": 58347,
+    "mouse_prefix_ENSMUSG_rows": 52636,
+    "missing_ensembl_rows": 0
+  },
+  "SrivatsanTrapnell2020_sciplex2.h5ad": {
+    "var_rows": 58347,
+    "unique_ensembl_ids": 58302,
+    "human_prefix_ENSG_rows": 58347,
+    "mouse_prefix_ENSMUSG_rows": 0,
+    "missing_ensembl_rows": 0
+  }
+}

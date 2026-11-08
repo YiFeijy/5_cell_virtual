@@ -1,0 +1,61 @@
+dataset:
+  pset_name: "CTRPv2"
+
+directories:
+  rawdata: "data/rawdata"
+  raw_metadata: "data/rawdata/metadata"
+  procdata: "data/procdata"
+  proc_metadata: "data/procdata/metadata"
+  results: "data/results"
+
+downloads:
+  ctrpv2_0:
+    file_name: "CTRPv2.0_2015_ctd2_ExpandedDataset.zip"
+    url: "https://d1hp0ufb0xxisr.cloudfront.net/CTD2/Broad/CTRPv2.0_2015_ctd2_ExpandedDataset.zip"
+  ctrpv2_1:
+    file_name: "CTRPv2.1_2016_pub_NatChemBiol_12_109.zip"
+    url: "https://d1hp0ufb0xxisr.cloudfront.net/CTD2/Broad/CTRPv2.1_2016_pub_NatChemBiol_12_109.zip"
+
+gene_annotation:
+  gencode_release: 50
+  ensembl_release: 116
+  assembly: "GRCh38.p14"
+  sources:
+    gtf:
+      file_name: "gencode.v50.annotation.gtf.gz"
+      url: "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.annotation.gtf.gz"
+    gencode_entrez:
+      file_name: "gencode.v50.metadata.EntrezGene.gz"
+      url: "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.metadata.EntrezGene.gz"
+    ncbi_gene2ensembl:
+      file_name: "ncbi_human_gene2ensembl.tsv.gz"
+      url: "https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2ensembl.gz"
+      human_only: true
+    ncbi_gene_history:
+      file_name: "ncbi_human_gene_history.tsv.gz"
+      url: "https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_history.gz"
+      human_only: true
+
+annotationdb:
+  base_url: "https://annotationdb.bhklab.ca"
+
+annotationgx:
+  enabled: true
+  # Parallel AnnotationGx query workers.
+  workers: 4
+
+published_profiles:
+  # Treat published EC50 values above this as missing for quality reasons.
+  ec50_max_umol: 1000000
+
+recompute_profiles:
+  # Number of independently scheduled curve-fit chunks.
+  chunks: 96
+  # Minimum finite dose-response points required per fit.
+  min_points: 4
+  # Interpret viability values on a 0-100 scale.
+  viability_as_pct: true
+  # AUC/AAC input: "Actual" observations or "Fitted" curve values.
+  area_type: "Fitted"
+  # Maximum fitted Hill slope.
+  hill_slope_upper_bound: 4.5

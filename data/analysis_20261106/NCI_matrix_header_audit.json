@@ -1,0 +1,68 @@
+{
+  "!Series_title": [
+    {
+      "count": 1,
+      "examples": [
+        "\"Drug-induced change in gene expression across NCI-60 cell lines after exposure to 15 anticancer agents for 2, 6 and 24h\""
+      ]
+    }
+  ],
+  "!Sample_title": [
+    {
+      "count": 7623,
+      "examples": [
+        "\"786-0_5-Azacytidine_0nM_24h\"",
+        "\"786-0_5-Azacytidine_0nM_2h\"",
+        "\"786-0_5-Azacytidine_0nM_6h\"",
+        "\"786-0_5-Azacytidine_1000nM_24h\"",
+        "\"786-0_5-Azacytidine_1000nM_2h\""
+      ]
+    }
+  ],
+  "!Sample_source_name_ch1": [
+    {
+      "count": 7623,
+      "examples": [
+        "\"human tumor cell line 786-0\"",
+        "\"human tumor cell line 786-0\"",
+        "\"human tumor cell line 786-0\"",
+        "\"human tumor cell line 786-0\"",
+        "\"human tumor cell line 786-0\""
+      ]
+    }
+  ],
+  "!Sample_characteristics_ch1": [
+    {
+      "count": 7623,
+      "examples": [
+        "\"group: member of the NCI-60 cell line panel\"",
+        "\"group: member of the NCI-60 cell line panel\"",
+        "\"group: member of the NCI-60 cell line panel\"",
+        "\"group: member of the NCI-60 cell line panel\"",
+        "\"group: member of the NCI-60 cell line panel\""
+      ]
+    },
+    {
+      "count": 7623,
+      "examples": [
+        "\"tissue: Renal\"",
+        "\"tissue: Renal\"",
+        "\"tissue: Renal\"",
+        "\"tissue: Renal\"",
+        "\"tissue: Renal\""
+      ]
+    }
+  ],
+  "!Sample_platform_id": [
+    {
+      "count": 7623,
+      "examples": [
+        "\"GPL571\"",
+        "\"GPL571\"",
+        "\"GPL571\"",
+        "\"GPL571\"",
+        "\"GPL571\""
+      ]
+    }
+  ]
+}

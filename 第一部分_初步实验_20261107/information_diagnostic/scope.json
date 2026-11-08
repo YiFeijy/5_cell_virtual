@@ -1,0 +1,9 @@
+{
+  "status": "post-primary exploratory information diagnostic",
+  "primary_models_changed": false,
+  "uses_extra_observation_at_prediction": true,
+  "RNA_time_h": 24,
+  "function_time_h": 72,
+  "split": "same unseen_drug five-fold groups",
+  "comparison_interpretation": "Measures predictability given an actual post-treatment RNA assay. It is not fair to call it a superior pre-treatment model; association is not a causal state mechanism."
+}

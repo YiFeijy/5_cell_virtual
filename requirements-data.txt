@@ -1,0 +1,6 @@
+# Extra packages used by source-data preparation/audits.
+-r requirements.txt
+rdkit==2025.9.4
+pyarrow==23.0.1
+requests==2.32.5
+xlrd==2.0.2

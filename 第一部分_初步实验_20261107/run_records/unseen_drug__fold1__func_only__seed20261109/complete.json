@@ -1,0 +1,19 @@
+{
+  "method": "func_only",
+  "protocol": "unseen_drug",
+  "fold": 1,
+  "seed": 20261109,
+  "parameters": 433217,
+  "epochs_run": 19,
+  "selected_epoch": 4,
+  "best_validation_score": 1.2176055908203125,
+  "expression_loss_weight": 1.0,
+  "function_loss_weight": 1.0,
+  "train_records": 2072,
+  "validation_records": 623,
+  "test_records": 669,
+  "seconds": 1.8018259869422764,
+  "device": "cpu",
+  "finite_forward_backward_passed": true,
+  "test_used_for_checkpoint_selection": false
+}

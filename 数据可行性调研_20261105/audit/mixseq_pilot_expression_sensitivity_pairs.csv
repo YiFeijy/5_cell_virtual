@@ -1,0 +1,25 @@
+DMSO_24hr_expt1,DMSO_6hr_expt1,Trametinib_24hr_expt1,Trametinib_6hr_expt1,DepMap_ID,sens,all_four_conditions_ge_10_cells,all_four_conditions_ge_20_cells,sensitivity_label_type
+55,38,52,46,ACH-000123,0.173056593092323,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+167,81,182,154,ACH-000189,0.308745867779435,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+98,81,108,127,ACH-000209,0.193114627653933,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+237,171,266,209,ACH-000228,0.330050634858554,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+84,66,88,103,ACH-000244,0.275823789257863,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+62,101,76,104,ACH-000252,0.586639617801926,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+90,61,118,88,ACH-000288,0.185927731553123,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+96,97,121,127,ACH-000329,0.080928457668578,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+155,79,129,99,ACH-000367,0.260205428079801,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+149,90,155,113,ACH-000397,-0.14850034304127,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+67,39,91,65,ACH-000415,0.750288094270559,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+136,131,138,166,ACH-000423,0.362921245263915,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+103,67,171,110,ACH-000553,0.344236230778836,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+91,65,79,84,ACH-000565,0.631996410189247,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+100,59,114,65,ACH-000672,0.044480374738904,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+94,79,119,100,ACH-000713,0.120942040120846,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+128,81,130,109,ACH-000717,0.232386836048023,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+117,56,118,88,ACH-000764,0.207739035901397,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+98,77,120,116,ACH-000791,0.0604990883951431,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+87,52,78,107,ACH-000834,0.645270925621264,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+94,60,94,90,ACH-000875,0.6235215746861,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+48,63,61,43,ACH-000927,0.0183840865156295,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+125,100,107,130,ACH-000977,0.0548008588448323,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability
+142,92,110,117,ACH-001190,0.638082514786042,True,True,1_minus_quantile_normalized_cross_screen_AUC; not_dose_specific_viability

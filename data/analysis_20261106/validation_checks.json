@@ -1,0 +1,11 @@
+{
+  "candidate_conditions": 3168,
+  "unique_condition_keys": true,
+  "candidate_signature_references_checked": 6893,
+  "expression_shape": [
+    8337,
+    978
+  ],
+  "HDF5_vs_export_alignment_checks": 3,
+  "all_checks_passed": true
+}

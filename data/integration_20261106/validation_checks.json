@@ -1,0 +1,10 @@
+{
+  "core_condition_ids_unique": true,
+  "core_function_endpoint_total_weight_one": true,
+  "core_biorepeats_each_three": true,
+  "cross_links_unique_per_query_curve": true,
+  "cross_dose_differences_recomputed": true,
+  "cross_drug_source_IDs_checked": true,
+  "candidate_link_rows": 26164,
+  "plan_local_links_valid": true
+}

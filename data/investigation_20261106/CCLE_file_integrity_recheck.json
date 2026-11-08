@@ -1,0 +1,58 @@
+[
+  {
+    "file": "raw/CCLE_DepMap_24Q4/Model.csv",
+    "release_file": "Model.csv",
+    "bytes": 645696,
+    "md5": "675210d17675f3517b0ce39a3c274f16",
+    "official_md5": "675210d17675f3517b0ce39a3c274f16",
+    "match": true
+  },
+  {
+    "file": "raw/CCLE_DepMap_24Q4/OmicsProfiles.csv",
+    "release_file": "OmicsProfiles.csv",
+    "bytes": 254733,
+    "md5": "7195088a5fc41eddb3f896c6e984a992",
+    "official_md5": "7195088a5fc41eddb3f896c6e984a992",
+    "match": true
+  },
+  {
+    "file": "raw/CCLE_DepMap_24Q4/OmicsDefaultModelProfiles.csv",
+    "release_file": "OmicsDefaultModelProfiles.csv",
+    "bytes": 90080,
+    "md5": "4d342a03701c0a4c0742fedb56c1de40",
+    "official_md5": "4d342a03701c0a4c0742fedb56c1de40",
+    "match": true
+  },
+  {
+    "file": "raw/CCLE_DepMap_24Q4/OmicsExpressionProteinCodingGenesTPMLogp1.csv",
+    "release_file": "OmicsExpressionProteinCodingGenesTPMLogp1.csv",
+    "bytes": 506628654,
+    "md5": "71794802b750ce77c422dad0720a40af",
+    "official_md5": "71794802b750ce77c422dad0720a40af",
+    "match": true
+  },
+  {
+    "file": "investigation_20261106/DepMap24Q4_README.txt",
+    "release_file": "README.txt",
+    "bytes": 43103,
+    "md5": "54628c15a10b9ff6536db245cfed5231",
+    "official_md5": "54628c15a10b9ff6536db245cfed5231",
+    "match": true
+  },
+  {
+    "file": "investigation_20261106/DepMap24Q4_ModelCondition.csv",
+    "release_file": "ModelCondition.csv",
+    "bytes": 219100,
+    "md5": "1f6033eb5b7a843b20cebe5ab63d3feb",
+    "official_md5": "1f6033eb5b7a843b20cebe5ab63d3feb",
+    "match": true
+  },
+  {
+    "file": "investigation_20261106/DepMap24Q4_OmicsDefaultModelConditionProfiles.csv",
+    "release_file": "OmicsDefaultModelConditionProfiles.csv",
+    "bytes": 120795,
+    "md5": "b10103a813975dc204630e70d825c12c",
+    "official_md5": "b10103a813975dc204630e70d825c12c",
+    "match": true
+  }
+]

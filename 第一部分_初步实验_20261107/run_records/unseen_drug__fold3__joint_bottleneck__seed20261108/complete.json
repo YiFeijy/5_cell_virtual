@@ -1,0 +1,19 @@
+{
+  "method": "joint_bottleneck",
+  "protocol": "unseen_drug",
+  "fold": 3,
+  "seed": 20261108,
+  "parameters": 613779,
+  "epochs_run": 19,
+  "selected_epoch": 4,
+  "best_validation_score": 2.200296401977539,
+  "expression_loss_weight": 1.0,
+  "function_loss_weight": 1.0,
+  "train_records": 1946,
+  "validation_records": 741,
+  "test_records": 677,
+  "seconds": 2.5942237700801343,
+  "device": "cpu",
+  "finite_forward_backward_passed": true,
+  "test_used_for_checkpoint_selection": false
+}

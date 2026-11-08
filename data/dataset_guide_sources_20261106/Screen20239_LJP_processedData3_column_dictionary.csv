@@ -1,0 +1,16 @@
+"""Data"" Worksheet Column",A,B,C,D,E,F,G,H,I,J,K,L,M,N
+Display Name,Cell,Small Molecule,Small Mol Concentration,Small Mol Conc Unit,LJP Library Plate,Replicate,Assay Well,Timepoint,Timepoint Unit,Total Cell Count Before Treatment,Total Cell Count After Treatment,Total Control Cell Count,Relative Cell Count,Relative Growth Rate After Treatment
+Name,cell,smallMolecule,smallMolConcentration,smallMolConcUnit,ljpLibraryPlate,replicate,assayWell,timepoint,timepointUnit,totalCellCountBeforeTreatment,totalCellCountAfterTreatment,totalControlCellCount,relativeCellCount,relativeGrowthRateAfterTreatment
+Data Type,cell,small_molecule,Text,Text,Text,Numeric,Text,Numeric,Text,Numeric,Numeric,Numeric,Numeric,Numeric
+Display Order,,,,,,,,,,,,,,
+Decimal Places,,,,,,0,,0,,0,0,0,4,4
+Description,Cell reagent,Small molecule perturbagen,,,LINCS Joint Project small molecule library plate,,,,,# of nuclei before treatment in a matched set of wells based on Hoechst 33342 segmentation ( x0 ),# of nuclei after treatment based on Hoechst 33342 segmentation ( x(c) ),# of nuclei in a DMSO-treated control sample based on Hoechst 33342 segmentation ( x(0) ),Total Cell Count After Treatment normalized to Total Control Cell Count,Growth rate of treated cells normalized to a DMSO-treated control
+Replicate Number,,,,,,,,,,,,,,
+Unit,,,,,,,,,,,,,,
+Assay readout type,,,,,,,,,,,,,,
+"If derived, how?",,,,,,,,,,,,,,
+"If derived, from which columns?",,,,,,,,,,,,,,
+Primary or Follow Up?,,,,,,,,,,,,,,
+Comments,,,,,,,,,,,,,,
+Protein HMS LINCS ID (optional),,,,,,,,,,,,,,
+Cell HMS LINCS ID (optional),,,,,,,,,,,,,,

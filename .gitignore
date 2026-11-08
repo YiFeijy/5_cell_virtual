@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+.agents/
+*.part
+*.tmp
+.DS_Store
+data/download.lock
+data/download_logs/
+# Source datasets remain available from the download manifest.
+data/raw/**
+!data/raw/HMS_LINCS/
+!data/raw/HMS_LINCS/*.xls
+!data/raw/LINCS_GSE70138/
+!data/raw/LINCS_GSE70138/*info*.txt.gz
+!data/raw/LINCS_GSE70138/*metrics*.txt.gz
+!data/raw/CCLE_DepMap_24Q4/
+!data/raw/CCLE_DepMap_24Q4/Model.csv
+!data/raw/CCLE_DepMap_24Q4/OmicsProfiles.csv
+!data/raw/CCLE_DepMap_24Q4/OmicsDefaultModelProfiles.csv
+data/unpacked/
+# Keep the original representative checkpoint; new full runs stay local.
+第一部分_初步实验_20261107/runs/**
+!第一部分_初步实验_20261107/runs/unseen_drug__fold1__joint_shared__seed20261107/
+!第一部分_初步实验_20261107/runs/unseen_drug__fold1__joint_shared__seed20261107/**
+第一部分_初步实验_20261107/baselines/
+第一部分_初步实验_20261107/predictions/**
+!第一部分_初步实验_20261107/predictions/unseen_drug__joint_shared__20261107.npz
+github_发布回执_*.json

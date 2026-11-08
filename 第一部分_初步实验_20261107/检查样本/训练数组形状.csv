@@ -1,0 +1,11 @@
+array_key,shape,dtype
+expression_z24,"(3364, 978)",float32
+baseline,"(5, 978)",float32
+drug_morgan,"(106, 2048)",uint8
+cell_index,"(3364,)",int64
+drug_index,"(3364,)",int64
+log10_dose_uM,"(3364,)",float32
+count72,"(3364,)",float64
+condition_weight,"(3364,)",float64
+gene_id,"(978,)",<U9
+library_condition_id,"(3364,)",<U26

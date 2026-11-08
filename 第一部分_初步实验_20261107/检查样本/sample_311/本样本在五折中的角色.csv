@@ -1,0 +1,6 @@
+protocol,fold,role,heldout_group
+unseen_drug,0,validation,CHEM_24a125eecf029bff
+unseen_drug,1,test,CHEM_24a125eecf029bff
+unseen_drug,2,train,CHEM_24a125eecf029bff
+unseen_drug,3,train,CHEM_24a125eecf029bff
+unseen_drug,4,train,CHEM_24a125eecf029bff

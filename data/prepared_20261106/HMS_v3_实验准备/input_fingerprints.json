@@ -1,0 +1,67 @@
+[
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/CCLE背景矩阵_与表达基因同顺序.csv",
+    "bytes": 93468,
+    "sha256": "493fbfc29fc203bc2b1418bc733468e783b346bf8049a82c18b200d7d3e82d96"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/README.md",
+    "bytes": 1599,
+    "sha256": "499e470d3546170f2bbc9e16a92178df8c8d633670c5a360c6e1cf599ade906c"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/v2实际进度.json",
+    "bytes": 1276,
+    "sha256": "209edbbdafe454c6a7cad2b00e6fac2c919d4c0f2ef59ea6d5f28223e36456de"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/全部HMS库板条件及可用性.csv",
+    "bytes": 1897432,
+    "sha256": "75976ed5722a2eb90e03334201a37e55d99d6d5fa2f80e478b04a83d09ec8e0b"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/其他LJP库板签名_另行保留.csv",
+    "bytes": 26859,
+    "sha256": "c225880b9fedacc6f695e0ec7341c3620b8782ea096811eb8440f9883f24bd4f"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/同库板条件仍未对应的签名.csv",
+    "bytes": 392,
+    "sha256": "776a3d046d420683c3f3c1dffd9112da1fbc41ad3d24bcbe4db7e459aefbc28f"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/导出核查.json",
+    "bytes": 387,
+    "sha256": "5f2e4ec36f2871d88c88fc6327bb35832f16d51caa743321ea4db2748766012f"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/库板内生物重复与技术孔引用.csv",
+    "bytes": 3442883,
+    "sha256": "416fb5c72b817516471c6567dfdbc30014881fbef7795b286849a28416485d80"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/核心库板条件表.csv",
+    "bytes": 1649588,
+    "sha256": "a1191b717a06453a6527de4efbe492030f8c062469847d167631f1d2230a6b70"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/核心细胞条件数.csv",
+    "bytes": 93,
+    "sha256": "4ca164c137e4b218d8db896daf8b2eb3dd7fa3f5bb9ccfe56b711ea105c81a34"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/核心表达功能关系表.csv",
+    "bytes": 1056790,
+    "sha256": "ae6768b761a15570c9182aa5c699d26e80d5029753893c5e830db650da543a46"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/核心表达签名与矩阵行号.csv",
+    "bytes": 2282895,
+    "sha256": "604d33d60506011b3f16e46978ac80c49d51e2ce18a320eff22028b823d4cb60"
+  },
+  {
+    "path": "data/integration_20261106/v2_库板来源核对/核心表达签名矩阵.npz",
+    "bytes": 24803238,
+    "sha256": "1eb585f5c9a1eb0b46a16f3fd49174ce4dac318a80e7388f37c5aa5475a629d6"
+  }
+]

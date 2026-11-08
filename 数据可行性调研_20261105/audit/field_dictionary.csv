@@ -1,0 +1,169 @@
+source_file,field,dtype,rows,non_null
+GSE92742_sig_info.txt.gz,sig_id,object,473647,473647
+GSE92742_sig_info.txt.gz,pert_id,object,473647,473647
+GSE92742_sig_info.txt.gz,pert_iname,object,473647,473647
+GSE92742_sig_info.txt.gz,pert_type,object,473647,473647
+GSE92742_sig_info.txt.gz,cell_id,object,473647,473647
+GSE92742_sig_info.txt.gz,pert_dose,object,473647,473647
+GSE92742_sig_info.txt.gz,pert_dose_unit,object,473647,473647
+GSE92742_sig_info.txt.gz,pert_idose,object,473647,473647
+GSE92742_sig_info.txt.gz,pert_time,int64,473647,473647
+GSE92742_sig_info.txt.gz,pert_time_unit,object,473647,473647
+GSE92742_sig_info.txt.gz,pert_itime,object,473647,473647
+GSE92742_sig_info.txt.gz,distil_id,object,473647,473647
+GSE70138_sig_info.txt.gz,sig_id,object,118050,118050
+GSE70138_sig_info.txt.gz,pert_id,object,118050,118050
+GSE70138_sig_info.txt.gz,pert_iname,object,118050,118050
+GSE70138_sig_info.txt.gz,pert_type,object,118050,118050
+GSE70138_sig_info.txt.gz,cell_id,object,118050,118050
+GSE70138_sig_info.txt.gz,pert_idose,object,118050,118050
+GSE70138_sig_info.txt.gz,pert_itime,object,118050,118050
+GSE70138_sig_info.txt.gz,distil_id,object,118050,118050
+Screen20237_LJP_processedData1.xls:Data,Cell,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Small Molecule,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Small Mol Concentration,float64,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Small Mol Conc Unit,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,LJP Library Plate,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Replicate,int64,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Assay Well,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Timepoint,int64,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Timepoint Unit,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Total Cell Count Before Treatment,float64,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Total Cell Count After Treatment,float64,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Total Control Cell Count,float64,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Relative Cell Count,float64,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Relative Growth Rate After Treatment,float64,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Unnamed: 14,float64,12420,0
+Screen20237_LJP_processedData1.xls:Data,Barcode,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,HMSLid,object,12420,11772
+Screen20237_LJP_processedData1.xls:Data,DrugName,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,BRDid,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,DRUGNAME,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,CellLine,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,TreatmentFile,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,DesignNumber,int64,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Untrt,int64,12420,12420
+Screen20237_LJP_processedData1.xls:Data,pert_type,object,12420,12420
+Screen20237_LJP_processedData1.xls:Data,Date,datetime64[ns],12420,12420
+Screen20237_LJP_processedData1.xls:Data,index,int64,12420,12420
+depmap24q4_Model.csv,ModelID,object,2105,2105
+depmap24q4_Model.csv,PatientID,object,2105,2105
+depmap24q4_Model.csv,CellLineName,object,2105,2105
+depmap24q4_Model.csv,StrippedCellLineName,object,2105,2105
+depmap24q4_Model.csv,DepmapModelType,object,2105,2105
+depmap24q4_Model.csv,OncotreeLineage,object,2105,2099
+depmap24q4_Model.csv,OncotreePrimaryDisease,object,2105,2105
+depmap24q4_Model.csv,OncotreeSubtype,object,2105,2105
+depmap24q4_Model.csv,OncotreeCode,object,2105,1952
+depmap24q4_Model.csv,PatientSubtypeFeatures,object,2105,156
+depmap24q4_Model.csv,RRID,object,2105,1971
+depmap24q4_Model.csv,Age,float64,2105,1676
+depmap24q4_Model.csv,AgeCategory,object,2105,2105
+depmap24q4_Model.csv,Sex,object,2105,2082
+depmap24q4_Model.csv,PatientRace,object,2105,679
+depmap24q4_Model.csv,PrimaryOrMetastasis,object,2105,1761
+depmap24q4_Model.csv,SampleCollectionSite,object,2105,2094
+depmap24q4_Model.csv,SourceType,object,2105,2069
+depmap24q4_Model.csv,SourceDetail,object,2105,1739
+depmap24q4_Model.csv,CatalogNumber,object,2105,1037
+depmap24q4_Model.csv,ModelType,object,2105,2105
+depmap24q4_Model.csv,TissueOrigin,float64,2105,0
+depmap24q4_Model.csv,ModelDerivationMaterial,object,2105,15
+depmap24q4_Model.csv,ModelTreatment,object,2105,51
+depmap24q4_Model.csv,PatientTreatmentStatus,object,2105,108
+depmap24q4_Model.csv,PatientTreatmentType,object,2105,5
+depmap24q4_Model.csv,PatientTreatmentDetails,object,2105,3
+depmap24q4_Model.csv,Stage,object,2105,13
+depmap24q4_Model.csv,StagingSystem,object,2105,1
+depmap24q4_Model.csv,PatientTumorGrade,float64,2105,1
+depmap24q4_Model.csv,PatientTreatmentResponse,object,2105,8
+depmap24q4_Model.csv,GrowthPattern,object,2105,2105
+depmap24q4_Model.csv,OnboardedMedia,object,2105,1656
+depmap24q4_Model.csv,FormulationID,object,2105,1656
+depmap24q4_Model.csv,SerumFreeMedia,object,2105,1655
+depmap24q4_Model.csv,PlateCoating,object,2105,1
+depmap24q4_Model.csv,EngineeredModel,object,2105,21
+depmap24q4_Model.csv,EngineeredModelDetails,object,2105,10
+depmap24q4_Model.csv,CulturedResistanceDrug,object,2105,7
+depmap24q4_Model.csv,PublicComments,object,2105,79
+depmap24q4_Model.csv,CCLEName,object,2105,1999
+depmap24q4_Model.csv,HCMIID,object,2105,44
+depmap24q4_Model.csv,ModelAvailableInDbgap,object,2105,1675
+depmap24q4_Model.csv,ModelSubtypeFeatures,object,2105,229
+depmap24q4_Model.csv,WTSIMasterCellID,float64,2105,976
+depmap24q4_Model.csv,SangerModelID,object,2105,1218
+depmap24q4_Model.csv,COSMICID,float64,2105,977
+depmap24q4_OmicsDefaultModelProfiles.csv,ModelID,object,3602,3602
+depmap24q4_OmicsDefaultModelProfiles.csv,ProfileID,object,3602,3602
+depmap24q4_OmicsDefaultModelProfiles.csv,ProfileType,object,3602,3602
+41467_2017_1383_MOESM5_ESM.txt,CellLine,object,12636,12636
+41467_2017_1383_MOESM5_ESM.txt,DrugName,object,12636,12636
+41467_2017_1383_MOESM5_ESM.txt,LJPplate,object,12636,12636
+41467_2017_1383_MOESM5_ESM.txt,HMSLid,object,12636,12636
+41467_2017_1383_MOESM5_ESM.txt,BRDid,object,12636,12636
+41467_2017_1383_MOESM5_ESM.txt,Conc,float64,12636,12636
+41467_2017_1383_MOESM5_ESM.txt,RelCellCnt,float64,12636,12636
+41467_2017_1383_MOESM5_ESM.txt,GRvalue,float64,12636,12636
+41467_2017_1383_MOESM5_ESM.txt,Biological_Replicate,int64,12636,12636
+41467_2017_1383_MOESM6_ESM.txt,Cell line,object,4648,4648
+41467_2017_1383_MOESM6_ESM.txt,Drug Name,object,4648,4648
+41467_2017_1383_MOESM6_ESM.txt,Nominal target,object,4648,4648
+41467_2017_1383_MOESM6_ESM.txt,Target class,object,4648,4648
+41467_2017_1383_MOESM6_ESM.txt,Concentration,float64,4648,4648
+41467_2017_1383_MOESM6_ESM.txt,GR value (72h),float64,4648,4578
+41467_2017_1383_MOESM6_ESM.txt,SCS,float64,4648,4648
+41467_2017_1383_MOESM6_ESM.txt,Response class,object,4648,4648
+41467_2017_1383_MOESM7_ESM.txt,Cell line,object,4650,4650
+41467_2017_1383_MOESM7_ESM.txt,Drug Name,object,4650,4650
+41467_2017_1383_MOESM7_ESM.txt,Nominal target,object,4650,4650
+41467_2017_1383_MOESM7_ESM.txt,Target class,object,4650,4650
+41467_2017_1383_MOESM7_ESM.txt,Concentration,float64,4650,4650
+41467_2017_1383_MOESM7_ESM.txt,GR value (72h),float64,4650,4650
+41467_2017_1383_MOESM7_ESM.txt,SCS,float64,4650,4650
+41467_2017_1383_MOESM7_ESM.txt,Response class,object,4650,4650
+prism_secondary_treatment.csv,column_name,object,13008,13008
+prism_secondary_treatment.csv,broad_id,object,13008,13008
+prism_secondary_treatment.csv,dose,float64,13008,13008
+prism_secondary_treatment.csv,screen_id,object,13008,13008
+prism_secondary_treatment.csv,compound_plate,object,13008,13008
+prism_secondary_treatment.csv,name,object,13008,13008
+prism_secondary_treatment.csv,moa,object,13008,12424
+prism_secondary_treatment.csv,target,object,13008,10616
+prism_secondary_treatment.csv,disease.area,object,13008,4680
+prism_secondary_treatment.csv,indication,object,13008,4680
+prism_secondary_treatment.csv,smiles,object,13008,13008
+prism_secondary_treatment.csv,phase,object,13008,13008
+prism_secondary_cell.csv,row_name,object,588,588
+prism_secondary_cell.csv,depmap_id,object,588,568
+prism_secondary_cell.csv,ccle_name,object,588,568
+prism_secondary_cell.csv,primary_tissue,object,588,578
+prism_secondary_cell.csv,secondary_tissue,object,588,413
+prism_secondary_cell.csv,tertiary_tissue,object,588,166
+prism_secondary_cell.csv,passed_str_profiling,object,588,578
+tahoe_cell_line_metadata.parquet,cell_name,object,1000,1000
+tahoe_cell_line_metadata.parquet,Cell_ID_DepMap,object,1000,995
+tahoe_cell_line_metadata.parquet,Cell_ID_Cellosaur,object,1000,1000
+tahoe_cell_line_metadata.parquet,Organ,object,1000,1000
+tahoe_cell_line_metadata.parquet,Driver_Gene_Symbol,object,1000,1000
+tahoe_cell_line_metadata.parquet,Driver_VarZyg,object,1000,931
+tahoe_cell_line_metadata.parquet,Driver_VarType,object,1000,1000
+tahoe_cell_line_metadata.parquet,Driver_ProtEffect_or_CdnaEffect,object,1000,975
+tahoe_cell_line_metadata.parquet,Driver_Mech_InferDM,object,1000,701
+tahoe_cell_line_metadata.parquet,Driver_GeneType_DM,object,1000,1000
+tahoe_drug_metadata.parquet,drug,object,379,379
+tahoe_drug_metadata.parquet,targets,object,379,264
+tahoe_drug_metadata.parquet,moa-broad,object,379,379
+tahoe_drug_metadata.parquet,moa-fine,object,379,379
+tahoe_drug_metadata.parquet,human-approved,object,379,379
+tahoe_drug_metadata.parquet,clinical-trials,object,379,379
+tahoe_drug_metadata.parquet,gpt-notes-approval,object,379,379
+tahoe_drug_metadata.parquet,canonical_smiles,object,379,377
+tahoe_drug_metadata.parquet,pubchem_cid,float64,379,377
+tahoe_sample_metadata.parquet,sample,object,1344,1344
+tahoe_sample_metadata.parquet,plate,object,1344,1344
+tahoe_sample_metadata.parquet,mean_gene_count,float64,1344,1344
+tahoe_sample_metadata.parquet,mean_tscp_count,float64,1344,1344
+tahoe_sample_metadata.parquet,mean_mread_count,float64,1344,1344
+tahoe_sample_metadata.parquet,mean_pcnt_mito,float32,1344,1344
+tahoe_sample_metadata.parquet,drug,object,1344,1344
+tahoe_sample_metadata.parquet,drugname_drugconc,object,1344,1344

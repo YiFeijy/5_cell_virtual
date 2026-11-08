@@ -1,0 +1,19 @@
+{
+  "method": "function_bottleneck_control",
+  "protocol": "unseen_drug",
+  "fold": 3,
+  "seed": 20261109,
+  "parameters": 613779,
+  "epochs_run": 16,
+  "selected_epoch": 1,
+  "best_validation_score": 0.6678069233894348,
+  "expression_loss_weight": 1.0,
+  "function_loss_weight": 1.0,
+  "train_records": 1946,
+  "validation_records": 741,
+  "test_records": 677,
+  "seconds": 1.8946650808211416,
+  "device": "cpu",
+  "finite_forward_backward_passed": true,
+  "test_used_for_checkpoint_selection": false
+}

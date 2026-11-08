@@ -1,0 +1,460 @@
+{
+  "created_at": "2026-11-06T12:38:17.199036+08:00",
+  "scope": "Actual matrix and table inspection. Descriptive correlations, no trained model; no claim of same-well pairing.",
+  "download_snapshot": {
+    "updated_at": "2026-11-06T12:44:00+08:00",
+    "complete": 76,
+    "total": 78,
+    "complete_bytes": 28976140344,
+    "completed_file_size_or_presence_mismatches": [],
+    "pending": [
+      {
+        "dataset": "LINCS_GSE92742",
+        "name": "GSE92742_Broad_LINCS_Level3_INF_mlr12k_n1319138x12328.gctx.gz",
+        "status": "下载中",
+        "downloaded_bytes": 16678003788,
+        "expected_size": null,
+        "error": null
+      },
+      {
+        "dataset": "LINCS_GSE92742",
+        "name": "GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx.gz",
+        "status": "下载中",
+        "downloaded_bytes": 19360883623,
+        "expected_size": null,
+        "error": null
+      }
+    ]
+  },
+  "HMS": {
+    "well_rows": 36912,
+    "conditions": 3852,
+    "cells": 6,
+    "drugs": 107,
+    "doses_uM": [
+      0.04,
+      0.12,
+      0.37,
+      1.11,
+      3.33,
+      10.0
+    ],
+    "endpoint_h": [
+      72
+    ],
+    "bio_repeat_count_distribution": {
+      "3": 3852
+    },
+    "relative_cell_count": {
+      "min": 0.017151144444444447,
+      "q01": 0.057267573888888874,
+      "q25": 0.31951583333333333,
+      "median": 0.6535825,
+      "q75": 0.9252638888888888,
+      "q99": 1.1025255555555553,
+      "max": 1.1894555555555555
+    },
+    "growth_rate": {
+      "min": -0.5233383333333333,
+      "q01": -0.25164702222222224,
+      "q25": 0.05660479444444444,
+      "median": 0.5266066666666667,
+      "q75": 0.8998269444444444,
+      "q99": 1.1494561888888888,
+      "max": 1.2745666666666668
+    },
+    "conditions_relative_count_below_half": 1583,
+    "conditions_negative_growth_rate": 734,
+    "repeat_correlations": [
+      {
+        "a": "Screen20237_LJP_processedData1.xls",
+        "b": "Screen20238_LJP_processedData2.xls",
+        "n": 3852,
+        "spearman": 0.929311735419487
+      },
+      {
+        "a": "Screen20237_LJP_processedData1.xls",
+        "b": "Screen20239_LJP_processedData3.xls",
+        "n": 3852,
+        "spearman": 0.9200116287813644
+      },
+      {
+        "a": "Screen20238_LJP_processedData2.xls",
+        "b": "Screen20239_LJP_processedData3.xls",
+        "n": 3852,
+        "spearman": 0.9379720348388545
+      }
+    ],
+    "stored_ratio_max_absolute_difference": 4.997923217953115e-05,
+    "qualification": "Relative cell count versus control and growth rate are distinct endpoints; neither is a direct fraction of dead cells. Average technical wells within each biological file, then weight biological files equally."
+  },
+  "inputs": {
+    "baseline_actual_rows": 1673,
+    "baseline_gene_columns": 19193,
+    "lincs_landmark_genes": 978,
+    "baseline_landmark_overlap": 978,
+    "missing_landmark_gene_ids": [],
+    "hms_cells_with_actual_baseline": [
+      "SKBR3",
+      "MCF7",
+      "HS578T",
+      "BT20",
+      "MDAMB231"
+    ],
+    "hms_cells_without_actual_baseline": [
+      "MCF10A"
+    ],
+    "finite_baseline_values": true,
+    "hms_drugs_parseable_phaseII_smiles": 106,
+    "hms_drugs_missing_or_invalid_phaseII_smiles": [
+      "BRD-U60236422"
+    ]
+  },
+  "joint_actual_matrices": {
+    "signature_records": 8337,
+    "signature_ids_missing_from_L5": 0,
+    "landmark_columns_read": 978,
+    "signatures_with_all_landmark_values_finite": 8337,
+    "unique_conditions_by_time": {
+      "3": 3847,
+      "24": 3838
+    },
+    "conditions_with_both_3h_and_24h": 3835,
+    "both_times_with_baseline_and_parseable_structure": 3168,
+    "signature_TAS": {
+      "min": 0.00335372,
+      "q01": 0.00846018,
+      "q25": 0.147404,
+      "median": 0.214362,
+      "q75": 0.332847,
+      "q99": 0.7386947999999995,
+      "max": 0.843112
+    },
+    "signature_distil_cc_q75": {
+      "min": 0.0,
+      "q01": 0.0,
+      "q25": 0.22,
+      "median": 0.33,
+      "q75": 0.49,
+      "q99": 0.81,
+      "max": 0.88
+    },
+    "signature_missing_distil_cc_q75": 99,
+    "signature_missing_TAS": 0,
+    "signature_TAS_below_0_2": 3763,
+    "signature_distil_cc_q75_below_0_2": 1677,
+    "L3_total_listed_replicate_references": 24819,
+    "L3_total_available_replicate_references": 24819,
+    "L3_signature_all_references_available": 8337,
+    "L3_signature_all_references_have_same_plate_vehicle_metadata": 8337,
+    "correlations": [
+      {
+        "time_h": 3,
+        "group": "all",
+        "endpoint": "relative_cell_count",
+        "n": 3847,
+        "spearman": -0.4053066812271167
+      },
+      {
+        "time_h": 3,
+        "group": "BT20",
+        "endpoint": "relative_cell_count",
+        "n": 642,
+        "spearman": -0.5044744683059222
+      },
+      {
+        "time_h": 3,
+        "group": "HS578T",
+        "endpoint": "relative_cell_count",
+        "n": 641,
+        "spearman": -0.4081642202603992
+      },
+      {
+        "time_h": 3,
+        "group": "MCF10A",
+        "endpoint": "relative_cell_count",
+        "n": 642,
+        "spearman": -0.40439447318739535
+      },
+      {
+        "time_h": 3,
+        "group": "MCF7",
+        "endpoint": "relative_cell_count",
+        "n": 641,
+        "spearman": -0.3203198583550819
+      },
+      {
+        "time_h": 3,
+        "group": "MDAMB231",
+        "endpoint": "relative_cell_count",
+        "n": 640,
+        "spearman": -0.40663995158954197
+      },
+      {
+        "time_h": 3,
+        "group": "SKBR3",
+        "endpoint": "relative_cell_count",
+        "n": 641,
+        "spearman": -0.4135314454634261
+      },
+      {
+        "time_h": 3,
+        "group": "all",
+        "endpoint": "growth_rate",
+        "n": 3847,
+        "spearman": -0.4056613947526891
+      },
+      {
+        "time_h": 3,
+        "group": "BT20",
+        "endpoint": "growth_rate",
+        "n": 642,
+        "spearman": -0.5038831044092187
+      },
+      {
+        "time_h": 3,
+        "group": "HS578T",
+        "endpoint": "growth_rate",
+        "n": 641,
+        "spearman": -0.4078601812296791
+      },
+      {
+        "time_h": 3,
+        "group": "MCF10A",
+        "endpoint": "growth_rate",
+        "n": 642,
+        "spearman": -0.4044086269699059
+      },
+      {
+        "time_h": 3,
+        "group": "MCF7",
+        "endpoint": "growth_rate",
+        "n": 641,
+        "spearman": -0.3203961756601106
+      },
+      {
+        "time_h": 3,
+        "group": "MDAMB231",
+        "endpoint": "growth_rate",
+        "n": 640,
+        "spearman": -0.40667846784293915
+      },
+      {
+        "time_h": 3,
+        "group": "SKBR3",
+        "endpoint": "growth_rate",
+        "n": 641,
+        "spearman": -0.41245981381311336
+      },
+      {
+        "time_h": 24,
+        "group": "all",
+        "endpoint": "relative_cell_count",
+        "n": 3838,
+        "spearman": -0.6726797598059
+      },
+      {
+        "time_h": 24,
+        "group": "BT20",
+        "endpoint": "relative_cell_count",
+        "n": 642,
+        "spearman": -0.6660066957902804
+      },
+      {
+        "time_h": 24,
+        "group": "HS578T",
+        "endpoint": "relative_cell_count",
+        "n": 639,
+        "spearman": -0.7182109769379075
+      },
+      {
+        "time_h": 24,
+        "group": "MCF10A",
+        "endpoint": "relative_cell_count",
+        "n": 637,
+        "spearman": -0.7041939842850709
+      },
+      {
+        "time_h": 24,
+        "group": "MCF7",
+        "endpoint": "relative_cell_count",
+        "n": 642,
+        "spearman": -0.6577613869805297
+      },
+      {
+        "time_h": 24,
+        "group": "MDAMB231",
+        "endpoint": "relative_cell_count",
+        "n": 639,
+        "spearman": -0.7331163757818178
+      },
+      {
+        "time_h": 24,
+        "group": "SKBR3",
+        "endpoint": "relative_cell_count",
+        "n": 639,
+        "spearman": -0.6590770731585496
+      },
+      {
+        "time_h": 24,
+        "group": "all",
+        "endpoint": "growth_rate",
+        "n": 3838,
+        "spearman": -0.6733889500445391
+      },
+      {
+        "time_h": 24,
+        "group": "BT20",
+        "endpoint": "growth_rate",
+        "n": 642,
+        "spearman": -0.6656880213959447
+      },
+      {
+        "time_h": 24,
+        "group": "HS578T",
+        "endpoint": "growth_rate",
+        "n": 639,
+        "spearman": -0.7178633714512782
+      },
+      {
+        "time_h": 24,
+        "group": "MCF10A",
+        "endpoint": "growth_rate",
+        "n": 637,
+        "spearman": -0.7036584883614675
+      },
+      {
+        "time_h": 24,
+        "group": "MCF7",
+        "endpoint": "growth_rate",
+        "n": 642,
+        "spearman": -0.6580995618714589
+      },
+      {
+        "time_h": 24,
+        "group": "MDAMB231",
+        "endpoint": "growth_rate",
+        "n": 639,
+        "spearman": -0.7330140127599453
+      },
+      {
+        "time_h": 24,
+        "group": "SKBR3",
+        "endpoint": "growth_rate",
+        "n": 639,
+        "spearman": -0.6588909216338991
+      }
+    ],
+    "qualification": "Condition correspondence in coordinated project; independent time points and wells. Matrix presence and finite values do not prove biological quality. TAS/CC thresholds are descriptive counts, not exclusion rules. L3 control presence verified in metadata, not yet control quality or normalization. RMS z is expression response magnitude, not viability."
+  },
+  "sciPlex": {
+    "SrivatsanTrapnell2020_sciplex3.h5ad": {
+      "X_shape": [
+        799317,
+        110983
+      ],
+      "obs_rows": 799317,
+      "cell_lines": {
+        "MCF7": 344862,
+        "A549": 244281,
+        "K562": 173652,
+        "null": 36522
+      },
+      "perturbation_names": 189,
+      "conditions_with_replicate": 4897,
+      "condition_cell_count": {
+        "min": 2.0,
+        "q01": 21.0,
+        "q25": 103.0,
+        "median": 131.0,
+        "q75": 201.0,
+        "q99": 342.03999999999996,
+        "max": 36522.0
+      },
+      "raw_conditions_fewer_than_20_cells": 45,
+      "missing_cell_line": 36522,
+      "missing_perturbation": 36522,
+      "time_values": {
+        "24.0": 680685,
+        "72.0": 82110,
+        "NaN": 36522
+      },
+      "nperts_values": null,
+      "qualification": "Raw file rows and annotations; cell QC and doublet assessment not performed. Captured cell numbers are not an independent viability assay."
+    },
+    "SrivatsanTrapnell2020_sciplex2.h5ad": {
+      "X_shape": [
+        24262,
+        58347
+      ],
+      "obs_rows": 24262,
+      "cell_lines": {
+        "A549": 24262
+      },
+      "perturbation_names": 5,
+      "conditions_with_replicate": 33,
+      "condition_cell_count": {
+        "min": 86.0,
+        "q01": 99.76,
+        "q25": 536.0,
+        "median": 792.0,
+        "q75": 930.0,
+        "q99": 1243.2,
+        "max": 1296.0
+      },
+      "raw_conditions_fewer_than_20_cells": 0,
+      "missing_cell_line": 0,
+      "missing_perturbation": 0,
+      "time_values": null,
+      "nperts_values": {
+        "1": 24262
+      },
+      "qualification": "Raw file rows and annotations; cell QC and doublet assessment not performed. Captured cell numbers are not an independent viability assay."
+    }
+  },
+  "CTRPv2_2015": {
+    "dose_rows": 6171005,
+    "rows_finite_measured_fitted_dose": 6171005,
+    "invalid_nonpositive_dose_rows": 0,
+    "experiment_compound_curves": 395263,
+    "distinct_cell_drug_pairs": 387130,
+    "cells_in_measured_table": 887,
+    "compounds_in_measured_table": 545,
+    "cell_metadata_rows": 1107,
+    "compound_metadata_rows": 545,
+    "experiment_metadata_rows": 1061,
+    "unique_experiment_ids": 907,
+    "experiment_ids_with_repeated_metadata_rows": 153,
+    "explicit_fixed_ratio_combination_entries": 49,
+    "entries_without_explicit_combination_name": 496,
+    "dose_rows_without_explicit_combination_name": 5553935,
+    "dose_rows_explicit_combination": 617070,
+    "distinct_cell_drug_pairs_without_explicit_combination": 348462,
+    "measured_relative_value_range": [
+      0.001922,
+      2.881
+    ],
+    "measured_values_below_0": 0,
+    "measured_values_above_1": 2288072,
+    "qualification": "cpd_avg_pv is aggregated measured relative viability on ratio scale; cpd_pred_pv is curve fit. Values above 1 need not be errors; do not divide by 100 or automatically clip."
+  },
+  "PRISM_secondary": {
+    "matrix_shape": [
+      489,
+      13008
+    ],
+    "finite_measurements": 5874229,
+    "missing_measurements": 486683,
+    "finite_fraction": 0.9234884871854854,
+    "LFC_distribution": {
+      "min": -12.0653636952,
+      "q01": -6.141337529129999,
+      "q25": -0.361492632414,
+      "median": 0.126205456252,
+      "q75": 0.448560795722,
+      "q99": 1.2265635664007988,
+      "max": 5.0076526092
+    },
+    "qualification": "Measured barcode abundance after screening, relative to vehicle, with batch correction; independent of RNA assay, but not a single-cell death label. Fitted AUC/IC50 are separate."
+  }
+}

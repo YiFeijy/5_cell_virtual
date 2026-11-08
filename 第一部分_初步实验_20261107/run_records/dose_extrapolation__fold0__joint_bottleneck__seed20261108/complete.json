@@ -1,0 +1,19 @@
+{
+  "method": "joint_bottleneck",
+  "protocol": "dose_extrapolation",
+  "fold": 0,
+  "seed": 20261108,
+  "parameters": 613779,
+  "epochs_run": 100,
+  "selected_epoch": 96,
+  "best_validation_score": 1.1419329643249512,
+  "expression_loss_weight": 1.0,
+  "function_loss_weight": 1.0,
+  "train_records": 2259,
+  "validation_records": 562,
+  "test_records": 543,
+  "seconds": 13.02823156514205,
+  "device": "cpu",
+  "finite_forward_backward_passed": true,
+  "test_used_for_checkpoint_selection": false
+}

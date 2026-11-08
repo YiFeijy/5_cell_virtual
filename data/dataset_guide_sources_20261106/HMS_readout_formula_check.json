@@ -1,0 +1,26 @@
+[
+  {
+    "file": "Screen20237_LJP_processedData1.xls",
+    "rows": 12420,
+    "relative_growth_column": "Relative Growth Rate After Treatment",
+    "formula": "(N_treated_end - N_initial)/(N_vehicle_end - N_initial)",
+    "max_absolute_difference": 4.998636908948306e-05,
+    "median_absolute_difference": 2.031344626209075e-06
+  },
+  {
+    "file": "Screen20238_LJP_processedData2.xls",
+    "rows": 12072,
+    "relative_growth_column": "Relative Growth Rate After Treatment",
+    "formula": "(N_treated_end - N_initial)/(N_vehicle_end - N_initial)",
+    "max_absolute_difference": 4.987652212351534e-05,
+    "median_absolute_difference": 2.3518923485399412e-06
+  },
+  {
+    "file": "Screen20239_LJP_processedData3.xls",
+    "rows": 12420,
+    "relative_growth_column": "Relative Growth Rate After Treatment",
+    "formula": "(N_treated_end - N_initial)/(N_vehicle_end - N_initial)",
+    "max_absolute_difference": 5.000391587017816e-05,
+    "median_absolute_difference": 1.9799945034787436e-06
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "cell": "BT20",
+  "ModelID": "ACH-000536",
+  "drug": "afatinib",
+  "pert_id": "BRD-A58767537",
+  "dose_uM": 0.04,
+  "raw_HMS_well_records": 9,
+  "biological_replicates": 3,
+  "mean_relative_cell_count": 0.7512411111111111,
+  "functional_time_h": 72,
+  "LINCS_signature_ids": [
+    "LJP006_BT20_24H:G24",
+    "LJP006_BT20_3H:G24"
+  ],
+  "gene_rows": 978,
+  "scope": "same_project_parallel_condition_link; baseline from separate CCLE study; HMS and LINCS replicate sets independently preserved"
+}
