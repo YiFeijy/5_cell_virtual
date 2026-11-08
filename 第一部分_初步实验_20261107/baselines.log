@@ -1,6 +1,0 @@
-{"protocol": "unseen_drug", "fold": 0, "training_feature_rank": 67, "train_reconstruction_max_error": 9.735545702937998e-13, "ridge_expression_alpha": 1000.0, "ridge_function_alpha": 1000.0, "full_sklearn_ridge_prediction_max_difference": 5.2534754324540245e-11}
-{"protocol": "unseen_drug", "fold": 1, "training_feature_rank": 67, "train_reconstruction_max_error": 6.905587213168474e-13, "ridge_expression_alpha": 1000.0, "ridge_function_alpha": 1000.0}
-{"protocol": "unseen_drug", "fold": 2, "training_feature_rank": 68, "train_reconstruction_max_error": 5.03375119365046e-13, "ridge_expression_alpha": 1000.0, "ridge_function_alpha": 1000.0}
-{"protocol": "unseen_drug", "fold": 3, "training_feature_rank": 68, "train_reconstruction_max_error": 7.533973445106312e-13, "ridge_expression_alpha": 1000.0, "ridge_function_alpha": 1000.0}
-{"protocol": "unseen_drug", "fold": 4, "training_feature_rank": 68, "train_reconstruction_max_error": 1.1572687252936475e-12, "ridge_expression_alpha": 1000.0, "ridge_function_alpha": 1000.0}
-{"protocol": "dose_extrapolation", "fold": 0, "training_feature_rank": 110, "train_reconstruction_max_error": 2.1760371282653068e-13, "ridge_expression_alpha": 1.0, "ridge_function_alpha": 10.0}

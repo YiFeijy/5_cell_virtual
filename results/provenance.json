@@ -1,0 +1,18 @@
+{
+  "original_date": "2026-11-07",
+  "repository_layout_date": "2026-11-08",
+  "original_train_sha256": "869fc4e0b2e433f1655770f65846313ee9ec7cd97225edf7c3d76fc2462d78a6",
+  "relocated_train_sha256": "75e0da2396cb75cb52325019f7fcdd7a528fc177b26b693dae32455af5247946",
+  "training_array_sha256_unchanged": "3aceb368359d859b7ecca0ffb350473802230210836ef0b11422cbf236e09a02",
+  "training_relocation": "ROOT/OUT and input paths only; all model, optimization and split functions unchanged",
+  "training_function_AST_comparison_passed": true,
+  "historical_runs": 144,
+  "historical_epochs": 4724,
+  "new_training_executed": false,
+  "raw_HMS_ratios_recomputed": true,
+  "original_L5_candidates_reextracted": 3410,
+  "original_L3_rows_rechecked": 11311,
+  "rebuilt_training_array_matches_original_sha256": true,
+  "representative_checkpoint_replay_passed": true,
+  "removed_prior_upload_commit": "4dd6368cbf0c075d96c3ee9be1958ed08931aee6"
+}

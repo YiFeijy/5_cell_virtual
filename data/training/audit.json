@@ -1,0 +1,51 @@
+{
+  "stage": "exploratory_basic_technical_QC_frozen",
+  "expression_time_h": 24,
+  "function_time_h": 72,
+  "records": 3364,
+  "distinct_conditions": 3133,
+  "cells": 5,
+  "drugs": 106,
+  "expression_shape": [
+    3364,
+    978
+  ],
+  "new_24h_conditions_not_requiring_3h": 1,
+  "original_instances_checked": 10512,
+  "vehicle_plates_checked": 32,
+  "vehicle_instances_checked": 799,
+  "excluded_24h_candidates": 46,
+  "single_instance_24h_signatures": 46,
+  "replicate_count_distribution": {
+    "2": 244,
+    "3": 2502,
+    "4": 618
+  },
+  "sensitivity_rep3plus_records": 3120,
+  "sensitivity_without_CGP_records": 3310,
+  "sum_condition_weights": 3133.0,
+  "no_TAS_or_response_magnitude_exclusion": true,
+  "source_hashes": [
+    {
+      "path": "data/reference/hms_conditions.csv",
+      "sha256": "75976ed5722a2eb90e03334201a37e55d99d6d5fa2f80e478b04a83d09ec8e0b"
+    },
+    {
+      "path": "data/reference/lincs_signatures.csv",
+      "sha256": "0a2ee75d9f313a6499158b9009994d234d5ae353e6c6953743e7bedf786002a3"
+    },
+    {
+      "path": "data/reference/lincs_expression.npz",
+      "sha256": "650a990c2d04345eab86e75cda17ba00ee89443f107680cb20d24a07f42033a6"
+    },
+    {
+      "path": "data/reference/drugs.csv",
+      "sha256": "4bfcbe6b61ec7f8bfdb340503e1f478710f10fcc8215fd8dc44e24a4360e958d"
+    },
+    {
+      "path": "docs/framework.docx",
+      "sha256": "96ad53c418f3e940dc502ba6e5a180ed4ac5eface808c51cd1fea7b81ec5963f"
+    }
+  ],
+  "qualification": "Basic identity, numeric and replicate/control coverage eligibility; no claim of independently validated viable-cell state or complete biological quality."
+}

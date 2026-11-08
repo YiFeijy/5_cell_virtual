@@ -1,7 +1,0 @@
-{
-  "zero_response_validation_mse": 1.4073954415359315,
-  "train_mean_response_validation_mse": 1.3417735820531593,
-  "train_mean_count_validation_mae": 0.26457918475871145,
-  "test_scored": false,
-  "note": "Descriptive sanity baselines on the same validation split; not a completed tuned model comparison."
-}

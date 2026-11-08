@@ -1,6 +1,0 @@
-source,actual_observation,reference_support,question_to_resolve,use_now
-HMS计数,N0/Nt/Ncontrol；72h数量与净增长,独立于表达的细胞数量读数,相对数量不是存活比例，也不是亚群组成,主功能监督及重复可靠性
-LINCS L5,3/24h群体扰动响应z,响应目标；非独立活细胞状态参考,不凭计数比例倒推残存细胞表达,响应解码与共享表征监督
-LINCS L3与vehicle,同平台处理/同步对照表达,表达尺度一致的参考,同步对照非同一处理样本真实t0；参考QC待做,状态重建与drug-control差异敏感性方案
-MIXseq,捕获的单细胞表达、细胞身份和QC标签,可研究捕获群体的组成与组内变化,normal标签非已认证活细胞门；附带sens源于GDSC/PRISM,组成分层/伪bulk/时间与表达外部评价
-sciPlex2/3,单细胞/核表达及条件注释,可研究捕获群体分布,本地obs字段未发现明确live/dead字段；独立存活参考需追协议/附件,组成与表达分布评价；有对应独立参考后开展存活相关估计
