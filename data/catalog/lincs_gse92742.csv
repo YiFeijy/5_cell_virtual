@@ -1,0 +1,77 @@
+cell_id,cell_name,all_signatures,small_molecule_signatures,primary_site,source_cell_type,sample_type
+A375,A375,42195,15453,skin,cell line,tumor
+A549,A549,46736,21685,lung,cell line,tumor
+A673,A673,380,363,bone,cell line,tumor
+AGS,AGS,376,362,stomach,cell line,tumor
+ASC,ASC,7248,2526,adipose,primary,primary
+BT20,BT20,1976,1406,breast,cell line,tumor
+CD34,CD34,352,322,bone,primary,normal
+CL34,CL34,369,356,large intestine,cell line,tumor
+CORL23,CORL23,379,364,lung,cell line,tumor
+COV644,COV644,370,358,ovary,cell line,tumor
+DV90,DV90,373,358,lung,cell line,tumor
+EFO27,EFO27,378,362,ovary,cell line,tumor
+FIBRNPC,FIBRNPC,1383,1312,skin,iPSC,normal
+H1299,H1299,374,360,lung,cell line,-666
+HA1E,HA1E,34205,9490,kidney,cell line,normal
+HCC15,HCC15,379,362,lung,cell line,tumor
+HCC515,HCC515,29199,8370,lung,cell line,normal
+HCT116,HCT116,378,363,large intestine,cell line,tumor
+HEC108,HEC108,379,363,endometrium,cell line,tumor
+HEK293T,HEK293T,1845,232,kidney,cell line,normal
+HEKTE,HEKTE,1311,0,kidney,cell line,normal
+HEPG2,HEPG2,28195,5774,liver,cell line,tumor
+HL60,HL60,374,323,haematopoietic and lymphoid tissue,cell line,tumor
+HS27A,HS27A,24,14,bone,cell line,normal
+HS578T,HS578T,1912,1400,breast,cell line,tumor
+HT115,HT115,368,355,large intestine,cell line,tumor
+HT29,HT29,38070,14513,large intestine,cell line,tumor
+HUH7,HUH7,649,527,liver,cell line,tumor
+JHUEM2,JHUEM2,374,361,endometrium,cell line,tumor
+JURKAT,JURKAT,723,421,haematopoietic and lymphoid tissue,cell line,tumor
+LOVO,LOVO,377,360,large intestine,cell line,tumor
+MCF10A,MCF10A,1908,1406,breast,cell line,normal
+MCF7,MCF7,63367,29312,breast,cell line,tumor
+MCH58,MCH58,27,1,skin,cell line,normal
+MDAMB231,MDAMB231,1917,1405,breast,cell line,tumor
+MDST8,MDST8,375,358,large intestine,cell line,tumor
+NCIH1694,NCIH1694,368,355,lung,cell line,tumor
+NCIH1836,NCIH1836,366,351,lung,cell line,tumor
+NCIH2073,NCIH2073,378,361,lung,cell line,tumor
+NCIH508,NCIH508,371,360,large intestine,cell line,tumor
+NCIH596,NCIH596,377,361,lung,cell line,tumor
+NCIH716,NCIH716,19,0,large intestine,cell line,tumor
+NEU,NEU,3578,3399,-666,differentiated,normal
+NKDBA,NKDBA,1045,982,kidney,cell line,normal
+NOMO1,NOMO1,804,637,haematopoietic and lymphoid tissue,cell line,tumor
+NPC,NPC,9585,4414,central nervous system,differentiated,primary
+OV7,OV7,376,359,ovary,cell line,tumor
+PC3,PC3,58945,23123,prostate,cell line,tumor
+PHH,PHH,2546,2331,liver,primary,primary
+PL21,PL21,370,354,haematopoietic and lymphoid tissue,cell line,tumor
+RKO,RKO,377,362,large intestine,cell line,tumor
+RMGI,RMGI,372,356,ovary,cell line,tumor
+RMUGS,RMUGS,380,364,ovary,cell line,tumor
+SHSY5Y,SHSY5Y,465,0,autonomic ganglia,cell line,tumor
+SKB,SKB,2631,2517,muscle,primary,normal
+SKBR3,SKBR3,1904,1393,breast,cell line,tumor
+SKL,SKL,2182,0,muscle,primary,primary
+SKLU1,SKLU1,370,355,lung,cell line,tumor
+SKM1,SKM1,386,364,haematopoietic and lymphoid tissue,cell line,tumor
+SKMEL1,SKMEL1,381,364,skin,cell line,tumor
+SKMEL28,SKMEL28,374,361,skin,cell line,tumor
+SNGM,SNGM,371,356,endometrium,cell line,tumor
+SNU1040,SNU1040,376,361,large intestine,cell line,tumor
+SNUC4,SNUC4,378,362,,,
+SNUC5,SNUC5,366,351,large intestine,cell line,tumor
+SW480,SW480,1342,363,large intestine,cell line,tumor
+SW620,SW620,378,362,large intestine,cell line,tumor
+SW948,SW948,374,359,large intestine,cell line,tumor
+T3M10,T3M10,368,353,lung,cell line,tumor
+THP1,THP1,826,648,haematopoietic and lymphoid tissue,cell line,tumor
+TYKNU,TYKNU,374,361,ovary,cell line,tumor
+U266,U266,273,241,blood,cell line,tumor
+U2OS,U2OS,359,0,bone,cell line,tumor
+U937,U937,744,690,haematopoietic and lymphoid tissue,cell line,tumor
+VCAP,VCAP,68553,34753,prostate,cell line,tumor
+WSUDLCL2,WSUDLCL2,370,354,haematopoietic and lymphoid tissue,cell line,tumor

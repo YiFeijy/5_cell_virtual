@@ -1,0 +1,167 @@
+{
+  "date": "2026-11-09",
+  "counts_are": "actual cells in the specified files; no alias collapse",
+  "datasets": {
+    "ccle_24q4": {
+      "listed_rows": 1673,
+      "models_with_RNA": 1673,
+      "models_in_Model_table": 2105,
+      "source_file": "raw/CCLE_DepMap_24Q4/OmicsExpressionProteinCodingGenesTPMLogp1.csv"
+    },
+    "lincs_gse70138": {
+      "listed_rows": 41,
+      "all_cells": 41,
+      "cells_with_small_molecule_signatures": 30,
+      "all_signatures": 118050,
+      "small_molecule_signatures": 107404,
+      "source_file": "raw/LINCS_GSE70138/GSE70138_Broad_LINCS_sig_info_2017-03-06.txt.gz"
+    },
+    "lincs_gse92742": {
+      "listed_rows": 76,
+      "all_cells": 76,
+      "cells_with_small_molecule_signatures": 71,
+      "all_signatures": 473647,
+      "small_molecule_signatures": 205034,
+      "source_file": "raw/LINCS_GSE92742/GSE92742_Broad_LINCS_sig_info.txt.gz"
+    },
+    "hms": {
+      "listed_rows": 6,
+      "raw_wells": 36912,
+      "cells": 6,
+      "source_file": "HMS three Excel files; verified library/biorepeat references"
+    },
+    "ctrpv2_2015": {
+      "listed_rows": 887,
+      "observed_cells": 887,
+      "cell_metadata_rows": 1107,
+      "dose_rows": 6171005,
+      "source_file": "v20.data.per_cpd_post_qc.txt + experiment/cell metadata"
+    },
+    "ctrpv2_2016": {
+      "listed_rows": 835,
+      "auc_cells": 835,
+      "expression_cells": 823,
+      "copy_number_cells": 823,
+      "auc_rows": 326148,
+      "auc_min": 0.0691,
+      "auc_max": 29.35,
+      "source_file": "CTRPv2 2016 AUC, baseline GEX and CNV tables; master_ccl_id metadata"
+    },
+    "gdsc1": {
+      "listed_rows": 970,
+      "distinct_raw_names": 970,
+      "distinct_nonempty_Sanger_IDs": 970,
+      "raw_wells": 5976183,
+      "source_file": "unpacked/GDSC1/GDSC1_public_raw_data_27Oct23/GDSC1_public_raw_data_27Oct23.csv"
+    },
+    "gdsc2": {
+      "listed_rows": 969,
+      "distinct_raw_names": 969,
+      "distinct_nonempty_Sanger_IDs": 969,
+      "raw_wells": 15069449,
+      "source_file": "unpacked/GDSC2/GDSC2_public_raw_data_27Oct23/GDSC2_public_raw_data_27Oct23.csv"
+    },
+    "prism_primary": {
+      "listed_rows": 578,
+      "actual_matrix_rows": 578,
+      "matrix_columns": 4686,
+      "named_current_cell_rows": 568,
+      "failed_STR_rows": 10,
+      "valid_measurements": 2632171,
+      "cell_metadata_rows": 588,
+      "source_file": "primary-screen-replicate-collapsed-logfold-change.csv"
+    },
+    "prism_secondary": {
+      "listed_rows": 489,
+      "actual_matrix_rows": 489,
+      "matrix_columns": 13008,
+      "named_current_cell_rows": 481,
+      "failed_STR_rows": 8,
+      "valid_measurements": 5874229,
+      "cell_metadata_rows": 588,
+      "source_file": "secondary-screen-replicate-collapsed-logfold-change.csv"
+    },
+    "mixseq": {
+      "listed_rows": 169,
+      "matrix_barcodes": 154710,
+      "normal_cells": 130648,
+      "actual_DepMap_IDs": 169,
+      "source_file": "26 author archives/classifications.csv; author normal flag and nonmissing DepMap_ID"
+    },
+    "sciplex2": {
+      "listed_rows": 1,
+      "annotated_rows": 24262,
+      "missing_cell_line_rows": 0,
+      "total_rows": 24262,
+      "raw_dose_labels": [
+        "0",
+        "0.1",
+        "0.5",
+        "1",
+        "10",
+        "100",
+        "5",
+        "50"
+      ],
+      "missing_dose_labels": 529,
+      "dose_unit_field_present": false,
+      "nonmissing_dose_labels_match_top_oligo_split": true,
+      "source_file": "SrivatsanTrapnell2020_sciplex2.h5ad"
+    },
+    "sciplex3": {
+      "listed_rows": 3,
+      "annotated_rows": 762795,
+      "missing_cell_line_rows": 36522,
+      "total_rows": 799317,
+      "cell_time_counts": [
+        {
+          "cell": "A549",
+          "time": 24.0,
+          "rows": 162171
+        },
+        {
+          "cell": "A549",
+          "time": 72.0,
+          "rows": 82110
+        },
+        {
+          "cell": "K562",
+          "time": 24.0,
+          "rows": 173652
+        },
+        {
+          "cell": "MCF7",
+          "time": 24.0,
+          "rows": 344862
+        },
+        {
+          "cell": null,
+          "time": null,
+          "rows": 36522
+        }
+      ],
+      "source_file": "SrivatsanTrapnell2020_sciplex3.h5ad"
+    },
+    "nci_tpw": {
+      "listed_rows": 60,
+      "expression_samples": 7623,
+      "cells": 60,
+      "source_file": "GSE116436_series_matrix.txt.gz sample headers"
+    },
+    "drugseq": {
+      "listed_rows": 1,
+      "cells": 1,
+      "source_file": "Exp_gzip.RData + comparisons_metadata.RData; cell identity from Novartis README"
+    },
+    "tahoe_shard": {
+      "listed_rows": 50,
+      "metadata_rows": 1000,
+      "metadata_unique_identities": 102,
+      "observed_cell_identities": 50,
+      "shard_rows": 28225,
+      "observed_samples": 66,
+      "observed_treatment_names": 66,
+      "source_file": "train-00000-of-03388.parquet + cell_line_metadata.parquet"
+    }
+  }
+}

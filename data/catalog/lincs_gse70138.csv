@@ -1,0 +1,42 @@
+cell_id,cell_name,all_signatures,small_molecule_signatures,primary_site,source_cell_type,sample_type
+A375,A375,12740,12050,skin,cell line,tumor
+A375.311,A375.311,380,0,skin,cell line,tumor
+A549,A549,2082,1954,lung,cell line,tumor
+A549.311,A549.311,380,0,lung,cell line,tumor
+ASC,ASC,1136,1064,adipose,primary,primary
+ASC.C,ASC.C,1135,1063,adipose,primary,primary
+BT20,BT20,1520,1416,breast,cell line,tumor
+CD34,CD34,1121,1049,bone,primary,normal
+HA1E,HA1E,12481,11797,kidney,cell line,normal
+HA1E.101,HA1E.101,380,0,kidney,cell line,normal
+HA1E.311,HA1E.311,380,0,kidney,cell line,normal
+HCC515,HCC515,1900,1776,lung,cell line,normal
+HELA,HELA,10617,10057,large intestine,cell line,tumor
+HELA.311,HELA.311,380,0,large intestine,cell line,tumor
+HEPG2,HEPG2,1899,1775,liver,cell line,tumor
+HME1,HME1,1895,1771,breast,cell line,normal
+HS578T,HS578T,1516,1412,breast,cell line,tumor
+HT29,HT29,12529,11845,large intestine,cell line,tumor
+HT29.311,HT29.311,380,0,large intestine,cell line,tumor
+HUES3,HUES3,352,330,-666,ESC,normal
+HUVEC,HUVEC,1129,1057,vascular system,cell line,normal
+JURKAT,JURKAT,366,344,haematopoietic and lymphoid tissue,cell line,tumor
+LNCAP,LNCAP,759,707,prostate,cell line,tumor
+MCF10A,MCF10A,1514,1410,breast,cell line,normal
+MCF7,MCF7,13476,12737,breast,cell line,tumor
+MCF7.101,MCF7.101,380,0,breast,cell line,tumor
+MCF7.311,MCF7.311,379,0,breast,cell line,tumor
+MDAMB231,MDAMB231,1515,1411,breast,cell line,tumor
+MNEU.E,MNEU.E,377,355,-666,differentiated,normal
+NEU,NEU,1113,1041,-666,differentiated,normal
+NPC,NPC,1198,1124,central nervous system,differentiated,primary
+NPC.CAS9,NPC.CAS9,1104,1032,central nervous system,differentiated,primary
+NPC.TAK,NPC.TAK,1283,1207,central nervous system,differentiated,primary
+PC3,PC3,12719,12031,prostate,cell line,tumor
+PC3.101,PC3.101,380,0,prostate,cell line,tumor
+PC3.311,PC3.311,380,0,prostate,cell line,tumor
+SKBR3,SKBR3,1514,1410,breast,cell line,tumor
+SKL,SKL,1128,1058,muscle,primary,primary
+SKL.C,SKL.C,1132,1060,muscle,primary,primary
+YAPC,YAPC,10621,10061,pancreas,cell line,tumor
+YAPC.311,YAPC.311,380,0,pancreas,cell line,tumor

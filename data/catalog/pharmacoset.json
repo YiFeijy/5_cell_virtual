@@ -1,0 +1,30 @@
+{
+  "file": "raw/CTRPv2/CTRPv2_PharmacoSet.rds",
+  "date": "2026-11-09",
+  "reader": "R readRDS; direct S4 attributes",
+  "cell_table_rows": 887,
+  "cell_ID_set_matches_2015_measured_table": true,
+  "drug_table_rows": 544,
+  "expanded_original_compound_ID_set_matches_2015_metadata": true,
+  "merged_source_entries": [
+    {
+      "master_cpd_id": "417416///417417",
+      "cpd_name": "tipifarnib-P2///tipifarnib-P1"
+    }
+  ],
+  "sensitivity_info_rows": 395263,
+  "raw_array_shape": [
+    395263,
+    29,
+    2
+  ],
+  "profile_fields": [
+    "aac_published",
+    "ec50_published",
+    "aac_recomputed",
+    "ic50_recomputed",
+    "HS",
+    "E_inf",
+    "EC50"
+  ]
+}

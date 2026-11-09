@@ -1,0 +1,170 @@
+model_id,cell_name,tissue,cellosaurus_id,normal_cells_with_ID,identity_name_source
+ACH-000956,22Rv1,Prostate,CVCL_1045,490,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000026,253J-BV,Bladder/Urinary Tract,CVCL_7937,606,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000323,42-MG-BA,CNS/Brain,CVCL_1798,921,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000905,5637,Bladder/Urinary Tract,CVCL_0126,297,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000973,639-V,Bladder/Urinary Tract,CVCL_1048,371,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000411,769-P,Kidney,CVCL_1050,1066,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000649,786-O,Kidney,CVCL_1051,1663,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-001307,8505C,Thyroid,CVCL_1054,1185,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000219,A-375,Skin,CVCL_0132,780,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000657,A2780,Ovary/Fallopian Tube,CVCL_0134,1338,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000681,A549,Lung,CVCL_0023,591,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000086,ACC-MESO-1,Pleura,CVCL_5113,968,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000880,AGS,Esophagus/Stomach,CVCL_0139,854,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000603,BEN,Lung,CVCL_1082,598,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000228,BICR 31,Head and Neck,CVCL_2312,3029,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000415,BICR 6,Head and Neck,CVCL_2314,1296,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000927,BT-474,Breast,CVCL_0179,1121,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000288,BT-549,Breast,CVCL_1092,1364,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000535,BxPC-3,Pancreas,CVCL_0186,118,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000212,CAL-120,Breast,CVCL_1104,580,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000142,CAL-29,Bladder/Urinary Tract,CVCL_1808,399,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000174,CAL-62,Thyroid,CVCL_1112,1836,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000329,CCF-STTG1,CNS/Brain,CVCL_1118,1809,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000458,CJM,Skin,CVCL_U797,360,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000803,COLO 668,Lung,CVCL_1128,280,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000644,COLO 829,Skin,CVCL_1137,404,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000717,COLO-680N,Esophagus/Stomach,CVCL_1131,4033,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000662,COR-L23,Lung,CVCL_1139,420,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000123,COV434,Ovary/Fallopian Tube,CVCL_2010,1391,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000998,CW-2,Bowel,CVCL_1151,102,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000713,Caov-3,Ovary/Fallopian Tube,CVCL_0201,2184,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000244,DK-MG,CNS/Brain,CVCL_1173,1808,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000749,DMS 273,Lung,CVCL_1176,1314,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000117,EFM-192A,Breast,CVCL_1812,460,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000897,FTC-238,Thyroid,CVCL_2447,355,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000096,G-401,Kidney,CVCL_0270,873,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000098,GAMG,CNS/Brain,CVCL_1226,443,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000738,GB-1,CNS/Brain,CVCL_1227,437,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000047,GCIY,Esophagus/Stomach,CVCL_1228,1020,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000756,GI-1,CNS/Brain,CVCL_1231,304,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000982,GP2d,Bowel,CVCL_2450,898,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000389,H4,CNS/Brain,CVCL_1239,103,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000868,HCC-1195,Lung,CVCL_5127,306,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000012,HCC-827,Lung,CVCL_2063,179,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000374,HCC1143,Breast,CVCL_1245,883,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000277,HCC1419,Breast,CVCL_1251,472,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000624,HCC1806,Breast,CVCL_1258,345,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000971,HCT 116,Bowel,CVCL_0291,616,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000997,HCT-15,Bowel,CVCL_0292,488,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000954,HEC-1-A,Uterus,CVCL_0293,325,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000941,HEC-1-B,Uterus,CVCL_0294,659,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000270,HPAC,Pancreas,CVCL_3517,166,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000552,HT-29,Bowel,CVCL_0320,343,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000625,Hep 3B2.1-7,Liver,CVCL_0326,228,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000014,Hs 294T,Skin,CVCL_0331,369,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000178,Hs 766T,Pancreas,CVCL_0334,309,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000274,Hs 852.T,Skin,CVCL_0950,348,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000976,HuCCT1,Biliary Tract,CVCL_0324,501,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000672,IA-LM,Lung,CVCL_1302,1412,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000882,IGR-1,Skin,CVCL_1303,988,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000966,IGROV1,Ovary/Fallopian Tube,CVCL_1304,1623,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000569,IST-MES1,Pleura,CVCL_1311,522,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000396,J82,Bladder/Urinary Tract,CVCL_0359,1229,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000734,JHH-5,Liver,CVCL_0364,459,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000237,JHOM-1,Ovary/Fallopian Tube,CVCL_4644,196,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000622,KNS-42,CNS/Brain,CVCL_0378,729,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000445,KNS-60,CNS/Brain,CVCL_2798,406,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000479,KNS-81,CNS/Brain,CVCL_2799,484,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000281,KP-2,Pancreas,CVCL_3004,172,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000486,KU-19-19,Bladder/Urinary Tract,CVCL_1344,463,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000873,KYSE-270,Esophagus/Stomach,CVCL_1350,733,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000824,KYSE-510,Esophagus/Stomach,CVCL_1354,694,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000769,LK-2,Lung,CVCL_1377,703,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000255,LMSU,Esophagus/Stomach,CVCL_4849,948,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000595,LN-229,CNS/Brain,CVCL_0393,698,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000977,LNCaP clone FGC,Prostate,CVCL_1379,2345,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000750,LOX IMVI,Skin,CVCL_1381,519,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000252,LS1034,Bowel,CVCL_1382,1404,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000444,LU99,Lung,CVCL_3015,450,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000390,LUDLU-1,Lung,CVCL_2582,411,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000471,Li-7,Liver,CVCL_3840,384,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000950,LoVo,Bowel,CVCL_0399,908,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000796,MCAS,Ovary/Fallopian Tube,CVCL_3020,231,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000884,MDA-MB-435S,Skin,CVCL_0622,1256,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000849,MDA-MB-468,Breast,CVCL_0419,673,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000449,MES-SA,Uterus,CVCL_1404,315,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000601,MIA PaCa-2,Pancreas,CVCL_0428,837,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000335,MSTO-211H,Pleura,CVCL_1430,642,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000477,Malme-3M,Skin,CVCL_1438,424,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000866,NCI-H1048,Lung,CVCL_1453,563,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000510,NCI-H1299,Lung,CVCL_0060,1265,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000666,NCI-H1355,Lung,CVCL_1464,1111,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000589,NCI-H1437,Lung,CVCL_1472,324,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000921,NCI-H157-DM,Lung,CVCL_0463,266,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000916,NCI-H1573,Lung,CVCL_1478,336,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000015,NCI-H1581,Lung,CVCL_1479,1185,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000035,NCI-H1650,Lung,CVCL_1483,905,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000021,NCI-H1693,Lung,CVCL_1488,928,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000888,NCI-H1793,Lung,CVCL_1496,779,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000434,NCI-H1915,Lung,CVCL_1505,633,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000587,NCI-H1975,Lung,CVCL_1511,264,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000886,NCI-H2009,Lung,CVCL_1514,457,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000785,NCI-H2126,Lung,CVCL_1532,609,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000367,NCI-H226,Pleura,CVCL_1544,1930,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000900,NCI-H23,Lung,CVCL_1547,720,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000875,NCI-H2347,Lung,CVCL_1550,1396,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000186,NCI-H2444,Lung,CVCL_1552,450,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000837,NCI-H322,Lung,CVCL_1556,577,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000343,NCI-H522,Lung,CVCL_1567,465,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000416,NCI-H838,Lung,CVCL_1594,1225,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000292,NCI-H841,Lung,CVCL_1595,1074,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000427,NCI-N87,Esophagus/Stomach,CVCL_1603,149,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000001,NIH:OVCAR-3,Ovary/Fallopian Tube,CVCL_0465,208,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000200,NMC-G1,CNS/Brain,CVCL_1608,400,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000911,NUGC-3,Esophagus/Stomach,CVCL_1612,669,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000704,OAW42,Ovary/Fallopian Tube,CVCL_1615,1512,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000776,ONS-76,CNS/Brain,CVCL_1624,500,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000159,OS-RC-2,Kidney,CVCL_1626,564,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000527,OVISE,Ovary/Fallopian Tube,CVCL_3116,363,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000022,PA-TU-8988S,Pancreas,CVCL_1846,532,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000023,PA-TU-8988T,Pancreas,CVCL_1847,587,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000090,PC-3,Prostate,CVCL_0035,720,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000235,Panc 04.03,Pancreas,CVCL_1636,505,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000347,QGP-1,Pancreas,CVCL_3143,232,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000189,RCC10RGB,Kidney,CVCL_1647,3284,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000565,RCM-1,Bowel,CVCL_1648,1758,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000791,RERF-LC-Ad1,Lung,CVCL_1651,2092,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000774,RERF-LC-Ad2,Lung,CVCL_1652,123,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000833,RH-30,Soft Tissue,CVCL_0041,695,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000701,RMUG-S,Ovary/Fallopian Tube,CVCL_3158,282,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000037,S-117,Soft Tissue,CVCL_1674,182,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000764,SH-10-TC,Esophagus/Stomach,CVCL_5167,2070,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-001190,SK-MEL-2,Skin,CVCL_0069,2237,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000822,SK-MEL-24,Skin,CVCL_0599,561,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000423,SK-MEL-3,Skin,CVCL_0550,2034,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000341,SK-N-FI,Peripheral Nervous System,CVCL_1702,320,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000149,SK-N-SH,Peripheral Nervous System,CVCL_0531,302,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000939,SK-UT-1,Uterus,CVCL_0533,636,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000504,SNB75,CNS/Brain,CVCL_1706,829,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000618,SNU-1041,Head and Neck,CVCL_L085,497,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000209,SNU-1079,Biliary Tract,CVCL_5008,1370,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000368,SNU-1105,CNS/Brain,CVCL_5010,753,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000715,SNU-1214,Head and Neck,CVCL_5017,249,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000268,SNU-245,Biliary Tract,CVCL_5038,409,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000517,SNU-410,Pancreas,CVCL_5059,521,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000532,SNU-61,Bowel,CVCL_5078,209,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000407,SNU-685,Uterus,CVCL_5083,491,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000537,SNU-761,Liver,CVCL_5089,292,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000460,SNU-8,Ovary/Fallopian Tube,CVCL_5096,178,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000280,SNU-840,Ovary/Fallopian Tube,CVCL_5100,571,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000967,SNU-C2A,Bowel,CVCL_1709,217,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000652,SUIT-2,Pancreas,CVCL_3172,686,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000842,SW 480,Bowel,CVCL_0546,302,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000669,SW 900,Lung,CVCL_1731,390,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000958,SW48,Bowel,CVCL_1724,536,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000163,SW579,Head and Neck,CVCL_3603,350,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000680,SW948,Bowel,CVCL_0632,107,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000553,Sq-1,Lung,CVCL_4900,1684,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000085,T3M-4,Pancreas,CVCL_4056,129,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000502,TCC-PAN2,Pancreas,CVCL_3178,760,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000488,TE-11,Esophagus/Stomach,CVCL_1761,820,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000605,TE-6,Esophagus/Stomach,CVCL_1765,430,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000452,TE-8,Esophagus/Stomach,CVCL_1766,177,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000397,TEN,Uterus,CVCL_E063,2730,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000495,TUHR4TKB,Kidney,CVCL_5957,422,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000579,UACC-257,Skin,CVCL_1779,726,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000834,UM-UC-1,Bladder/Urinary Tract,CVCL_2743,1957,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-001239,WM-266-4,Skin,CVCL_2765,157,DepMap24Q4 Model.csv matched by exact DepMap ID
+ACH-000661,WM1799,Skin,CVCL_A341,456,DepMap24Q4 Model.csv matched by exact DepMap ID
