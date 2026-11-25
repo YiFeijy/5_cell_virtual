@@ -1,0 +1,574 @@
+{
+  "raw_root_scanned": "/home/data2/jiangyun/5_cell_virtual/3_MVP/data/raw",
+  "total_datasets": 17,
+  "total_files": 100,
+  "total_bytes": 142553297969,
+  "total_size_human": "132.76 GB",
+  "directory_summary": [
+    {
+      "dataset": "CCLE_DepMap_24Q4",
+      "n_files": 4,
+      "total_bytes": 507619163,
+      "total_size_human": "484.10 MB",
+      "file_types": ".csv"
+    },
+    {
+      "dataset": "CTRPv2",
+      "n_files": 3,
+      "total_bytes": 609475695,
+      "total_size_human": "581.24 MB",
+      "file_types": ".rds, .zip"
+    },
+    {
+      "dataset": "CellModelPassports",
+      "n_files": 2,
+      "total_bytes": 186967,
+      "total_size_human": "182.58 KB",
+      "file_types": ".csv, .csv.gz"
+    },
+    {
+      "dataset": "DTP_SingleCell",
+      "n_files": 2,
+      "total_bytes": 71628800,
+      "total_size_human": "68.31 MB",
+      "file_types": ".tar"
+    },
+    {
+      "dataset": "GDSC",
+      "n_files": 4,
+      "total_bytes": 241745642,
+      "total_size_human": "230.55 MB",
+      "file_types": ".xlsx, .zip"
+    },
+    {
+      "dataset": "HMS_Hafner71_GR",
+      "n_files": 0,
+      "total_bytes": 0,
+      "total_size_human": "0.00 B",
+      "file_types": ""
+    },
+    {
+      "dataset": "HMS_LINCS",
+      "n_files": 3,
+      "total_bytes": 14774272,
+      "total_size_human": "14.09 MB",
+      "file_types": ".xls"
+    },
+    {
+      "dataset": "LINCS_2020",
+      "n_files": 5,
+      "total_bytes": 35989458087,
+      "total_size_human": "33.52 GB",
+      "file_types": ".gctx, .txt"
+    },
+    {
+      "dataset": "LINCS_GSE70138",
+      "n_files": 8,
+      "total_bytes": 18915842680,
+      "total_size_human": "17.62 GB",
+      "file_types": ".gctx.gz, .txt.gz"
+    },
+    {
+      "dataset": "LINCS_GSE92742",
+      "n_files": 9,
+      "total_bytes": 73772826134,
+      "total_size_human": "68.71 GB",
+      "file_types": ".gctx.gz, .txt.gz"
+    },
+    {
+      "dataset": "MIXseq",
+      "n_files": 29,
+      "total_bytes": 1879138981,
+      "total_size_human": "1.75 GB",
+      "file_types": ".rds, .txt, .xlsx, .zip"
+    },
+    {
+      "dataset": "NCI_TPW",
+      "n_files": 1,
+      "total_bytes": 897298727,
+      "total_size_human": "855.73 MB",
+      "file_types": ".txt.gz"
+    },
+    {
+      "dataset": "Novartis_DRUGseq",
+      "n_files": 2,
+      "total_bytes": 2727765430,
+      "total_size_human": "2.54 GB",
+      "file_types": ".RData"
+    },
+    {
+      "dataset": "PRISM_19Q4",
+      "n_files": 9,
+      "total_bytes": 402290704,
+      "total_size_human": "383.65 MB",
+      "file_types": ".csv, .txt"
+    },
+    {
+      "dataset": "PRISM_24Q2",
+      "n_files": 11,
+      "total_bytes": 1484816519,
+      "total_size_human": "1.38 GB",
+      "file_types": ".csv, .txt"
+    },
+    {
+      "dataset": "Tahoe_100M",
+      "n_files": 6,
+      "total_bytes": 2366620050,
+      "total_size_human": "2.20 GB",
+      "file_types": ".parquet"
+    },
+    {
+      "dataset": "sciPlex",
+      "n_files": 2,
+      "total_bytes": 2671810118,
+      "total_size_human": "2.49 GB",
+      "file_types": ".h5ad"
+    }
+  ],
+  "v0_core_datasets": {
+    "HMS_LINCS": {
+      "status": "ok",
+      "files": [
+        {
+          "file": "Screen20237_LJP_processedData1.xls",
+          "bytes": 5101568,
+          "sheets": [
+            "Meta",
+            "Data Columns",
+            "Data"
+          ],
+          "n_wells": 12420
+        },
+        {
+          "file": "Screen20238_LJP_processedData2.xls",
+          "bytes": 4603904,
+          "sheets": [
+            "Meta",
+            "Data Columns",
+            "Data"
+          ],
+          "n_wells": 12072
+        },
+        {
+          "file": "Screen20239_LJP_processedData3.xls",
+          "bytes": 5068800,
+          "sheets": [
+            "Meta",
+            "Data Columns",
+            "Data"
+          ],
+          "n_wells": 12420
+        }
+      ],
+      "total_wells": 36912,
+      "columns": [
+        "Cell",
+        "Small Molecule",
+        "Small Mol Concentration",
+        "Small Mol Conc Unit",
+        "LJP Library Plate",
+        "Replicate",
+        "Assay Well",
+        "Timepoint",
+        "Timepoint Unit",
+        "Total Cell Count Before Treatment",
+        "Total Cell Count After Treatment",
+        "Total Control Cell Count",
+        "Relative Cell Count",
+        "Relative Growth Rate After Treatment",
+        "Unnamed: 14",
+        "Barcode",
+        "HMSLid",
+        "DrugName",
+        "BRDid",
+        "DRUGNAME",
+        "CellLine",
+        "TreatmentFile",
+        "DesignNumber",
+        "Untrt",
+        "pert_type",
+        "Date",
+        "index",
+        "source_file"
+      ],
+      "cells": [
+        "BT20",
+        "HS578T",
+        "MCF10A",
+        "MCF7",
+        "MDAMB231",
+        "SKBR3"
+      ],
+      "n_cells": 6,
+      "n_unique_drugs_BRDid": 107,
+      "doses_uM": [
+        0.04,
+        0.12,
+        0.37,
+        1.11,
+        3.33,
+        10.0
+      ],
+      "timepoints_h": [
+        72
+      ],
+      "conc_units": [
+        "uM"
+      ],
+      "library_plates": [
+        "LJP5",
+        "LJP6"
+      ],
+      "value_stats": {
+        "N0_before_treatment": {
+          "min": 513.3646,
+          "median": 1235.3854,
+          "max": 2543.4583
+        },
+        "Nt_after_treatment": {
+          "min": 1.0,
+          "median": 2692.0,
+          "max": 12883.0
+        },
+        "Nc_control_72h": {
+          "min": 3124.5385,
+          "median": 4156.1667,
+          "max": 11155.6667
+        },
+        "relative_cell_count_Nt_over_Nc": {
+          "min": 0.0002,
+          "q25": 0.2964,
+          "median": 0.6162,
+          "q75": 0.9203,
+          "max": 1.3087
+        },
+        "relative_net_growth_Nt_minus_N0_over_Nc_minus_N0": {
+          "min": -0.7592,
+          "q25": 0.0328,
+          "median": 0.4733,
+          "q75": 0.8921,
+          "max": 1.5096,
+          "negative_well_count_net_killing": 7668,
+          "negative_well_fraction": 0.2077
+        }
+      },
+      "example_wells_BT20_afatinib_0.04uM": [
+        {
+          "source_file": "Screen20237_LJP_processedData1.xls",
+          "LJP Library Plate": "LJP6",
+          "CellLine": "BT20",
+          "BRDid": "BRD-A58767537",
+          "Small Mol Concentration": 0.04,
+          "Timepoint": 72,
+          "Total Cell Count Before Treatment": 1657.7396,
+          "Total Cell Count After Treatment": 3973.0,
+          "Total Control Cell Count": 5505.6667,
+          "Relative Cell Count": 0.72162,
+          "Relative Growth Rate After Treatment": 0.60169
+        },
+        {
+          "source_file": "Screen20237_LJP_processedData1.xls",
+          "LJP Library Plate": "LJP6",
+          "CellLine": "BT20",
+          "BRDid": "BRD-A58767537",
+          "Small Mol Concentration": 0.04,
+          "Timepoint": 72,
+          "Total Cell Count Before Treatment": 1657.7396,
+          "Total Cell Count After Treatment": 4132.0,
+          "Total Control Cell Count": 5505.6667,
+          "Relative Cell Count": 0.7505,
+          "Relative Growth Rate After Treatment": 0.64301
+        },
+        {
+          "source_file": "Screen20237_LJP_processedData1.xls",
+          "LJP Library Plate": "LJP6",
+          "CellLine": "BT20",
+          "BRDid": "BRD-A58767537",
+          "Small Mol Concentration": 0.04,
+          "Timepoint": 72,
+          "Total Cell Count Before Treatment": 1657.7396,
+          "Total Cell Count After Treatment": 3836.0,
+          "Total Control Cell Count": 5505.6667,
+          "Relative Cell Count": 0.69674,
+          "Relative Growth Rate After Treatment": 0.56609
+        }
+      ]
+    },
+    "LINCS_GSE70138": {
+      "status": "ok",
+      "gene_info": {
+        "total_genes": 12328,
+        "measured_landmark_pr_is_lm_1": 978,
+        "inferred_genes": 11350,
+        "columns": [
+          "pr_gene_id",
+          "pr_gene_symbol",
+          "pr_gene_title",
+          "pr_is_lm",
+          "pr_is_bing"
+        ]
+      },
+      "cell_info": {
+        "rows_in_cell_info_table": 98,
+        "unique_cell_ids_observed_in_sig_info": 41,
+        "unique_cell_ids_with_trt_cp": 30,
+        "hms_6_cells_present_in_trt_cp": [
+          "BT20",
+          "HS578T",
+          "MCF10A",
+          "MCF7",
+          "MDAMB231",
+          "SKBR3"
+        ]
+      },
+      "pert_info": {
+        "total_perts": 2170,
+        "trt_cp_perts": 1796,
+        "trt_cp_restricted_or_missing_smiles": 2,
+        "columns": [
+          "pert_id",
+          "canonical_smiles",
+          "inchi_key",
+          "pert_iname",
+          "pert_type"
+        ]
+      },
+      "sig_info": {
+        "total_signatures": 118050,
+        "pert_type_counts": {
+          "trt_cp": 107404,
+          "ctl_vehicle": 6467,
+          "trt_xpr": 3882,
+          "ctl_vector": 209,
+          "ctl_untrt": 88
+        },
+        "trt_cp_signatures": 107404,
+        "trt_cp_time_distribution": {
+          "24 h": 101360,
+          "3 h": 4950,
+          "6 h": 1094
+        },
+        "ljp005_006_trt_cp_signatures": 14832,
+        "ljp005_006_time_distribution": {
+          "24 h": 9882,
+          "3 h": 4950
+        },
+        "columns": [
+          "sig_id",
+          "pert_id",
+          "pert_iname",
+          "pert_type",
+          "cell_id",
+          "pert_idose",
+          "pert_itime",
+          "distil_id"
+        ]
+      },
+      "inst_info": {
+        "total_instances": 345976,
+        "pert_type_counts": {
+          "trt_cp": 314422,
+          "ctl_vehicle": 19258,
+          "trt_xpr": 11421,
+          "ctl_vector": 614,
+          "ctl_untrt": 261
+        },
+        "ctl_vehicle_instances": 19258,
+        "columns": [
+          "inst_id",
+          "cell_id",
+          "det_plate",
+          "det_well",
+          "pert_mfc_id",
+          "pert_dose",
+          "pert_dose_unit",
+          "pert_id",
+          "pert_iname",
+          "pert_type",
+          "pert_time",
+          "pert_time_unit"
+        ]
+      },
+      "unpacked_gctx": {
+        "Level3": {
+          "file": "GSE70138_Broad_LINCS_Level3_INF_mlr12k_n345976x12328_2017-03-06.gctx",
+          "bytes": 17072655504,
+          "size_human": "15.90 GB",
+          "shape_rows_x_genes": [
+            345976,
+            12328
+          ],
+          "dtype": "float32",
+          "sample_64x978_min": 0.0,
+          "sample_64x978_median": 9.6255,
+          "sample_64x978_max": 15.0
+        },
+        "Level5": {
+          "file": "GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx",
+          "bytes": 5824120558,
+          "size_human": "5.42 GB",
+          "shape_rows_x_genes": [
+            118050,
+            12328
+          ],
+          "dtype": "float32",
+          "sample_64x978_min": -10.0,
+          "sample_64x978_median": -0.0008,
+          "sample_64x978_max": 10.0
+        }
+      }
+    },
+    "CCLE_DepMap_24Q4": {
+      "status": "ok",
+      "model_csv_rows": 2105,
+      "model_csv_key_columns": [
+        "ModelID",
+        "CellLineName",
+        "StrippedCellLineName",
+        "RRID",
+        "OncotreeLineage",
+        "SangerModelID",
+        "COSMICID"
+      ],
+      "expression_matrix": {
+        "file": "OmicsExpressionProteinCodingGenesTPMLogp1.csv",
+        "bytes": 506628654,
+        "size_human": "483.16 MB",
+        "n_models_with_RNA": 1673,
+        "n_protein_coding_genes": 19193,
+        "example_gene_columns": [
+          "TSPAN6 (7105)",
+          "TNMD (64102)",
+          "DPM1 (8813)",
+          "SCYL3 (57147)",
+          "C1orf112 (55732)"
+        ],
+        "unit": "log2(TPM + 1)",
+        "sample_5x200_min": 0.0,
+        "sample_5x200_median": 3.1424,
+        "sample_5x200_max": 9.4884
+      },
+      "hms_6_cells_coverage_audit": [
+        {
+          "hms_cell_name": "BT20",
+          "ModelID": "ACH-000536",
+          "OncotreeLineage": "Breast",
+          "OncotreePrimaryDisease": "Invasive Breast Carcinoma",
+          "has_24Q4_RNA_row": true
+        },
+        {
+          "hms_cell_name": "HS578T",
+          "ModelID": "ACH-000148",
+          "OncotreeLineage": "Breast",
+          "OncotreePrimaryDisease": "Invasive Breast Carcinoma",
+          "has_24Q4_RNA_row": true
+        },
+        {
+          "hms_cell_name": "MCF10A",
+          "ModelID": "ACH-001357",
+          "OncotreeLineage": "Breast",
+          "OncotreePrimaryDisease": "Non-Cancerous",
+          "has_24Q4_RNA_row": false
+        },
+        {
+          "hms_cell_name": "MCF7",
+          "ModelID": "ACH-000019",
+          "OncotreeLineage": "Breast",
+          "OncotreePrimaryDisease": "Invasive Breast Carcinoma",
+          "has_24Q4_RNA_row": true
+        },
+        {
+          "hms_cell_name": "MDAMB231",
+          "ModelID": "ACH-000768",
+          "OncotreeLineage": "Breast",
+          "OncotreePrimaryDisease": "Invasive Breast Carcinoma",
+          "has_24Q4_RNA_row": true
+        },
+        {
+          "hms_cell_name": "SKBR3",
+          "ModelID": "ACH-000017",
+          "OncotreeLineage": "Breast",
+          "OncotreePrimaryDisease": "Invasive Breast Carcinoma",
+          "has_24Q4_RNA_row": true
+        }
+      ]
+    }
+  },
+  "extension_datasets_for_later_iterations": {
+    "LINCS_2020": {
+      "role_in_roadmap": "v1–v3 大规模小分子多时间点转录监督（核心化学泛化杠杆）",
+      "total_trt_cp_signatures": 720216,
+      "qc_pass_trt_cp_signatures": 510270,
+      "unique_cells_trt_cp": 230,
+      "unique_pert_ids_in_compoundinfo": 34419,
+      "top_timepoints_h": {
+        "24.0": 559163,
+        "6.0": 138006,
+        "3.0": 11998,
+        "4.0": 4704,
+        "48.0": 4372,
+        "72.0": 796
+      }
+    },
+    "CTRPv2_2015": {
+      "role_in_roadmap": "v1–v3 多谱系 72h 实测 ATP 药敏训练与筛选排序评测（剔除 49 组合，留 496 单药）",
+      "compound_meta_rows": 545,
+      "cell_line_meta_rows": 1107,
+      "dose_level_file_bytes": 331401478
+    },
+    "CellModelPassports": {
+      "role_in_roadmap": "v3 训练期细胞固有 72h 对照倍增倍数辅助校准（绝不作测试必填输入）",
+      "rows": 1041,
+      "unique_models": 964,
+      "columns": [
+        "model_name",
+        "model_id",
+        "seeding_density",
+        "day4_day1_ratio",
+        "replicates",
+        "st_dev",
+        "doubling_time_hours"
+      ]
+    },
+    "GDSC": {
+      "role_in_roadmap": "外部 72h 跨测定药敏验证（GDSC1 染料 / GDSC2 ATP）",
+      "n_files": 4,
+      "total_size_human": "230.55 MB"
+    },
+    "PRISM_19Q4": {
+      "role_in_roadmap": "外部 120h 混合培养条形码药敏盲测（~900 非 CTRP 跨模态新药）",
+      "n_files": 9,
+      "total_size_human": "383.65 MB"
+    },
+    "PRISM_24Q2": {
+      "role_in_roadmap": "外部 120h 新版 PRISM 复验与 72h→120h 标度检验",
+      "n_files": 11,
+      "total_size_human": "1.38 GB"
+    },
+    "NCI_TPW": {
+      "role_in_roadmap": "外部跨平台（微阵列）60 细胞 × 15 药 × 2/6/24h 时间动态盲测",
+      "n_files": 1,
+      "total_size_human": "855.73 MB"
+    },
+    "Novartis_DRUGseq": {
+      "role_in_roadmap": "外部 U2OS × 4,343 药跨平台 MoA 检索验证（不含实测活性标签）",
+      "n_files": 2,
+      "total_size_human": "2.54 GB"
+    },
+    "MIXseq": {
+      "role_in_roadmap": "单细胞药物响应异质性与 3–48h trametinib 时序验证",
+      "n_files": 29,
+      "total_size_human": "1.75 GB"
+    },
+    "sciPlex": {
+      "role_in_roadmap": "单细胞核转录组响应与群体组成解耦（留工作二）",
+      "n_files": 2,
+      "total_size_human": "2.49 GB"
+    },
+    "Tahoe_100M": {
+      "role_in_roadmap": "单细胞大规模扰动分片与元数据（留工作二）",
+      "n_files": 6,
+      "total_size_human": "2.20 GB"
+    }
+  }
+}

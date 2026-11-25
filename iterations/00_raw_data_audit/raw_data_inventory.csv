@@ -1,0 +1,18 @@
+dataset,n_files,total_bytes,total_size_human,file_types
+CCLE_DepMap_24Q4,4,507619163,484.10 MB,.csv
+CTRPv2,3,609475695,581.24 MB,".rds, .zip"
+CellModelPassports,2,186967,182.58 KB,".csv, .csv.gz"
+DTP_SingleCell,2,71628800,68.31 MB,.tar
+GDSC,4,241745642,230.55 MB,".xlsx, .zip"
+HMS_Hafner71_GR,0,0,0.00 B,
+HMS_LINCS,3,14774272,14.09 MB,.xls
+LINCS_2020,5,35989458087,33.52 GB,".gctx, .txt"
+LINCS_GSE70138,8,18915842680,17.62 GB,".gctx.gz, .txt.gz"
+LINCS_GSE92742,9,73772826134,68.71 GB,".gctx.gz, .txt.gz"
+MIXseq,29,1879138981,1.75 GB,".rds, .txt, .xlsx, .zip"
+NCI_TPW,1,897298727,855.73 MB,.txt.gz
+Novartis_DRUGseq,2,2727765430,2.54 GB,.RData
+PRISM_19Q4,9,402290704,383.65 MB,".csv, .txt"
+PRISM_24Q2,11,1484816519,1.38 GB,".csv, .txt"
+Tahoe_100M,6,2366620050,2.20 GB,.parquet
+sciPlex,2,2671810118,2.49 GB,.h5ad
