@@ -50,7 +50,7 @@ iter-05  v3 迭代：双轨动态状态空间模型（dyn_state_only）+ 19k 受
 | :--- | :--- | :--- | :--- | :--- |
 | [00_raw_data_audit](00_raw_data_audit/README.md) | `iter-00` | 已下载原始数据全貌、v0 三大核心库深度剖析、扩展库规划 | `python iterations/00_raw_data_audit/inspect_raw_data.py` | 已完成并提交 |
 | [01_v0_preprocessing](01_v0_preprocessing/README.md) | `iter-01` | 最初版本 (v0) 数据清洗、HMS 原孔重算、L3/L5 对齐 QC、特征与 5 折划分 | `python iterations/01_v0_preprocessing/run_preprocess_v0.py` | 已完成并提交 |
-| [02_v0_baseline_and_joint_model](02_v0_baseline_and_joint_model/README.md) | `iter-02` | 最初版本 (v0) 计算策略、基线与 8 组神经网络代码、完整复现结果与问题诊断 | `python iterations/02_v0_baseline_and_joint_model/run_v0_experiment.py --full` | 已完成并提交 |
+| `02_v0_baseline_and_joint_model`（下一步提交） | `iter-02` | 最初版本 (v0) 计算策略、基线与 8 组神经网络代码、完整复现结果与问题诊断 | 待提交 | 待提交（待 `iter-02` 实现并核验后合入） |
 | `03_v1_...`（待后续提交） | `iter-03+` | 扩大药物规模（LINCS 2020 + CTRPv2）→ 反泄漏 → 动态状态建模 | 待后续按轮次独立提交 | 规划中 |
 
 ---
@@ -76,11 +76,9 @@ iter-05  v3 迭代：双轨动态状态空间模型（dyn_state_only）+ 19k 受
    # 第 1 步：亲手复现最初版本 (v0) 的完整数据预处理并核对数值一致
    python iterations/01_v0_preprocessing/run_preprocess_v0.py
 
-   # 第 2 步：亲手跑一遍最初版本 (v0) 的基线、神经网络、排序与信息诊断
-   #   快速试跑（仅第 0 折 + 1 个种子，约 10 秒）：
-   python iterations/02_v0_baseline_and_joint_model/run_v0_experiment.py --quick
-   #   完整复现（5 折新药 + 高剂量外推 + 3 种子 + 基线 + Bootstrap CI + 信息诊断，约 1-2 分钟）：
-   python iterations/02_v0_baseline_and_joint_model/run_v0_experiment.py --full --workers 6
+   # 第 2 步（将在下一步 iter-02 提交中上线）：亲手跑一遍最初版本 (v0) 的基线、神经网络、排序与信息诊断
+   # python iterations/02_v0_baseline_and_joint_model/run_v0_experiment.py --quick
+   # python iterations/02_v0_baseline_and_joint_model/run_v0_experiment.py --full --workers 6
    ```
 
 > **说明**：本分支不修改 `main` 上原有已冻结的 `src/`、`data/training/` 和 `results/` 文件；所有分步教学与迭代脚本及复现输出均集中在 `iterations/` 目录下，方便逐 commit 对比阅读和独立运行。
