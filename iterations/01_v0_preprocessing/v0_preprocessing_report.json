@@ -1,0 +1,1901 @@
+{
+  "iteration": "iter-01",
+  "pipeline": "initial_v0_frozen_preprocessing",
+  "repo_branch_expected": "step-by-step-repro",
+  "unpacked_root": "/home/data2/jiangyun/5_cell_virtual/3_MVP/data/unpacked",
+  "environment": {
+    "python": "3.12.12",
+    "numpy": "2.0.1",
+    "pandas": "2.3.3",
+    "h5py": "3.16.0",
+    "rdkit": "2025.09.4",
+    "xlrd": "2.0.2"
+  },
+  "frozen_definition_boundary": "身份、化学/骨架分组、候选签名映射采用已审计data/reference；不扩展或重定义v0",
+  "funnel": [
+    {
+      "step": 1,
+      "stage": "HMS_library_conditions",
+      "records_in": 4140,
+      "records_out": 4140,
+      "records_dropped": 0,
+      "conditions_out": 3852,
+      "drop_reason": "原孔汇总；无库板记录剔除"
+    },
+    {
+      "step": 2,
+      "stage": "CCLE_background_and_parseable_structure",
+      "records_in": 4140,
+      "records_out": 3420,
+      "records_dropped": 720,
+      "conditions_out": 3180,
+      "drop_reason": "MCF10A 缺 RNA 690条；其余细胞 WH-4-025/restricted 30条；共720条"
+    },
+    {
+      "step": 3,
+      "stage": "24h_signature_available",
+      "records_in": 3420,
+      "records_out": 3410,
+      "records_dropped": 10,
+      "conditions_out": 3171,
+      "drop_reason": "原始sig_info无匹配24h签名：10条（明细见JSON）"
+    },
+    {
+      "step": 4,
+      "stage": "technical_QC_at_least_two_instances",
+      "records_in": 3410,
+      "records_out": 3364,
+      "records_dropped": 46,
+      "conditions_out": 3133,
+      "drop_reason": "46条单实例签名；无数值无效或同板对照不足导致的额外剔除"
+    },
+    {
+      "step": 5,
+      "stage": "weights_features_splits_verified",
+      "records_in": 3364,
+      "records_out": 3364,
+      "records_dropped": 0,
+      "conditions_out": 3133,
+      "drop_reason": "无剔除；精确parity与零组泄漏核对"
+    }
+  ],
+  "stage1": {
+    "source_files": [
+      {
+        "name": "Screen20237_LJP_processedData1.xls",
+        "wells": 12420,
+        "sha256": "da4df260af5ff51d931b11d35b3cb82aa4e90ac1160ab9a0a73dcd5ca6e800a6"
+      },
+      {
+        "name": "Screen20238_LJP_processedData2.xls",
+        "wells": 12072,
+        "sha256": "1bd97d65e30d0c75c3669aa43e817b279e55f1c5166f957fe6342cf4ee3751f7"
+      },
+      {
+        "name": "Screen20239_LJP_processedData3.xls",
+        "wells": 12420,
+        "sha256": "277571d0718b704609976971b839201faa4f019b3006f15cecb4f39cf7f279fd"
+      }
+    ],
+    "raw_wells": 36912,
+    "biorepeat_records": 12420,
+    "library_records": 4140,
+    "unique_conditions": 3852,
+    "time_h": 72,
+    "dose_unit": "uM",
+    "max_abs_diff_vs_reference": {
+      "relative_cell_count": 2.220446049250313e-16,
+      "relative_net_growth": 2.220446049250313e-16,
+      "relative_cell_count_sd": 9.974659986866641e-17,
+      "n_bio": 0.0
+    },
+    "n_bio_all_three": true,
+    "technical_wells_per_biorepeat": {
+      "2": 348,
+      "3": 12072
+    },
+    "hash_rule": "HMSv2_LIB_ + sha256(library|cell|pert|dose:.9g)[:16]",
+    "assembly_label_source": "已逐条核对原孔的 hms_conditions.csv 冻结精度"
+  },
+  "example_trace": {
+    "condition": "LJP006 | BT20 | afatinib | BRD-A58767537 | 0.04 uM",
+    "raw_wells": [
+      {
+        "source_file": "Screen20237_LJP_processedData1.xls",
+        "original_excel_row": 2,
+        "Total Cell Count Before Treatment": 1657.7396,
+        "Total Cell Count After Treatment": 3973.0,
+        "Total Control Cell Count": 5505.6667,
+        "relative_cell_count": 0.72162,
+        "relative_net_growth": 0.60169
+      },
+      {
+        "source_file": "Screen20237_LJP_processedData1.xls",
+        "original_excel_row": 3,
+        "Total Cell Count Before Treatment": 1657.7396,
+        "Total Cell Count After Treatment": 4132.0,
+        "Total Control Cell Count": 5505.6667,
+        "relative_cell_count": 0.7505,
+        "relative_net_growth": 0.64301
+      },
+      {
+        "source_file": "Screen20237_LJP_processedData1.xls",
+        "original_excel_row": 4,
+        "Total Cell Count Before Treatment": 1657.7396,
+        "Total Cell Count After Treatment": 3836.0,
+        "Total Control Cell Count": 5505.6667,
+        "relative_cell_count": 0.69674,
+        "relative_net_growth": 0.56609
+      },
+      {
+        "source_file": "Screen20238_LJP_processedData2.xls",
+        "original_excel_row": 2,
+        "Total Cell Count Before Treatment": 1334.6771,
+        "Total Cell Count After Treatment": 2876.0,
+        "Total Control Cell Count": 3970.9103,
+        "relative_cell_count": 0.72427,
+        "relative_net_growth": 0.58467
+      },
+      {
+        "source_file": "Screen20238_LJP_processedData2.xls",
+        "original_excel_row": 3,
+        "Total Cell Count Before Treatment": 1334.6771,
+        "Total Cell Count After Treatment": 3293.0,
+        "Total Control Cell Count": 3970.9103,
+        "relative_cell_count": 0.82928,
+        "relative_net_growth": 0.74285
+      },
+      {
+        "source_file": "Screen20238_LJP_processedData2.xls",
+        "original_excel_row": 4,
+        "Total Cell Count Before Treatment": 1334.6771,
+        "Total Cell Count After Treatment": 2983.0,
+        "Total Control Cell Count": 3970.9103,
+        "relative_cell_count": 0.75121,
+        "relative_net_growth": 0.62526
+      },
+      {
+        "source_file": "Screen20239_LJP_processedData3.xls",
+        "original_excel_row": 2,
+        "Total Cell Count Before Treatment": 1097.2552,
+        "Total Cell Count After Treatment": 2735.0,
+        "Total Control Cell Count": 3769.5385,
+        "relative_cell_count": 0.72555,
+        "relative_net_growth": 0.61286
+      },
+      {
+        "source_file": "Screen20239_LJP_processedData3.xls",
+        "original_excel_row": 3,
+        "Total Cell Count Before Treatment": 1097.2552,
+        "Total Cell Count After Treatment": 2950.0,
+        "Total Control Cell Count": 3769.5385,
+        "relative_cell_count": 0.78259,
+        "relative_net_growth": 0.69332
+      },
+      {
+        "source_file": "Screen20239_LJP_processedData3.xls",
+        "original_excel_row": 4,
+        "Total Cell Count Before Treatment": 1097.2552,
+        "Total Cell Count After Treatment": 2938.0,
+        "Total Control Cell Count": 3769.5385,
+        "relative_cell_count": 0.77941,
+        "relative_net_growth": 0.68883
+      }
+    ],
+    "biorepeat_means": [
+      {
+        "library_id": "LJP006",
+        "cell_id": "BT20",
+        "pert_id": "BRD-A58767537",
+        "dose_uM": 0.04,
+        "source_file": "Screen20237_LJP_processedData1.xls",
+        "relative_cell_count": 0.722953333333333,
+        "relative_net_growth": 0.603596666666667,
+        "n_technical_rows": 3
+      },
+      {
+        "library_id": "LJP006",
+        "cell_id": "BT20",
+        "pert_id": "BRD-A58767537",
+        "dose_uM": 0.04,
+        "source_file": "Screen20238_LJP_processedData2.xls",
+        "relative_cell_count": 0.768253333333333,
+        "relative_net_growth": 0.650926666666667,
+        "n_technical_rows": 3
+      },
+      {
+        "library_id": "LJP006",
+        "cell_id": "BT20",
+        "pert_id": "BRD-A58767537",
+        "dose_uM": 0.04,
+        "source_file": "Screen20239_LJP_processedData3.xls",
+        "relative_cell_count": 0.762516666666667,
+        "relative_net_growth": 0.665003333333333,
+        "n_technical_rows": 3
+      }
+    ],
+    "equal_weight_mean": {
+      "library_id": "LJP006",
+      "cell_id": "BT20",
+      "pert_id": "BRD-A58767537",
+      "dose_uM": 0.04,
+      "relative_cell_count": 0.751241111111111,
+      "relative_net_growth": 0.639842222222222,
+      "n_bio": 3,
+      "relative_cell_count_sd": 0.024665281567718,
+      "library_condition_id": "HMSv2_LIB_175ffaa50568acca"
+    },
+    "L3_instances": [
+      {
+        "sig_id": "LJP006_BT20_24H:G24",
+        "cell_id": "BT20",
+        "pert_id": "BRD-A58767537",
+        "dose_uM": 0.04,
+        "distil_id": "LJP006_BT20_24H_X1_B17:G24|LJP006_BT20_24H_X2_B17:G24|LJP006_BT20_24H_X3_B17:G24",
+        "inst_id": "LJP006_BT20_24H_X1_B17:G24",
+        "cell_id_instance": "BT20",
+        "det_plate": "LJP006_BT20_24H_X1_B17",
+        "det_well": "G24",
+        "pert_mfc_id": "BRD-A58767537-001-03-8",
+        "pert_dose": 0.04,
+        "pert_dose_unit": "um",
+        "pert_id_instance": "BRD-A58767537",
+        "pert_iname": "afatinib",
+        "pert_type": "trt_cp",
+        "pert_time": 24.0,
+        "pert_time_unit": "h",
+        "L3_finite_non_sentinel": true,
+        "valid_vehicle_count_same_plate": 25,
+        "instance_technical_valid": true
+      },
+      {
+        "sig_id": "LJP006_BT20_24H:G24",
+        "cell_id": "BT20",
+        "pert_id": "BRD-A58767537",
+        "dose_uM": 0.04,
+        "distil_id": "LJP006_BT20_24H_X1_B17:G24|LJP006_BT20_24H_X2_B17:G24|LJP006_BT20_24H_X3_B17:G24",
+        "inst_id": "LJP006_BT20_24H_X2_B17:G24",
+        "cell_id_instance": "BT20",
+        "det_plate": "LJP006_BT20_24H_X2_B17",
+        "det_well": "G24",
+        "pert_mfc_id": "BRD-A58767537-001-03-8",
+        "pert_dose": 0.04,
+        "pert_dose_unit": "um",
+        "pert_id_instance": "BRD-A58767537",
+        "pert_iname": "afatinib",
+        "pert_type": "trt_cp",
+        "pert_time": 24.0,
+        "pert_time_unit": "h",
+        "L3_finite_non_sentinel": true,
+        "valid_vehicle_count_same_plate": 26,
+        "instance_technical_valid": true
+      },
+      {
+        "sig_id": "LJP006_BT20_24H:G24",
+        "cell_id": "BT20",
+        "pert_id": "BRD-A58767537",
+        "dose_uM": 0.04,
+        "distil_id": "LJP006_BT20_24H_X1_B17:G24|LJP006_BT20_24H_X2_B17:G24|LJP006_BT20_24H_X3_B17:G24",
+        "inst_id": "LJP006_BT20_24H_X3_B17:G24",
+        "cell_id_instance": "BT20",
+        "det_plate": "LJP006_BT20_24H_X3_B17",
+        "det_well": "G24",
+        "pert_mfc_id": "BRD-A58767537-001-03-8",
+        "pert_dose": 0.04,
+        "pert_dose_unit": "um",
+        "pert_id_instance": "BRD-A58767537",
+        "pert_iname": "afatinib",
+        "pert_type": "trt_cp",
+        "pert_time": 24.0,
+        "pert_time_unit": "h",
+        "L3_finite_non_sentinel": true,
+        "valid_vehicle_count_same_plate": 25,
+        "instance_technical_valid": true
+      }
+    ],
+    "final_sample": {
+      "library_id": "LJP006",
+      "cell_id": "BT20",
+      "pert_id": "BRD-A58767537",
+      "dose_uM": 0.04,
+      "relative_cell_count": 0.751241111111111,
+      "relative_net_growth": 0.639842222222222,
+      "n_bio": 3,
+      "relative_cell_count_sd": 0.024665281567718,
+      "library_condition_id": "HMSv2_LIB_175ffaa50568acca",
+      "biological_condition_group": "HMSv2_COND_a8478233af7ce101",
+      "functional_time_h": 72,
+      "readout": "relative_cell_count",
+      "label_origin": "technical_mean_within_library_biorepeat_then_equal_biorepeat_mean",
+      "both_expression_times": true,
+      "ModelID": "ACH-000536",
+      "actual_RNA_row": true,
+      "pert_iname": "afatinib",
+      "canonical_smiles": "CN(C)C\\C=C\\C(=O)Nc1cc2c(Nc3ccc(F)c(Cl)c3)ncnc2cc1OC1CCOC1",
+      "parseable_smiles": true,
+      "input_and_observation_available": true,
+      "QC_stage": "source_library_and_numeric_condition_checked; biological_expression_QC_pending",
+      "signature_ids_3h": "LJP006_BT20_3H:G24",
+      "sig_id": "LJP006_BT20_24H:G24",
+      "distil_id": "LJP006_BT20_24H_X1_B17:G24|LJP006_BT20_24H_X2_B17:G24|LJP006_BT20_24H_X3_B17:G24",
+      "distil_nsample": 3,
+      "distil_cc_q75": 0.43,
+      "tas": 0.240908,
+      "time_h": 24,
+      "n_listed_instances": 3,
+      "n_technical_valid_instances": 3,
+      "replicate_vehicle_centered_pearson_median": 0.367689364677753,
+      "all_instances_technical_valid": true,
+      "main_eligible": true,
+      "eligibility_reason": "source_and_numeric_checks_passed;at_least_two_instances_with_same_plate_controls",
+      "drug_index": 7,
+      "chemical_split_group": "CHEM_24a125eecf029bff",
+      "scaffold_split_group": "SCAF_a83b5fc8b57cf269",
+      "cell_index": 3,
+      "sample_index": 311,
+      "condition_weight": 1.0,
+      "sensitivity_rep3plus": true,
+      "sensitivity_without_CGP60474": true
+    },
+    "features": {
+      "sample_index": 311,
+      "cell_index": 3,
+      "drug_index": 7,
+      "log10_dose_uM": -1.3979400396347046,
+      "Morgan_on_bits": 74,
+      "baseline_first5": [
+        7.621172904968262,
+        1.5210506916046143,
+        9.868621826171875,
+        6.510962009429932,
+        6.136683464050293
+      ],
+      "gene_id_first5": [
+        "780",
+        "7849",
+        "6193",
+        "23",
+        "9552"
+      ],
+      "expression_z24_first5": [
+        0.28653478622436523,
+        -0.9907945990562439,
+        -1.1542381048202515,
+        0.3489273488521576,
+        0.5902959704399109
+      ],
+      "count72": 0.7512411111111111,
+      "condition_weight": 1.0
+    },
+    "split_roles": [
+      {
+        "protocol": "unseen_drug",
+        "fold": 0,
+        "role": "validation",
+        "heldout_group": "CHEM_24a125eecf029bff"
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 1,
+        "role": "test",
+        "heldout_group": "CHEM_24a125eecf029bff"
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 2,
+        "role": "train",
+        "heldout_group": "CHEM_24a125eecf029bff"
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 3,
+        "role": "train",
+        "heldout_group": "CHEM_24a125eecf029bff"
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 4,
+        "role": "train",
+        "heldout_group": "CHEM_24a125eecf029bff"
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 0,
+        "role": "train",
+        "heldout_group": "SCAF_a83b5fc8b57cf269"
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 1,
+        "role": "train",
+        "heldout_group": "SCAF_a83b5fc8b57cf269"
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 2,
+        "role": "train",
+        "heldout_group": "SCAF_a83b5fc8b57cf269"
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 3,
+        "role": "validation",
+        "heldout_group": "SCAF_a83b5fc8b57cf269"
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 4,
+        "role": "test",
+        "heldout_group": "SCAF_a83b5fc8b57cf269"
+      },
+      {
+        "protocol": "dose_extrapolation",
+        "fold": 0,
+        "role": "train",
+        "heldout_group": "HMSv2_COND_a8478233af7ce101"
+      }
+    ]
+  },
+  "stage2": {
+    "drop_counts": {
+      "missing_RNA_inclusive": {
+        "records": 690,
+        "conditions": 642
+      },
+      "unparseable_SMILES_inclusive": {
+        "records": 36,
+        "conditions": 36
+      },
+      "overlap": {
+        "records": 6,
+        "conditions": 6
+      },
+      "RNA_only": {
+        "records": 684,
+        "conditions": 636
+      },
+      "SMILES_only": {
+        "records": 30,
+        "conditions": 30
+      }
+    },
+    "dropped_drugs": [
+      {
+        "pert_id": "BRD-U60236422",
+        "canonical_smiles": "restricted",
+        "inchi_key": "restricted",
+        "pert_iname": "WH-4-025",
+        "pert_type": "trt_cp",
+        "parseable_smiles": false
+      }
+    ],
+    "missing_RNA_cells": [
+      {
+        "cell_id": "MCF10A",
+        "ModelID": "ACH-001357"
+      }
+    ],
+    "CCLE_verification": {
+      "mode": "raw_CCLE_24Q4_RNA",
+      "raw_RNA_verified": true,
+      "qualification": "MCF10A 无本发布 RNA 行；不推断其未公开的上游缺失原因",
+      "source": "/home/data2/jiangyun/5_cell_virtual/3_MVP/data/raw/CCLE_DepMap_24Q4/OmicsExpressionProteinCodingGenesTPMLogp1.csv",
+      "RNA_models": 1673,
+      "baseline_max_abs_diff": 0.0,
+      "missing_RNA_models_present_in_Model_csv": [
+        "ACH-001357"
+      ]
+    },
+    "parseability_recomputed_with_rdkit": true,
+    "sequential_drops": {
+      "missing_RNA": 690,
+      "SMILES_after_RNA_filter": 30
+    }
+  },
+  "stage3": {
+    "missing_24h_candidates": [
+      {
+        "library_id": "LJP005",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K12343256",
+        "dose_uM": 0.04,
+        "pert_iname": "trametinib",
+        "library_condition_id": "HMSv2_LIB_833f47c054c41a8b",
+        "available_times_h": [
+          3
+        ],
+        "available_signature_ids": [
+          "LJP005_HS578T_3H:P24"
+        ],
+        "reason": "原始 sig_info 在该库板/细胞/药物/剂量下无24h签名；上游未公开原因未推断"
+      },
+      {
+        "library_id": "LJP005",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K04853698",
+        "dose_uM": 10.0,
+        "pert_iname": "LDN-193189",
+        "library_condition_id": "HMSv2_LIB_ed895e1470e8e27e",
+        "available_times_h": [
+          3
+        ],
+        "available_signature_ids": [
+          "LJP005_MDAMB231_3H:G01"
+        ],
+        "reason": "原始 sig_info 在该库板/细胞/药物/剂量下无24h签名；上游未公开原因未推断"
+      },
+      {
+        "library_id": "LJP005",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K92571446",
+        "dose_uM": 10.0,
+        "pert_iname": "WZ-3105",
+        "library_condition_id": "HMSv2_LIB_87b059519ca8506c",
+        "available_times_h": [
+          3
+        ],
+        "available_signature_ids": [
+          "LJP005_MDAMB231_3H:D19"
+        ],
+        "reason": "原始 sig_info 在该库板/细胞/药物/剂量下无24h签名；上游未公开原因未推断"
+      },
+      {
+        "library_id": "LJP005",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K79090631",
+        "dose_uM": 1.11,
+        "pert_iname": "CGP-60474",
+        "library_condition_id": "HMSv2_LIB_87bd9bdac68c76aa",
+        "available_times_h": [
+          3
+        ],
+        "available_signature_ids": [
+          "LJP005_SKBR3_3H:F03"
+        ],
+        "reason": "原始 sig_info 在该库板/细胞/药物/剂量下无24h签名；上游未公开原因未推断"
+      },
+      {
+        "library_id": "LJP005",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K92571446",
+        "dose_uM": 0.37,
+        "pert_iname": "WZ-3105",
+        "library_condition_id": "HMSv2_LIB_d3c2e0fac270a215",
+        "available_times_h": [
+          3
+        ],
+        "available_signature_ids": [
+          "LJP005_SKBR3_3H:D22"
+        ],
+        "reason": "原始 sig_info 在该库板/细胞/药物/剂量下无24h签名；上游未公开原因未推断"
+      },
+      {
+        "library_id": "LJP006",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K46056750",
+        "dose_uM": 10.0,
+        "pert_iname": "AZD-7762",
+        "library_condition_id": "HMSv2_LIB_bd4d20eabe2f35f3",
+        "available_times_h": [
+          3
+        ],
+        "available_signature_ids": [
+          "LJP006_HS578T_3H:L01"
+        ],
+        "reason": "原始 sig_info 在该库板/细胞/药物/剂量下无24h签名；上游未公开原因未推断"
+      },
+      {
+        "library_id": "LJP006",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K72414522",
+        "dose_uM": 10.0,
+        "pert_iname": "AZD-5438",
+        "library_condition_id": "HMSv2_LIB_447fa3ccc94864e6",
+        "available_times_h": [
+          3
+        ],
+        "available_signature_ids": [
+          "LJP006_HS578T_3H:J01"
+        ],
+        "reason": "原始 sig_info 在该库板/细胞/药物/剂量下无24h签名；上游未公开原因未推断"
+      },
+      {
+        "library_id": "LJP006",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K69932463",
+        "dose_uM": 10.0,
+        "pert_iname": "AZD-8055",
+        "library_condition_id": "HMSv2_LIB_2bc35a09b9ac0d05",
+        "available_times_h": [],
+        "available_signature_ids": [],
+        "reason": "原始 sig_info 在该库板/细胞/药物/剂量下无24h签名；上游未公开原因未推断"
+      },
+      {
+        "library_id": "LJP006",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K69932463",
+        "dose_uM": 10.0,
+        "pert_iname": "AZD-8055",
+        "library_condition_id": "HMSv2_LIB_f6f704384df67528",
+        "available_times_h": [],
+        "available_signature_ids": [],
+        "reason": "原始 sig_info 在该库板/细胞/药物/剂量下无24h签名；上游未公开原因未推断"
+      },
+      {
+        "library_id": "LJP006",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K88573743",
+        "dose_uM": 10.0,
+        "pert_iname": "A-443654",
+        "library_condition_id": "HMSv2_LIB_b63287ec750a7e1b",
+        "available_times_h": [
+          3
+        ],
+        "available_signature_ids": [
+          "LJP006_SKBR3_3H:I19"
+        ],
+        "reason": "原始 sig_info 在该库板/细胞/药物/剂量下无24h签名；上游未公开原因未推断"
+      }
+    ],
+    "landmark_order_exact": true,
+    "landmark_genes": 978,
+    "signature_metadata_exact": true,
+    "L5": {
+      "source": "/home/data2/jiangyun/5_cell_virtual/3_MVP/data/unpacked/LINCS_GSE70138/GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx",
+      "matrix_shape": [
+        118050,
+        12328
+      ],
+      "rows_extracted": 3410,
+      "genes_extracted": 978,
+      "HDF5_direction": "META/COL=id 为 matrix 行；META/ROW=id 为基因列",
+      "file_bytes": 5824120558,
+      "mode": "full_raw_l5_gctx",
+      "raw_verified": true,
+      "max_abs_diff": 0.0
+    }
+  },
+  "l3_verification_mode": "full_raw_l3_gctx",
+  "stage4": {
+    "L3": {
+      "source": "/home/data2/jiangyun/5_cell_virtual/3_MVP/data/unpacked/LINCS_GSE70138/GSE70138_Broad_LINCS_Level3_INF_mlr12k_n345976x12328_2017-03-06.gctx",
+      "matrix_shape": [
+        345976,
+        12328
+      ],
+      "rows_extracted": 11311,
+      "genes_extracted": 978,
+      "HDF5_direction": "META/COL=id 为 matrix 行；META/ROW=id 为基因列",
+      "file_bytes": 17072655504,
+      "raw_verified": true,
+      "vehicle_sd_max_abs_diff_vs_archived": 5.551115123125783e-17,
+      "pearson_median_max_abs_diff_vs_archived": 9.985502008591496e-17
+    },
+    "treatment_instances": 10512,
+    "DMSO_controls": 799,
+    "det_plates": 32,
+    "all_treatments_finite_non_sentinel": true,
+    "numeric_scope": "每个实例978个实测landmark；不对11350个推断基因做QC",
+    "eligibility_rule": "全部列出实例技术有效 AND 至少2个有效处理实例；每实例同板有效vehicle至少2个",
+    "instance_identity_dose_time_unit_checks": true,
+    "all_vehicles_finite_non_sentinel": true,
+    "min_valid_same_plate_controls": 23,
+    "max_valid_same_plate_controls": 26,
+    "eligible_replicate_count_distribution": {
+      "2": 244,
+      "3": 2502,
+      "4": 618
+    },
+    "excluded_single_instance_signatures": [
+      {
+        "library_condition_id": "HMSv2_LIB_8f0d0783c7eac082",
+        "biological_condition_group": "HMSv2_COND_7cee2562b9716292",
+        "sig_id": "LJP005_BT20_24H:P24",
+        "library_id": "LJP005",
+        "cell_id": "BT20",
+        "pert_id": "BRD-K12343256",
+        "pert_iname": "trametinib",
+        "dose_uM": 0.04,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_d0948c26f6b6e76b",
+        "biological_condition_group": "HMSv2_COND_cb17012cce2a83ce",
+        "sig_id": "LJP005_BT20_24H:F04",
+        "library_id": "LJP005",
+        "cell_id": "BT20",
+        "pert_id": "BRD-K79090631",
+        "pert_iname": "CGP-60474",
+        "dose_uM": 0.37,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_2747b661416f0c2b",
+        "biological_condition_group": "HMSv2_COND_f4a1b46c055b2e73",
+        "sig_id": "LJP005_BT20_24H:F03",
+        "library_id": "LJP005",
+        "cell_id": "BT20",
+        "pert_id": "BRD-K79090631",
+        "pert_iname": "CGP-60474",
+        "dose_uM": 1.11,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_bdf855442e2bb37b",
+        "biological_condition_group": "HMSv2_COND_39e46cde7da05e19",
+        "sig_id": "LJP005_BT20_24H:D22",
+        "library_id": "LJP005",
+        "cell_id": "BT20",
+        "pert_id": "BRD-K92571446",
+        "pert_iname": "WZ-3105",
+        "dose_uM": 0.37,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_f77471a9f7aacea0",
+        "biological_condition_group": "HMSv2_COND_f87e0e228579bec0",
+        "sig_id": "LJP005_BT20_24H:D20",
+        "library_id": "LJP005",
+        "cell_id": "BT20",
+        "pert_id": "BRD-K92571446",
+        "pert_iname": "WZ-3105",
+        "dose_uM": 3.33,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_0fdc64211ef7ac93",
+        "biological_condition_group": "HMSv2_COND_5114dc1e32775243",
+        "sig_id": "LJP005_BT20_24H:D19",
+        "library_id": "LJP005",
+        "cell_id": "BT20",
+        "pert_id": "BRD-K92571446",
+        "pert_iname": "WZ-3105",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_b729d9fa61dfdaa2",
+        "biological_condition_group": "HMSv2_COND_1a9cb164e64ce53c",
+        "sig_id": "LJP005_HS578T_24H:H19",
+        "library_id": "LJP005",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-A41692738",
+        "pert_iname": "TGX-221",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_69f78cdd8685d71b",
+        "biological_condition_group": "HMSv2_COND_80fd129c87f7e71d",
+        "sig_id": "LJP005_HS578T_24H:K01",
+        "library_id": "LJP005",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K16478699",
+        "pert_iname": "PLX-4720",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_bdcb27bdfd01dfac",
+        "biological_condition_group": "HMSv2_COND_9b5a438234167a22",
+        "sig_id": "LJP005_HS578T_24H:C19",
+        "library_id": "LJP005",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K21680192",
+        "pert_iname": "mitoxantrone",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_ce3a47d8a3ca1fe5",
+        "biological_condition_group": "HMSv2_COND_f03dd6d7739e7541",
+        "sig_id": "LJP005_HS578T_24H:K16",
+        "library_id": "LJP005",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K29395450",
+        "pert_iname": "PIK-93",
+        "dose_uM": 0.37,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_2cff5e7f4f4aa18d",
+        "biological_condition_group": "HMSv2_COND_57b752a26d78af73",
+        "sig_id": "LJP005_HS578T_24H:F03",
+        "library_id": "LJP005",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K79090631",
+        "pert_iname": "CGP-60474",
+        "dose_uM": 1.11,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_6b7516a93de8c711",
+        "biological_condition_group": "HMSv2_COND_bda7350cd047e874",
+        "sig_id": "LJP005_HS578T_24H:D19",
+        "library_id": "LJP005",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K92571446",
+        "pert_iname": "WZ-3105",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_cac92b0289b0938d",
+        "biological_condition_group": "HMSv2_COND_a99bab5ff258b18b",
+        "sig_id": "LJP005_MCF7_24H:P24",
+        "library_id": "LJP005",
+        "cell_id": "MCF7",
+        "pert_id": "BRD-K12343256",
+        "pert_iname": "trametinib",
+        "dose_uM": 0.04,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_ef8e80a7ecde58fc",
+        "biological_condition_group": "HMSv2_COND_33f8593fbcd412b4",
+        "sig_id": "LJP005_MDAMB231_24H:O01",
+        "library_id": "LJP005",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-A19500257",
+        "pert_iname": "geldanamycin",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_48bcf1f035bc825d",
+        "biological_condition_group": "HMSv2_COND_b8c75dddf250da24",
+        "sig_id": "LJP005_MDAMB231_24H:E03",
+        "library_id": "LJP005",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K02708799",
+        "pert_iname": "GSK-1059615",
+        "dose_uM": 1.11,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_05c62a594b73bb6b",
+        "biological_condition_group": "HMSv2_COND_d193cf9a132fe540",
+        "sig_id": "LJP005_MDAMB231_24H:J01",
+        "library_id": "LJP005",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K07691486",
+        "pert_iname": "roscovitine",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_f11622daf62256e8",
+        "biological_condition_group": "HMSv2_COND_3b998948b19e3cec",
+        "sig_id": "LJP005_MDAMB231_24H:D08",
+        "library_id": "LJP005",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K63923597",
+        "pert_iname": "barasertib-HQPA",
+        "dose_uM": 3.33,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_998d1a5ac3bbca8d",
+        "biological_condition_group": "HMSv2_COND_9a4adbed0743c515",
+        "sig_id": "LJP005_MDAMB231_24H:A24",
+        "library_id": "LJP005",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K78431006",
+        "pert_iname": "crizotinib",
+        "dose_uM": 0.04,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_3e5d8b1fb20d8934",
+        "biological_condition_group": "HMSv2_COND_f246de1da90f17d2",
+        "sig_id": "LJP005_MDAMB231_24H:D14",
+        "library_id": "LJP005",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K79404599",
+        "pert_iname": "enzastaurin",
+        "dose_uM": 3.33,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_7f43b463ab5079ac",
+        "biological_condition_group": "HMSv2_COND_55b04a1c01743155",
+        "sig_id": "LJP005_MDAMB231_24H:D24",
+        "library_id": "LJP005",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K92571446",
+        "pert_iname": "WZ-3105",
+        "dose_uM": 0.04,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_b03e205b74fd8dfa",
+        "biological_condition_group": "HMSv2_COND_b8d0b3df01069e97",
+        "sig_id": "LJP005_MDAMB231_24H:D22",
+        "library_id": "LJP005",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K92571446",
+        "pert_iname": "WZ-3105",
+        "dose_uM": 0.37,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_8afe42899680a179",
+        "biological_condition_group": "HMSv2_COND_4b3937371573a91a",
+        "sig_id": "LJP005_MDAMB231_24H:E07",
+        "library_id": "LJP005",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K93788137",
+        "pert_iname": "PF-431396",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_9a523107ef9a1985",
+        "biological_condition_group": "HMSv2_COND_9896c49fe3d11e31",
+        "sig_id": "LJP005_SKBR3_24H:H13",
+        "library_id": "LJP005",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K65182930",
+        "pert_iname": "NVP-AUY922",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_19300b1ee99aa2cd",
+        "biological_condition_group": "HMSv2_COND_625471dcab2fb036",
+        "sig_id": "LJP005_SKBR3_24H:F01",
+        "library_id": "LJP005",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K79090631",
+        "pert_iname": "CGP-60474",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_ceb7cbb2d3be7d62",
+        "biological_condition_group": "HMSv2_COND_e8e5ef4eb2b02525",
+        "sig_id": "LJP005_SKBR3_24H:D24",
+        "library_id": "LJP005",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K92571446",
+        "pert_iname": "WZ-3105",
+        "dose_uM": 0.04,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_3942d5c9232cd5ac",
+        "biological_condition_group": "HMSv2_COND_28ebc3b7c99e3ac7",
+        "sig_id": "LJP005_SKBR3_24H:D23",
+        "library_id": "LJP005",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K92571446",
+        "pert_iname": "WZ-3105",
+        "dose_uM": 0.12,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_058196c37015b5c4",
+        "biological_condition_group": "HMSv2_COND_6e86c45b40c84590",
+        "sig_id": "LJP005_SKBR3_24H:D21",
+        "library_id": "LJP005",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K92571446",
+        "pert_iname": "WZ-3105",
+        "dose_uM": 1.11,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_d342a9034f998674",
+        "biological_condition_group": "HMSv2_COND_e89bdb3d0ace44f4",
+        "sig_id": "LJP005_SKBR3_24H:D20",
+        "library_id": "LJP005",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K92571446",
+        "pert_iname": "WZ-3105",
+        "dose_uM": 3.33,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_e894cc4f6d73d51b",
+        "biological_condition_group": "HMSv2_COND_b88ab3c123af52b7",
+        "sig_id": "LJP005_SKBR3_24H:D19",
+        "library_id": "LJP005",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K92571446",
+        "pert_iname": "WZ-3105",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_10702a72f9d7455c",
+        "biological_condition_group": "HMSv2_COND_1c27b5c042b0cde2",
+        "sig_id": "LJP006_BT20_24H:O14",
+        "library_id": "LJP006",
+        "cell_id": "BT20",
+        "pert_id": "BRD-K40175214",
+        "pert_iname": "torin-1",
+        "dose_uM": 3.33,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_62c991ef1df2361e",
+        "biological_condition_group": "HMSv2_COND_a342ea288c6a6b88",
+        "sig_id": "LJP006_BT20_24H:N01",
+        "library_id": "LJP006",
+        "cell_id": "BT20",
+        "pert_id": "BRD-K42918627",
+        "pert_iname": "GSK-2126458",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_664aa7d495bd7d7a",
+        "biological_condition_group": "HMSv2_COND_fa2cdd6b705a13de",
+        "sig_id": "LJP006_BT20_24H:P03",
+        "library_id": "LJP006",
+        "cell_id": "BT20",
+        "pert_id": "BRD-K56751279",
+        "pert_iname": "Y-39983",
+        "dose_uM": 1.11,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_c0b93c40576cbddd",
+        "biological_condition_group": "HMSv2_COND_43d1f59d340e58a9",
+        "sig_id": "LJP006_HS578T_24H:K01",
+        "library_id": "LJP006",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K13390322",
+        "pert_iname": "AT-7519",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_07f429be7182d34c",
+        "biological_condition_group": "HMSv2_COND_669a29b71d7b7811",
+        "sig_id": "LJP006_HS578T_24H:D01",
+        "library_id": "LJP006",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K13566078",
+        "pert_iname": "BMS-345541",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_661758b0d0e4a8f0",
+        "biological_condition_group": "HMSv2_COND_1759d5669a27261a",
+        "sig_id": "LJP006_HS578T_24H:G02",
+        "library_id": "LJP006",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K79090631",
+        "pert_iname": "CGP-60474",
+        "dose_uM": 3.33,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_8d94659bd2eb5cdc",
+        "biological_condition_group": "HMSv2_COND_948261b4f106bd29",
+        "sig_id": "LJP006_HS578T_24H:I20",
+        "library_id": "LJP006",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K88573743",
+        "pert_iname": "A-443654",
+        "dose_uM": 3.33,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_603490e3308e6984",
+        "biological_condition_group": "HMSv2_COND_8d97f86095107b56",
+        "sig_id": "LJP006_HS578T_24H:I19",
+        "library_id": "LJP006",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-K88573743",
+        "pert_iname": "A-443654",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_34dfbefad70d4c99",
+        "biological_condition_group": "HMSv2_COND_98c4202c902daa78",
+        "sig_id": "LJP006_HS578T_24H:P24",
+        "library_id": "LJP006",
+        "cell_id": "HS578T",
+        "pert_id": "BRD-U22633929",
+        "pert_iname": "XMD11-85H",
+        "dose_uM": 0.04,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_1e9e862c0ce0c40d",
+        "biological_condition_group": "HMSv2_COND_180fabfc928db3de",
+        "sig_id": "LJP006_MCF7_24H:P02",
+        "library_id": "LJP006",
+        "cell_id": "MCF7",
+        "pert_id": "BRD-K56751279",
+        "pert_iname": "Y-39983",
+        "dose_uM": 3.33,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_a3140bdf2af3b228",
+        "biological_condition_group": "HMSv2_COND_bde819e1df254eb3",
+        "sig_id": "LJP006_MDAMB231_24H:K01",
+        "library_id": "LJP006",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K13390322",
+        "pert_iname": "AT-7519",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_a1003845f0beda45",
+        "biological_condition_group": "HMSv2_COND_29069f8be1a793fb",
+        "sig_id": "LJP006_MDAMB231_24H:N07",
+        "library_id": "LJP006",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K64052750",
+        "pert_iname": "gefitinib",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_f5d2a1254c01cefc",
+        "biological_condition_group": "HMSv2_COND_516f693e7baed9f3",
+        "sig_id": "LJP006_MDAMB231_24H:J01",
+        "library_id": "LJP006",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-K72414522",
+        "pert_iname": "AZD-5438",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_b6211ea0e8376103",
+        "biological_condition_group": "HMSv2_COND_8a827949dd1b89f7",
+        "sig_id": "LJP006_MDAMB231_24H:M01",
+        "library_id": "LJP006",
+        "cell_id": "MDAMB231",
+        "pert_id": "BRD-U51024685",
+        "pert_iname": "HG-6-64-01",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_190d7c1f8388a7d7",
+        "biological_condition_group": "HMSv2_COND_18bcd98fca3e8ec7",
+        "sig_id": "LJP006_SKBR3_24H:K01",
+        "library_id": "LJP006",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K13390322",
+        "pert_iname": "AT-7519",
+        "dose_uM": 10.0,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_ae529aa73f05b9b0",
+        "biological_condition_group": "HMSv2_COND_4360a4b0c88a0062",
+        "sig_id": "LJP006_SKBR3_24H:O24",
+        "library_id": "LJP006",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-K99252563",
+        "pert_iname": "QL-XII-47",
+        "dose_uM": 0.04,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      },
+      {
+        "library_condition_id": "HMSv2_LIB_9ddf6f63887754f5",
+        "biological_condition_group": "HMSv2_COND_ad3b74f5145add5f",
+        "sig_id": "LJP006_SKBR3_24H:P22",
+        "library_id": "LJP006",
+        "cell_id": "SKBR3",
+        "pert_id": "BRD-U22633929",
+        "pert_iname": "XMD11-85H",
+        "dose_uM": 0.37,
+        "n_listed_instances": 1,
+        "n_technical_valid_instances": 1,
+        "eligibility_reason": "fewer_than_two_valid_instances_or_control_issue"
+      }
+    ],
+    "candidate_table_parity": {
+      "rows": 3410,
+      "columns": 34,
+      "exact": true,
+      "numeric_max_abs_diff": 0.0
+    },
+    "diagnostic_precision": "相关系数在全量模式重算核对<1e-12后采用归档CSV精度；不参与入组",
+    "no_TAS_or_expression_magnitude_filter": true
+  },
+  "stage5": {
+    "weights": {
+      "sum": 3133.0,
+      "one_plate_conditions": 2902,
+      "one_plate_records": 2902,
+      "two_plate_conditions": 231,
+      "two_plate_records": 462
+    },
+    "feature_stats": {
+      "expression_z24": {
+        "shape": [
+          3364,
+          978
+        ],
+        "dtype": "float32",
+        "unit": "L1000 Level5 z-score, 24 h",
+        "min": -10.000000953674316,
+        "max": 10.000000953674316,
+        "mean": -0.010977254249155521,
+        "std": 1.2785029411315918,
+        "finite": true
+      },
+      "baseline": {
+        "shape": [
+          5,
+          978
+        ],
+        "dtype": "float32",
+        "unit": "log2(TPM+1)",
+        "min": 0.0,
+        "max": 12.872790336608887,
+        "mean": 4.827357292175293,
+        "std": 1.9775687456130981,
+        "finite": true
+      },
+      "drug_morgan": {
+        "shape": [
+          106,
+          2048
+        ],
+        "dtype": "uint8",
+        "unit": "binary bit",
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.029061947228773585,
+        "std": 0.16798020851292442,
+        "finite": true
+      },
+      "cell_index": {
+        "shape": [
+          3364
+        ],
+        "dtype": "int64",
+        "unit": "zero-based index",
+        "min": 0.0,
+        "max": 4.0,
+        "mean": 1.996730083234245,
+        "std": 1.4122114818944096,
+        "finite": true
+      },
+      "drug_index": {
+        "shape": [
+          3364
+        ],
+        "dtype": "int64",
+        "unit": "zero-based index",
+        "min": 0.0,
+        "max": 105.0,
+        "mean": 51.44560047562425,
+        "std": 30.7611770474303,
+        "finite": true
+      },
+      "log10_dose_uM": {
+        "shape": [
+          3364
+        ],
+        "dtype": "float32",
+        "unit": "log10(dose / 1 uM)",
+        "min": -1.3979400396347046,
+        "max": 1.0,
+        "mean": -0.20539435744285583,
+        "std": 0.8162908554077148,
+        "finite": true
+      },
+      "count72": {
+        "shape": [
+          3364
+        ],
+        "dtype": "float64",
+        "unit": "Nt/Nc, 72 h, dimensionless",
+        "min": 0.0584521111111111,
+        "max": 1.1894555555555557,
+        "mean": 0.6249815720141365,
+        "std": 0.3077304897943225,
+        "finite": true
+      },
+      "condition_weight": {
+        "shape": [
+          3364
+        ],
+        "dtype": "float64",
+        "unit": "1/n_library_plates",
+        "min": 0.5,
+        "max": 1.0,
+        "mean": 0.9313317479191439,
+        "std": 0.1721011249137787,
+        "finite": true
+      },
+      "gene_id": {
+        "shape": [
+          978
+        ],
+        "dtype": "<U9",
+        "unit": "Entrez gene ID"
+      },
+      "library_condition_id": {
+        "shape": [
+          3364
+        ],
+        "dtype": "<U26",
+        "unit": "HMS library condition ID"
+      }
+    },
+    "arrays_parity": {
+      "expression_z24": {
+        "exact": true,
+        "max_abs_diff": 0.0
+      },
+      "baseline": {
+        "exact": true,
+        "max_abs_diff": 0.0
+      },
+      "drug_morgan": {
+        "exact": true,
+        "max_abs_diff": 0.0
+      },
+      "cell_index": {
+        "exact": true,
+        "max_abs_diff": 0.0
+      },
+      "drug_index": {
+        "exact": true,
+        "max_abs_diff": 0.0
+      },
+      "log10_dose_uM": {
+        "exact": true,
+        "max_abs_diff": 0.0
+      },
+      "count72": {
+        "exact": true,
+        "max_abs_diff": 0.0
+      },
+      "condition_weight": {
+        "exact": true,
+        "max_abs_diff": 0.0
+      },
+      "gene_id": {
+        "exact": true,
+        "max_abs_diff": null
+      },
+      "library_condition_id": {
+        "exact": true,
+        "max_abs_diff": null
+      }
+    },
+    "samples_parity": {
+      "rows": 3364,
+      "columns": 42,
+      "exact": true,
+      "numeric_max_abs_diff": 0.0
+    },
+    "splits_parity": {
+      "rows": 37004,
+      "columns": 7,
+      "exact": true,
+      "numeric_max_abs_diff": 0.0
+    },
+    "leakage_checks": [
+      {
+        "protocol": "dose_extrapolation",
+        "fold": 0,
+        "group": "biological_condition_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 0,
+        "group": "biological_condition_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 0,
+        "group": "heldout_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 1,
+        "group": "biological_condition_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 1,
+        "group": "heldout_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 2,
+        "group": "biological_condition_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 2,
+        "group": "heldout_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 3,
+        "group": "biological_condition_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 3,
+        "group": "heldout_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 4,
+        "group": "biological_condition_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 4,
+        "group": "heldout_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 0,
+        "group": "biological_condition_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 0,
+        "group": "heldout_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 1,
+        "group": "biological_condition_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 1,
+        "group": "heldout_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 2,
+        "group": "biological_condition_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 2,
+        "group": "heldout_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 3,
+        "group": "biological_condition_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 3,
+        "group": "heldout_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 4,
+        "group": "biological_condition_group",
+        "leaking_groups": 0
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 4,
+        "group": "heldout_group",
+        "leaking_groups": 0
+      }
+    ],
+    "split_rule": "不同生物条件数降序；sha256('20261107|group')升序破同分；分给(load,fold)最小折；test=f, validation=(f+1)%5",
+    "dose_split_rule_uM": {
+      "train": "<=1.11",
+      "validation": 3.33,
+      "test": 10.0
+    },
+    "scaling_rule": {
+      "fit_role": "train only",
+      "weights": "condition_weight",
+      "formula": "mu=sum(w*x)/sum(w); sigma=sqrt(sum(w*(x-mu)^2)/sum(w)); (x-mu)/sigma",
+      "baseline": "按训练样本展开到978维；每基因加权标准化，std最小1e-4",
+      "dose": "log10_dose_uM训练折加权均值/标准差",
+      "count72": "训练折加权均值/标准差；预测后逆变换",
+      "Morgan": "保持0/1，不标准化",
+      "expression_z24": "保持已发布Level5 z-score，不二次标准化",
+      "arrays_on_disk": "保存原始尺度；标准化在每折训练时进行"
+    },
+    "train_scaling_by_fold": [
+      {
+        "protocol": "dose_extrapolation",
+        "fold": 0,
+        "fit_role": "train",
+        "fit_records": 2259,
+        "fit_weight_sum": 2104.0,
+        "cell_mean_range": [
+          0.022545222002665864,
+          12.377592640231317
+        ],
+        "cell_std_range": [
+          0.03143119541971664,
+          4.025456472871742
+        ],
+        "cell_mean_sha256": "05c8eb3eae64c5fe76cbc5d2c1cca2fe76175d72ef288f5af54831b4a7c5b8ac",
+        "cell_std_sha256": "19b58cf89b8bffc18a9dd02b82274cb8badfbc283756bf297989aaba18eb840e",
+        "dose_mean": -0.6747154858062476,
+        "dose_std": 0.5383566769322664,
+        "count72_mean": 0.7210221629066329,
+        "count72_std": 0.2828637568688045
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 0,
+        "fit_role": "train",
+        "fit_records": 2041,
+        "fit_weight_sum": 1869.0,
+        "cell_mean_range": [
+          0.022357508904909056,
+          12.377458112644218
+        ],
+        "cell_std_range": [
+          0.031273748032215935,
+          4.020632864053087
+        ],
+        "cell_mean_sha256": "20b2ab9ee2b6875b28e0a4749f68f164902a94ebced53811e3d94e92ae8cd4c0",
+        "cell_std_sha256": "bd7390551d4965c922faa936f9e0178406b59a163be3a3902cc335032a5553a1",
+        "dose_mean": -0.2034009802486566,
+        "dose_std": 0.8152237792981321,
+        "count72_mean": 0.611233927340824,
+        "count72_std": 0.3021594976918969
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 1,
+        "fit_role": "train",
+        "fit_records": 2072,
+        "fit_weight_sum": 1870.0,
+        "cell_mean_range": [
+          0.022390507171577947,
+          12.377468294255873
+        ],
+        "cell_std_range": [
+          0.03129791403943292,
+          4.020009940684943
+        ],
+        "cell_mean_sha256": "225d85648ebcd600861ce0e0c3d6373298158888fa31dc8ff84434e00cd047b4",
+        "cell_std_sha256": "f4a1ecf4c87ba688135f1e91b991c3a72cde8363eb78ac388ce1511dc183ac6f",
+        "dose_mean": -0.20404590206509604,
+        "dose_std": 0.8163783108467458,
+        "count72_mean": 0.6460218960873441,
+        "count72_std": 0.29075722742201354
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 2,
+        "fit_role": "train",
+        "fit_records": 2064,
+        "fit_weight_sum": 1887.0,
+        "cell_mean_range": [
+          0.02243435910246994,
+          12.376151916774797
+        ],
+        "cell_std_range": [
+          0.031357693827838144,
+          4.018016152561946
+        ],
+        "cell_mean_sha256": "beb294363cd40cdd0e062c103ebce7ce94c7477db1e68b40958d3a5f5db72a92",
+        "cell_std_sha256": "411ff415ddf82df52bcf01ee661098d8396a4f4fe2d547414fd31e3004f5ef9f",
+        "dose_mean": -0.20487740399759158,
+        "dose_std": 0.8160086542275876,
+        "count72_mean": 0.6568931584614025,
+        "count72_std": 0.3006542093145967
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 3,
+        "fit_role": "train",
+        "fit_records": 1946,
+        "fit_weight_sum": 1887.0,
+        "cell_mean_range": [
+          0.02256039911846541,
+          12.376288191123683
+        ],
+        "cell_std_range": [
+          0.03144454789939139,
+          4.0151930304917185
+        ],
+        "cell_mean_sha256": "e14b4689f5bb2facbf53e798faea0725ba0982f816251b9af0e19062b0245f43",
+        "cell_std_sha256": "2900134d01d5ce6497c6e398a1d3ff5b7f676d9b62bfffa0d3c48ccb864a4940",
+        "dose_mean": -0.20335355885109702,
+        "dose_std": 0.8163160003969124,
+        "count72_mean": 0.6491927986015427,
+        "count72_std": 0.31099957956914503
+      },
+      {
+        "protocol": "unseen_drug",
+        "fold": 4,
+        "fit_role": "train",
+        "fit_records": 1969,
+        "fit_weight_sum": 1886.0,
+        "cell_mean_range": [
+          0.022409293028276142,
+          12.376107265941664
+        ],
+        "cell_std_range": [
+          0.03133016973268298,
+          4.014845226755854
+        ],
+        "cell_mean_sha256": "c527b1be2f9c01de73319f34cde3682b5513a601f745f837cc3e41aaac744104",
+        "cell_std_sha256": "2aea521b68ed2f3cb29dae4f626480a42668202ee9301073a955918251c17920",
+        "dose_mean": -0.20627519890887233,
+        "dose_std": 0.8154453091074563,
+        "count72_mean": 0.6344155053405209,
+        "count72_std": 0.31489806814457005
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 0,
+        "fit_role": "train",
+        "fit_records": 2100,
+        "fit_weight_sum": 1869.0,
+        "cell_mean_range": [
+          0.022394806376836274,
+          12.376879494607353
+        ],
+        "cell_std_range": [
+          0.03130573379654747,
+          4.016569448583856
+        ],
+        "cell_mean_sha256": "5f3377df7c75f1d39a2457d01d7ea5dc8253eeb512074249deda7c62906014d0",
+        "cell_std_sha256": "ba95316bb5d16fd8b49e9ee08a31e04a985d61cf887d91e1b37d2bd036f5b512",
+        "dose_mean": -0.20648392398307003,
+        "dose_std": 0.8156550377096767,
+        "count72_mean": 0.6015135323553891,
+        "count72_std": 0.3043837227547525
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 1,
+        "fit_role": "train",
+        "fit_records": 2041,
+        "fit_weight_sum": 1870.0,
+        "cell_mean_range": [
+          0.022360906271851635,
+          12.377044588996764
+        ],
+        "cell_std_range": [
+          0.03126220510077387,
+          4.011435690368687
+        ],
+        "cell_mean_sha256": "0893823af1e4f3628815a04f17ac17379a15c0fe7c69a1fdfaceb2c6ba673311",
+        "cell_std_sha256": "d6e04c38fec457803802d994663160322ae4bede93a4cde30163d472408b7a00",
+        "dose_mean": -0.20558383269982541,
+        "dose_std": 0.8157681392133103,
+        "count72_mean": 0.6526084197950089,
+        "count72_std": 0.3049691875347179
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 2,
+        "fit_role": "train",
+        "fit_records": 1916,
+        "fit_weight_sum": 1887.0,
+        "cell_mean_range": [
+          0.02244196657069663,
+          12.376600131068713
+        ],
+        "cell_std_range": [
+          0.03135399136331186,
+          4.018283138111206
+        ],
+        "cell_mean_sha256": "2680edb2da7484441ac21a401342ef6ec72b0d622a54b074754544718675297c",
+        "cell_std_sha256": "4cd5cfcac19edbb55d06ae38323a9681e0dec330375d9705ec4378f9a545f7c3",
+        "dose_mean": -0.20106509868815645,
+        "dose_std": 0.8160273524150837,
+        "count72_mean": 0.6992710918595065,
+        "count72_std": 0.28956439667858846
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 3,
+        "fit_role": "train",
+        "fit_records": 1947,
+        "fit_weight_sum": 1887.0,
+        "cell_mean_range": [
+          0.022478908263877325,
+          12.376504114714008
+        ],
+        "cell_std_range": [
+          0.03138549197364964,
+          4.018934214074359
+        ],
+        "cell_mean_sha256": "32875044d6b3b503cccf41547096e76a3253e12a15748531b0cba1de29c474a9",
+        "cell_std_sha256": "db1363b2054484dada1b471454cb9b4be945ada917332a64dd3bfc614f3e1295",
+        "dose_mean": -0.20360617505442735,
+        "dose_std": 0.8164609486995809,
+        "count72_mean": 0.6556166680327385,
+        "count72_std": 0.3031591111515106
+      },
+      {
+        "protocol": "unseen_scaffold",
+        "fold": 4,
+        "fit_role": "train",
+        "fit_records": 2088,
+        "fit_weight_sum": 1886.0,
+        "cell_mean_range": [
+          0.02247560408740667,
+          12.376436289143083
+        ],
+        "cell_std_range": [
+          0.03139696372283941,
+          4.023355054543798
+        ],
+        "cell_mean_sha256": "330a9453d479f3faf88e49995c7872c94ed632e766069585e1f70f5b0cf834ac",
+        "cell_std_sha256": "87140a3a3ac32649e8f2b5d2139a020bbea0ff97d03ae508bbc2e7cb9862e3b1",
+        "dose_mean": -0.20525673719978282,
+        "dose_std": 0.8154519951257047,
+        "count72_mean": 0.5886899575969129,
+        "count72_std": 0.3066530565080131
+      }
+    ],
+    "Morgan_recomputed_exact": true
+  },
+  "rebuilt_dir": null,
+  "input_sha256": {
+    "data/reference/baseline.csv": "493fbfc29fc203bc2b1418bc733468e783b346bf8049a82c18b200d7d3e82d96",
+    "data/reference/cells.csv": "3c229cd0c364a27af40454459d20bda73710ad4cb86366da41b8be65c6836bfe",
+    "data/reference/drug_structure_coverage.csv": "136a8b928abb31db8e41fb998ea567cc1b070e47eaac53743535a5a71c76dda7",
+    "data/reference/drugs.csv": "4bfcbe6b61ec7f8bfdb340503e1f478710f10fcc8215fd8dc44e24a4360e958d",
+    "data/reference/hms_biorepeats.csv": "416fb5c72b817516471c6567dfdbc30014881fbef7795b286849a28416485d80",
+    "data/reference/hms_conditions.csv": "75976ed5722a2eb90e03334201a37e55d99d6d5fa2f80e478b04a83d09ec8e0b",
+    "data/reference/input_features.npz": "0b7cf80bbd805fd9b335714c033e9a5bcbd81e162046756840de0b5cec4bba1c",
+    "data/reference/lincs_expression.npz": "650a990c2d04345eab86e75cda17ba00ee89443f107680cb20d24a07f42033a6",
+    "data/reference/lincs_signatures.csv": "0a2ee75d9f313a6499158b9009994d234d5ae353e6c6953743e7bedf786002a3",
+    "data/reference/prior_condition_ids.csv": "b021d5d54cf4f02faf7c787e863a5742dbc40fe4c170c4bc2f8850e439cf31d8",
+    "data/training/arrays.npz": "3aceb368359d859b7ecca0ffb350473802230210836ef0b11422cbf236e09a02",
+    "data/training/samples.csv": "ac0252f1bd1b4c96ac19a73582233c134756dd67f4a7f1751475e30f95c0a2eb",
+    "data/training/splits.csv": "70595a76b37ee2e1b1bba7b1c6222ac417381443fdc7ef4a18741eefc1f8889f",
+    "data/training/all_24h_candidates_with_QC.csv": "ec07d47e896d2d25d585cac71bf12689eecd8d2a9d061f84412398ad213928e9",
+    "data/training/instance_checks.csv": "ea18cef11761b8b593109df1ad02b91fbcdafe8388b0e0747755761a5ecac700",
+    "data/training/vehicle_plate_checks.csv": "e5f47d7162a5e48c051ed0d0a156d5b337ce208d4c3f8aa972bae2795c65dc11",
+    "data/raw/LINCS_GSE70138/GSE70138_Broad_LINCS_cell_info_2017-04-28.txt.gz": "88c6ca5ff8bb3cf3af22c2eb8cbe769f9ae8e305a760959b18711877d730d61c",
+    "data/raw/LINCS_GSE70138/GSE70138_Broad_LINCS_gene_info_2017-03-06.txt.gz": "741216ccc53320119b47ab006de3bcad48963c57087c9e07f50f0d6cd088711a",
+    "data/raw/LINCS_GSE70138/GSE70138_Broad_LINCS_inst_info_2017-03-06.txt.gz": "84fb2ff891c7d97012c6d97356ce7a1ebc82da0f37d7da011415bddd70c90a6c",
+    "data/raw/LINCS_GSE70138/GSE70138_Broad_LINCS_pert_info_2017-03-06.txt.gz": "000171e8ce17cb00a3e80a907d97f0bc4218077eb4cb2ac03f4e0f9f4f2e5493",
+    "data/raw/LINCS_GSE70138/GSE70138_Broad_LINCS_sig_info_2017-03-06.txt.gz": "b78284478d62029f600d4397334c538d363123110affd2454bf0055bd0678e01",
+    "data/raw/LINCS_GSE70138/GSE70138_Broad_LINCS_sig_metrics_2017-03-06.txt.gz": "05dd9139f7db1caef03b534611c0bcf97dd071a764445688eaa7e6c47e50b04c",
+    "src/aggregate_hms.py": "7e82e3379214a2742c492e9503763efe7703ca72bf62f91f72491fba1a4bc6a2",
+    "src/extract_reference.py": "d55ed7e5e79db8759d6b401691741bbead81daf50b074fafbd334fdcc2257e55",
+    "src/prepare.py": "9bf67dfea28e4b755601a729cf8d5bda538e07b4615547e3e442ea8d89498a73",
+    "src/check.py": "f09d75b1fc50ce0b38e23f5c2d6d3addce852eeeec3fdc514d440b3e3809dc9c",
+    "src/train.py": "75e0da2396cb75cb52325019f7fcdd7a528fc177b26b693dae32455af5247946"
+  },
+  "success": true,
+  "final_cohort": {
+    "records": 3364,
+    "conditions": 3133,
+    "cells": [
+      "BT20",
+      "HS578T",
+      "MCF7",
+      "MDAMB231",
+      "SKBR3"
+    ],
+    "n_cells": 5,
+    "n_drugs": 106,
+    "expression_time_h": 24,
+    "count_time_h": 72
+  }
+}

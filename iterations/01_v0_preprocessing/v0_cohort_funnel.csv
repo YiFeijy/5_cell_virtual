@@ -1,0 +1,6 @@
+step,stage,records_in,records_out,records_dropped,conditions_out,drop_reason
+1,HMS_library_conditions,4140,4140,0,3852,原孔汇总；无库板记录剔除
+2,CCLE_background_and_parseable_structure,4140,3420,720,3180,MCF10A 缺 RNA 690条；其余细胞 WH-4-025/restricted 30条；共720条
+3,24h_signature_available,3420,3410,10,3171,原始sig_info无匹配24h签名：10条（明细见JSON）
+4,technical_QC_at_least_two_instances,3410,3364,46,3133,46条单实例签名；无数值无效或同板对照不足导致的额外剔除
+5,weights_features_splits_verified,3364,3364,0,3133,无剔除；精确parity与零组泄漏核对
